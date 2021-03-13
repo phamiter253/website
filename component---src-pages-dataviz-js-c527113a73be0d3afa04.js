@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{N58Q:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),i=a("Bl7J"),r=a("vrFN");t.default=function(){return l.a.createElement(i.a,null,l.a.createElement(r.a,{title:"Data Visualizations"}),l.a.createElement("h1",null,"Hi from the second page"))}}}]);
+//# sourceMappingURL=component---src-pages-dataviz-js-c527113a73be0d3afa04.js.map
