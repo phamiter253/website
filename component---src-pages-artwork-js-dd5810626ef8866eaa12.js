@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{fpZo:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),o=n("Bl7J"),c=n("vrFN");t.default=function(){return r.a.createElement(o.a,null,r.a.createElement(c.a,{title:"Artwork"}))}}}]);
+//# sourceMappingURL=component---src-pages-artwork-js-dd5810626ef8866eaa12.js.map
