@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[565],{61062:function(e,t,n){n.r(t);var u=n(67294),i=n(80352),c=n(60262);t.default=function(){return u.createElement(i.Z,null,u.createElement(c.Z,{title:"Dynamic Website Studio"}))}}}]);
+//# sourceMappingURL=component---src-pages-dynamic-js-e9af3e551525603d3f3c.js.map
