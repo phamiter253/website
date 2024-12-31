@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[930],{95470:function(e,t,n){n.r(t);var l=n(67294),u=n(47482),a=n(60262);t.default=function(){return l.createElement(u.Z,null,l.createElement(a.Z,{title:"Game Development Ideas"}))}}}]);
-//# sourceMappingURL=component---src-pages-game-js-d0ffea0e8c9e89f7d195.js.map

@@ -1,0 +1,4 @@
+<template>
+  <Home/>
+  <Grid/>
+</template>

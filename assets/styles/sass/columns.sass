@@ -1,0 +1,6 @@
+@mixin col ($cols)
+  @media screen and (max-width: 768px)
+    padding: 0
+    width: 100%
+  padding: 0 calc(#{$gutter} / 2)
+  width: calc((#{$cols} / 12) * 100%)
