@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
-  // app: {
-  //   baseURL: '/website/',
-	// },
+  app: {
+    baseURL: '/website/',
+	},
   components: [
     {
       path: '~/components',
