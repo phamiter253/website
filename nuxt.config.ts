@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
+  baseURL: '/website/',
+  buildAssetsDir: 'assets',
   app: {
 		head: {
 			charset: 'utf-8',
