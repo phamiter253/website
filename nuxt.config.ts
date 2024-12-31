@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/website/',
-    buildAssetsDir: 'assets',
 		head: {
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
@@ -20,19 +19,17 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  ssr: false,
-  modules: [
-  ],
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //     failOnError: false, 
-  //   },
-  // },
-  // routeRules: {
-  //   "/**": { swr: true },
-  //   "/dashboard/**": { ssr: false },
-  // },
+  ssr: true,
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false, 
+    },
+  },
+  routeRules: {
+    "/**": { swr: true },
+    "/dashboard/**": { ssr: false },
+  },
   // vite: {
   //   css: {
   //     preprocessorOptions: {
