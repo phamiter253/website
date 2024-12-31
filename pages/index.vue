@@ -1,4 +1,0 @@
-<template>
-  <Home/>
-  <Grid/>
-</template>
