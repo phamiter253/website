@@ -1,7 +1,6 @@
 export default defineNuxtConfig({
-  baseURL: '/website/',
-  buildAssetsDir: 'assets',
   app: {
+    baseURL: '/website/',
 		head: {
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
