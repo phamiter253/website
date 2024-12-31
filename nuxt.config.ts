@@ -1,18 +1,7 @@
 export default defineNuxtConfig({
-  app: {
-    baseURL: '/website/',
-		head: {
-			charset: 'utf-8',
-			viewport: 'width=device-width, initial-scale=1',
-			title: 'Priscilla Hamiter',
-			meta: [
-				{
-					name: 'description',
-					content: 'Realworld Conduit was built by Nuxt3, Vue3, Quasar and etc',
-				}
-			],
-		},
-	},
+  // app: {
+  //   baseURL: '/website/',
+	// },
   components: [
     {
       path: '~/components',
