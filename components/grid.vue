@@ -3,7 +3,7 @@
   .container
     .grid__container
       .cell(style='background-image: url("/images/home-projects-24.jpg")')
-      .cell(style='background-image: url("/images/home-projects-21.jpg")' :class="{ 'cell--active': currIndex === 2 }" @click='setCurrent(2)')
+      .cell(style='background-image: url("/images/home-projects-21.jpg")')
       .cell-large
         h2.cell__title Upcoming Project
       .cell-large
@@ -41,25 +41,19 @@ import { gsap } from "gsap";
 onMounted(() => {
   gsap.registerPlugin(Flip);
   const smallElements = document.querySelectorAll(".cell");
-  let targets = gsap.utils.toArray(".cell");
+  let targets = gsap.utils.toArray(".cell, .cell-large");
 
-  // if (useFlipState().value) {
-  //   Flip.from(useFlipState().value, {
-  //     targets: cell.value,
-  //   });
-  //   gsap.set(cell.value, { visibility: "visible" });
-  // }
   smallElements.forEach((element) => {
-  element.addEventListener("click",()=>{
-    let state = Flip.getState(targets);
-    element.classList.toggle("cell--active");
-    Flip.from(state, {
-      duration: .5,
-      ease: "power4.in",
-      scale: true
-    });
-  })
-});
+    element.addEventListener("click",()=>{
+      let state = Flip.getState(targets);
+      element.classList.toggle("active");
+      Flip.from(state, {
+        duration: .5,
+        ease: "power1.in",
+        absolute: true
+      });
+    })
+  });
 });
 
 </script>

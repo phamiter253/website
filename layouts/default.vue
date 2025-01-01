@@ -1,5 +1,5 @@
 <template>
   <Navigation/>
   <slot></slot>
-  <Footer/>
+  <!-- <Footer/> -->
 </template>
