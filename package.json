@@ -11,6 +11,8 @@
     "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.7.4",
+    "eslint": "^9.17.0",
     "gh-pages": "^6.2.0",
     "gsap": "^3.12.5",
     "nuxt": "^3.15.0",

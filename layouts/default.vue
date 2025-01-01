@@ -1,5 +1,5 @@
-<template>
-  <Navigation/>
-  <slot></slot>
-  <!-- <Footer/> -->
+<template lang="pug">
+  .default
+    NavigationBar
+    slot
 </template>
