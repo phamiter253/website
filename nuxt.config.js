@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      htmlAttrs: { lang: 'en' },
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Priscilla Hamiter'
@@ -16,19 +17,15 @@ export default defineNuxtConfig({
       // ],
     }
   },
-
-  components: [
-    {
-      path: '~/components',
-      pathPrefix: false
-    }
+  plugins: [
+    '~/plugins/gsap.client.js'
   ],
   ssr: true,
   vite: {
       css: {
         preprocessorOptions: {
           sass: {
-            additionalData:  '@use "~/assets/styles/sass/global.sass" as *'
+            additionalData:  '@use "~/assets/styles/sass/global.sass" as *\n'
           }
         }
       }

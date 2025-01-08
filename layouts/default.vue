@@ -1,5 +1,6 @@
 <template lang="pug">
   .default
-    NavigationBar
+    TheNavigation
     slot
+    TheFooter
 </template>
