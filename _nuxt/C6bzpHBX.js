@@ -1,1 +1,0 @@
-import{v as t,x as n,t as o,_ as a}from"./9Lwkhly-.js";const r={class:"container"};function s(l,e){return o(),t("div",r,e[0]||(e[0]=[n("h1",null,"Page not found ",-1),n("p",null,"We can't find what you're looking for. Please check the link and try again.",-1)]))}const c={},d=a(c,[["render",s]]);export{d as default};
