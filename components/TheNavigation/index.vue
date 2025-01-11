@@ -21,7 +21,8 @@
   header.navigation(:class="{ active: isDown }")
     .container
       .navigation__container
-        img.navigation__logo(src='/logo.svg' alt='Priscilla Hamiter Logo')
+        NuxtLink(to='/' aria-label='Home')
+          img.navigation__logo(src='/logo.svg' alt='Priscilla Hamiter Logo')
 </template>
 
 <style lang="sass" src="./index.sass"></style>

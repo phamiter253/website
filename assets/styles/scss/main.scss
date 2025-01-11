@@ -39,8 +39,9 @@ p {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 var(--fluid-16-32)
+  padding: 0 var(--fluid-16-32);
+  max-width: 1440px !important;
 }
