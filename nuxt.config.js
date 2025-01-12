@@ -2,7 +2,6 @@ export default defineNuxtConfig({
   build: {
     transpile: ['gsap']
   },
-
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
@@ -20,7 +19,6 @@ export default defineNuxtConfig({
   plugins: [
     '~/plugins/gsap.client.js'
   ],
-  ssr: true,
   vite: {
       css: {
         preprocessorOptions: {

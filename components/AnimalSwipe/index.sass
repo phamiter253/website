@@ -1,26 +1,68 @@
 .animal-swipe
   &__container
-    display: flex
+    &
+      display: flex
+
+    @media screen and (max-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
 
   &__cards
-    display: flex
-    align-items: center
-    justify-content: center
-    position: relative
-    width: 33%
-    height: 80vh
+    &
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      width: 33%
+      height: 80vh
+      overflow: hidden
+
+    @media screen and (max-width: 768px)
+      width: 100%
+
+    @media screen and (max-width: 600px)
+      height: 60vh
 
   &__card
-    position: absolute
-    aspect-ratio: 2 / 3
-    width: 70%
-    height: auto
-    background-color: #333
-    border-radius: 8% / 6%
+    &
+      position: absolute
+      aspect-ratio: 2.5 / 3
+      width: 70%
+      height: auto
+      background-color: #333
+      border-radius: 8% / 6%
+      overflow: hidden
+      pointer-events: auto
+
+    @media screen and (max-width: 768px)
+      width: 50%
+
+    @media screen and (max-width: 600px)
+      width: 80%
+
+    &.inactive
+      transition: transform 0.3s
+
+    &.to-left
+      transform: translateX(-40rem) rotate(-30deg) !important
+    
+    &.to-right 
+      transform: translate(40rem) rotate(30deg) !important
 
   &__content
-    padding: 1rem
+    &
+      padding: 1rem
+
+    @media screen and (max-width: 768px)
+      width: 100%
 
   &__title
-    font-family: 'Rats Fink Heavy'
-    color: #333
+    &
+      font-family: 'Rats Fink Heavy'
+      color: #333
+      margin: 0
+
+    @media screen and (max-width: 768px)
+      text-align: center
+

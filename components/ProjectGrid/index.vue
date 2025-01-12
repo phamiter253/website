@@ -14,11 +14,13 @@
           duration: .3,
           ease: "power1.in"
         });
-        gsap.to(window, {
-          duration: .5, 
-          delay: .4,
-          scrollTo:{y:"#"+element.id, offsetY:80}
-        });
+        if (element.classList.contains("active")) {
+          gsap.to(window, {
+            duration: .5, 
+            delay: .4,
+            scrollTo:{y:"#"+element.id, offsetY:80}
+          });
+        }
       })
     });
   });

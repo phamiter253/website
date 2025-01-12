@@ -2,7 +2,8 @@ export const useGsap = () => {
   const nuxtApp = useNuxtApp();
 
   return {
-    gsap: nuxtApp.$gsap,
-    Flip: nuxtApp.$Flip
+    Draggable: nuxtApp.$Draggable,
+    Flip: nuxtApp.$Flip,
+    gsap: nuxtApp.$gsap
   };
 };
