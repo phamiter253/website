@@ -1297,17 +1297,17 @@ export const villagers = [
     quote: "The squeaky wheel gets the cheese.",
     song: "K.K. Faire"
   },
-  // {
-  //   name: "Dotty",
-  //   personality: "peppy",
-  //   hobby: "Fashion",
-  //   birthday: "3-14",
-  //   horoscope: "pisces",
-  //   skill: "home repair",
-  //   goal: "Tennis player",
-  //   quote: "It's always a good hare day.",
-  //   song: "Drivin'"
-  // },
+  {
+    name: "Dotty",
+    personality: "peppy",
+    hobby: "Fashion",
+    birthday: "3-14",
+    horoscope: "pisces",
+    skill: "home repair",
+    goal: "Tennis player",
+    quote: "It's always a good hare day.",
+    song: "Drivin'"
+  },
   {
     name: "Drago",
     personality: "lazy",

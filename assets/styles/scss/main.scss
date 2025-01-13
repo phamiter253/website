@@ -9,7 +9,8 @@
       (26, 48),
       (18, 32),
       (16, 24),
-      (16, 32)
+      (16, 32),
+      (14, 20)
     ),
     "prefix": "fluid-",
     "relativeTo": "viewport-width",
@@ -34,7 +35,12 @@ h3 {
 }
 
 p {
-  font-size: var(--fluid-16-24)
+  font-size: var(--fluid-14-20)
+}
+
+button {
+  all: unset;
+  cursor: pointer;
 }
 
 .container {
