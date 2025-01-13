@@ -1,1 +1,0 @@
-import{c as s,a as o,o as t,_ as n}from"./DmRxRvbS.js";const c={class:"pages-projects"};function a(i,e){return t(),s("div",c,e[0]||(e[0]=[o("div",{class:"container"},[o("h1",null,"Coming Soon!")],-1)]))}const r={},d=n(r,[["render",a]]);export{d as default};
