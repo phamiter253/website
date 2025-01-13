@@ -3,12 +3,7 @@
   
   function handleScroll() {
     const currentScrollPosition = window.scrollY
-
-    if (currentScrollPosition > 10){
-      isDown.value = true
-    } else {
-      isDown.value = false
-    }
+    isDown.value = currentScrollPosition > 10 ? true : false
   }; 
   onMounted(() => {
     window.addEventListener('scroll', () => {
