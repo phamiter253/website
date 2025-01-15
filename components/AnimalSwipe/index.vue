@@ -3,55 +3,86 @@
   const { gsap, Draggable } = useGsap();
 
   let startX;
-  const profileDrawer = ref(false);
-  const zodiac = 'aries';
+  const profileDrawer = ref(true);
+  const zodiacs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
+  const personalities = ["Cranky", "Jock", "Lazy", "Normal", "Peppy", "Big Sister", "Smug", "Snooty"];
+  let position = 1;
+  let currentIndex = 1;
+  const indexOne = ref(0);
+  const indexTwo = ref(1);
+  const user = ref({
+    zodiac: "aries",
+    personality: "cranky"
+  });
   const decisionVal = 80;
-
+  let cardIndex = 1
   villagers.sort(() => Math.random() - 0.5);
 
+
+  function handleDrawer() {
+    profileDrawer.value = profileDrawer.value ? false : true
+  }; 
+
   function moveCard(direction) {
-    const cards = document.querySelectorAll(".animal-swipe__card:not(.inactive)");
-    const lastCard = cards[cards.length -1]
+    const cards = document.querySelectorAll(".animal-swipe__card");
+    const lastCard = cards[cardIndex]
     lastCard.classList.add("inactive");
-    if (direction === "right") {
-      lastCard.classList.add("to-right");
-      console.log(lastCard.getAttribute("data-name"))
-    } else {
-      lastCard.classList.add("to-left");
+    lastCard.classList.add(`to-${direction}`);
+    if (direction === "right"){
+      console.log(villagers[currentIndex])
     }
+    currentIndex = cardIndex === 1 ? indexOne.value : indexTwo.value
+
+    setTimeout(function() {
+      lastCard.classList.remove("inactive")
+      lastCard.classList.add("below")
+      lastCard.classList.remove(`to-${direction}`)
+      if (cardIndex === 0) {
+        indexTwo.value = position;
+      }else{
+        indexOne.value = position;
+      }
+    }, 300);
+    
+    if (cardIndex === 0) {
+      setTimeout(function() {
+        cards[1].classList.remove("below");
+      }, 300);
+    }else {
+      cards[0].classList.remove("below");
+    }
+    cardIndex = cardIndex === 1 ? 0 : 1;
+    position++;
   };
 
   onMounted(() => {
-    profileDrawer.value = document.querySelector(".animal-swipe__profile");
     const smallElements = document.querySelectorAll(".animal-swipe__card");
 
     smallElements.forEach((element) => {
       Draggable.create(element, {
         type: "x",
         lockAxis: true,
+        zIndexBoost: false,
         onPress: (e) => {
           startX = e.pageX;
         },
         onDrag: (e) => {
           const distance = e.x - startX
           const rotation = distance > 1 ? 10 : -10
-
           gsap.to(element, {
             rotation: rotation
           })
         },
         onRelease: (e) => {
           const distance = e.x - startX
-          
           if (distance <= -decisionVal || distance >= decisionVal) {
             const direction = distance <= -decisionVal ? "left" : "right"
             moveCard(direction)
-          }else{
-            gsap.to(element, {
-              x: 0,
-              rotation: 0
-            })
           }
+          gsap.to(element, {
+            x: 0,
+            rotation: 0
+          })
         }
       });
     });
@@ -64,28 +95,42 @@
     .container
       .animal-swipe__container
         .animal-swipe__cards
-          //- .animal-swipe__profile
-          //-   img.animal-swipe__profile-image(src='/images/animal-crossing/posters/villager.png')
-          //-   .animal-swipe__name
-          //-     h3.animal-swipe__title Villager
-          //-     img.animal-swipe__zodiac(:src='`/images/animal-crossing/horoscope/${zodiac}.svg`')
+          .animal-swipe__profile(:class="{ active: profileDrawer }")
+            button.animal-swipe__back(@click='handleDrawer()')
+              img.animal-swipe__back-icon(src='/images/animal-crossing/icons/arrow.svg')
+            img.animal-swipe__profile-image(src='/images/animal-crossing/posters/villager.png')
+            .animal-swipe__name
+              h3.animal-swipe__title Villager
+              img.animal-swipe__zodiac(:src='`/images/animal-crossing/horoscope/${user.zodiac}.svg`')
+            fieldset.animal-swipe__group
+              legend.animal-swipe__radio-title Pick your Zodiac Sign
+              .animal-swipe__radio-group(v-for='(zodiac,i) in zodiacs' :key='`zodiac-${i}`')
+                input(type='radio' :id='`zodiac-${i}`' :value='zodiac' name='zodiac' :checked='zodiac === "Aries" ? true : false')
+                label(:for='`zodiac-${i}`' v-html='zodiac')
+            fieldset.animal-swipe__group
+              legend.animal-swipe__radio-title Pick your Personality Type
+              .animal-swipe__radio-group(v-for='(personality,i) in personalities' :key='`personality-${i}`')
+                input(type='radio' :id='`personality-${i}`' :value='personality' name='personality' :checked='personality === "Cranky" ? true : false')
+                label(:for='`personality-${i}`' v-html='personality')
           .animal-swipe__controls
-            button.animal-swipe__button
+            button.animal-swipe__button(@click='handleDrawer()')
               img.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg')
             .animal-swipe__button
               img.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg')
             button.animal-swipe__button
               img.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg')
-          .animal-swipe__card(v-for='(villager, i) in villagers' :key='`villager-${i}`' :data-name='villager.name')
-            TinderCard(:user='villager')
+          .animal-swipe__card
+            TinderCard(:user='villagers[indexOne]')
+          .animal-swipe__card
+            TinderCard(:user='villagers[indexTwo]')
           .animal-swipe__buttons
             button.animal-swipe__button.reject(@click='moveCard("left")')
               img.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png')
             button.animal-swipe__button.like(@click='moveCard("right")')
               img.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png')
         .animal-swipe__content
-          h1.animal-swipe__title CritterConnect
-          p.animal-swipe__text Welcome to CritterConnect, the matchmaking app for Animal Crossing villagers! Swipe through unique personalities and hobbies to find your dream neighbors and build the perfect island paradise. Your ideal villager is just a swipe away!
+          h1.animal-swipe__title Animal Crossing Tinder
+          p.animal-swipe__text Welcome to Animal Crossing Tinder, the matchmaking app for Animal Crossing villagers! Swipe through unique personalities and hobbies to find your dream neighbors and build the perfect island paradise. Your ideal villager is just a swipe away!
           h2.animal-swipe__subheading Instructions
           p.animal-swipe__text More Coming Soon!
 </template>

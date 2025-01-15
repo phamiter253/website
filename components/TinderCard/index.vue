@@ -1,11 +1,11 @@
 <script setup>
   const props = defineProps({
     user: { type: Object, default: null }
-  })
+  });
   const isVisible = ref(false);
-  const hobbySentence = ["Loves", "You can find me", "Usually", "I like to", "Always", "I spend a lot of time", "Really into"];
-  const image = props.user.name.toLowerCase().replace(" ", "").replace(/é/g, 'e');
-  const music = props.user.song.toLowerCase().replace(/[ .']/g, '').replace(/é/g, 'e');
+  const hobbySentence = ["Loves", "My favorite thing is", "Really into"];
+  const image = computed(() => props.user.name.toLowerCase().replace(/[ ']/g, ""));
+  const music = computed(() => props.user.song.toLowerCase().replace(/[ .']/g, '').replace(/é/g, 'e'));
 
   function toggleClass() {
     isVisible.value = !isVisible.value ? true : false;
@@ -18,21 +18,21 @@
 
 <template lang="pug">
   .tinder-card(:class="{ bioVisible: isVisible }")
-    .tinder-card__image(:style='{ backgroundImage :"url(/images/animal-crossing/posters/" + image + ".png)"}')
-      .tinder-card__profile-title
-        .tinder-card__name(v-html='props.user.name')
-        img.tinder-card__icon(:src='`/images/animal-crossing/horoscope/${props.user.horoscope}.svg`')
-        button.tinder-card__button(@click='toggleClass()')
-          img.tinder-card__info-icon(src='/images/animal-crossing/icons/info.png')
+    img.tinder-card__image(:src='`/images/animal-crossing/posters/${image}.png`')
+    .tinder-card__profile-title
+      .tinder-card__name(v-html='props.user.name')
+      img.tinder-card__icon(:src='`/images/animal-crossing/horoscope/${props.user.horoscope}.svg`')
+      button.tinder-card__button(@click='toggleClass()')
+        img.tinder-card__info-icon(src='/images/animal-crossing/icons/info.png')
     .tinder-card__info
       button.tinder-card__button(@click='toggleClass()')
         img.tinder-card__arrow-icon(src='/images/animal-crossing/icons/down-arrow.svg')
       .tinder-card__profile-title
         .tinder-card__name(v-html='props.user.name')
         img.tinder-card__icon(:src='`/images/animal-crossing/horoscope/${props.user.horoscope}.svg`')
-      .tinder-card__text-group
+      .tinder-card__text-group(v-if='props.user.goal')
         img.tinder-card__bio-icon(src='/images/animal-crossing/icons/briefcase.svg')
-        .tinder-card__bio-title(v-if='props.user.goal' v-html='`Aspiring ${props.user.goal}`')
+        .tinder-card__bio-title(v-html='`Aspiring ${props.user.goal}`')
       .tinder-card__line
       .tinder-card__bio-catchphrase(v-html='props.user.quote')
       .tinder-card__bio-skill(v-if='props.user.skill' v-html='pickRandom() + " " +props.user.skill')

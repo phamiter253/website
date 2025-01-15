@@ -10,7 +10,8 @@
       (18, 32),
       (16, 24),
       (16, 32),
-      (14, 20)
+      (14, 20),
+      (12, 16)
     ),
     "prefix": "fluid-",
     "relativeTo": "viewport-width",
@@ -20,6 +21,8 @@
 body {
   background-color: #D6DAC8;
   margin: 0;
+  // opacity: 0;
+  // animation: fadeIn .5s ease-in
 }
 
 h1 {
@@ -50,4 +53,26 @@ button {
   margin: 0 auto;
   padding: 0 var(--fluid-16-32);
   max-width: 1440px !important;
+}
+
+fieldset {
+  border: none;
+  padding: 0 !important;
+}
+
+legend {
+  padding-bottom: .5rem;
+}
+
+input[type="radio"] { 
+  display: none; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
