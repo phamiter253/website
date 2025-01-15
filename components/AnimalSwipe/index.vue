@@ -1,13 +1,12 @@
 <script setup>
   import { villagers } from '~/utils/data/villagers'
-  const { gsap, Draggable } = useGsap();
 
-  let startX;
+  const { gsap, Draggable } = useGsap();
   const profileDrawer = ref(true);
   const zodiacs = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
   const personalities = ["Cranky", "Jock", "Lazy", "Normal", "Peppy", "Big Sister", "Smug", "Snooty"];
   let position = 1;
-  let currentIndex = 1;
+  // let currentIndex = 1;
   const indexOne = ref(0);
   const indexTwo = ref(1);
   const user = ref({
@@ -28,10 +27,10 @@
     const lastCard = cards[cardIndex]
     lastCard.classList.add("inactive");
     lastCard.classList.add(`to-${direction}`);
-    if (direction === "right"){
-      console.log(villagers[currentIndex])
-    }
-    currentIndex = cardIndex === 1 ? indexOne.value : indexTwo.value
+    // if (direction === "right"){
+    //   console.log(villagers[currentIndex])
+    // }
+    // currentIndex = cardIndex === 1 ? indexOne.value : indexTwo.value
 
     setTimeout(function() {
       lastCard.classList.remove("inactive")
@@ -63,18 +62,15 @@
         type: "x",
         lockAxis: true,
         zIndexBoost: false,
-        onPress: (e) => {
-          startX = e.pageX;
-        },
-        onDrag: (e) => {
-          const distance = e.x - startX
+        onDrag: () => {
+          const distance = gsap.getProperty(element, "x")
           const rotation = distance > 1 ? 10 : -10
           gsap.to(element, {
             rotation: rotation
           })
         },
-        onRelease: (e) => {
-          const distance = e.x - startX
+        onRelease: () => {
+          const distance = gsap.getProperty(element, "x")
           if (distance <= -decisionVal || distance >= decisionVal) {
             const direction = distance <= -decisionVal ? "left" : "right"
             moveCard(direction)
