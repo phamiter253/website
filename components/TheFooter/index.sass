@@ -8,14 +8,48 @@
     padding: 2rem 0 0
     width: 100%
 
-    &::before
-      display: block
-      background: #333
-      width: 40%
-      height: 1px
-      content: ''
+  &__links
+    display: flex
+    flex-wrap: wrap
+    margin: .5rem 0
+    padding: 0
+
+  &__link
+    &-item
+      display: flex
+      align-items: center
+      font-family: 'Amiri', sans-serif
+      font-size: var(--fluid-16-24)
+      letter-spacing: 1px
+      list-style-type: none
+
+      &::after
+        &
+          display: block
+          border-radius: .75rem
+          width: .75rem
+          height: .80rem
+          margin: 0 .85rem
+          background-color: black
+          content: ""
+        @media screen and (max-width: 600px)
+          width: .58rem
+          height: .6rem
+
+      &:last-child::after
+        width: 0
+        height: 0
+        content: ""
 
   &__copyright
-    font-family: 'Amiri', sans-serif
-    font-style: italic
-    font-size: 18px
+    &
+      border-top: #333 solid 1px
+      margin-top: 0 
+      padding: .5rem 0 0
+      width: 40%
+      font-family: 'Amiri', sans-serif
+      font-style: italic
+      font-size: 18px
+
+    @media screen and (max-width: 600px)
+      width: 80%

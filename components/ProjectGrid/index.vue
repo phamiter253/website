@@ -1,6 +1,8 @@
 <script setup>
   import { cells } from '~/utils/data/cells'
+
   const { gsap, Flip } = useGsap();
+  const catergories = ["All", "Art", "Coding", "Food"];
 
   onMounted(() => {
     const smallElements = document.querySelectorAll(".cell");

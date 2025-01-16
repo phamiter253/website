@@ -37,7 +37,6 @@ export default defineNuxtConfig({
   routeRules: {
     '/dashboard/**': { ssr: false }
   },
-
   css: ['~/assets/styles/scss/main.scss'],
   compatibilityDate: '2024-12-31',
   modules: ['@nuxt/eslint']

@@ -9,7 +9,7 @@
 
   function toggleClass() {
     isVisible.value = !isVisible.value ? true : false;
-  }; 
+  };
 
   function pickRandom (){
     return hobbySentence[Math.floor(Math.random()*hobbySentence.length)];

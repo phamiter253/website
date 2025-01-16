@@ -5,7 +5,7 @@ export const cells = [
     category: 'coding',
     image: '/images/animal-crossing-background.jpg',
     font: '"Rats Fink Heavy"',
-    link: '/data-viz/animal-crossing'
+    link: '/projects/animal-crossing'
   },
   {
     name: 'Turkey Shaped Pretzels',

@@ -15,7 +15,7 @@
   });
   const decisionVal = 80;
   let cardIndex = 1
-  villagers.sort(() => Math.random() - 0.5);
+  const list = ref(villagers.sort(() => Math.random() - 0.5));
 
 
   function handleDrawer() {
@@ -28,7 +28,7 @@
     lastCard.classList.add("inactive");
     lastCard.classList.add(`to-${direction}`);
     // if (direction === "right"){
-    //   console.log(villagers[currentIndex])
+    //   console.log(list[currentIndex])
     // }
     // currentIndex = cardIndex === 1 ? indexOne.value : indexTwo.value
 
@@ -116,9 +116,9 @@
             button.animal-swipe__button
               img.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg')
           .animal-swipe__card
-            TinderCard(:user='villagers[indexOne]')
+            TinderCard(:user='list[indexOne]')
           .animal-swipe__card
-            TinderCard(:user='villagers[indexTwo]')
+            TinderCard(:user='list[indexTwo]')
           .animal-swipe__buttons
             button.animal-swipe__button.reject(@click='moveCard("left")')
               img.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png')

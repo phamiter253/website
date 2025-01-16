@@ -21,8 +21,7 @@
 body {
   background-color: #D6DAC8;
   margin: 0;
-  // opacity: 0;
-  // animation: fadeIn .5s ease-in
+  animation: fadeIn .5s ease-in
 }
 
 h1 {
@@ -53,6 +52,11 @@ button {
   margin: 0 auto;
   padding: 0 var(--fluid-16-32);
   max-width: 1440px !important;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
 }
 
 fieldset {

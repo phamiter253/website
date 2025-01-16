@@ -18,6 +18,12 @@ main:focus
   min-height: 100vh
 
 #main-content
+  display: flex
   flex: 1
+  justify-content: center
 
+.pages-home
+  display: flex
+  align-items: center
+  flex: 1
 </style>
