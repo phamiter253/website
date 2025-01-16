@@ -1,1 +1,0 @@
-import{c as a,a as e,o,_ as t}from"./BjWNXRX9.js";const s={class:"pages-404"};function c(l,n){return o(),a("div",s,n[0]||(n[0]=[e("div",{class:"container"},[e("h1",null,"Page not found "),e("p",null,"We can't find what you're looking for. Please check the link and try again.")],-1)]))}const r={},d=t(r,[["render",c]]);export{d as default};
