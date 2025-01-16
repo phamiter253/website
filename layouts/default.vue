@@ -26,4 +26,9 @@ main:focus
   display: flex
   align-items: center
   flex: 1
+
+.pages-contact
+  display: flex
+  align-items: center
+  flex: 1
 </style>
