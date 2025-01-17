@@ -1,1 +1,0 @@
-import{c as n,a as o,o as s,_ as a}from"./0Z554t3O.js";const t={class:"pages-projects__halloween"};function c(l,e){return s(),n("div",t,e[0]||(e[0]=[o("div",{class:"container"},[o("h1",null,"Coming Soon!")],-1)]))}const r={},d=a(r,[["render",c]]);export{d as default};
