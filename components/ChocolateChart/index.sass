@@ -30,7 +30,8 @@
 
   &__chart
     &
-      // height: 85vh
+      position: relative
+      height: 105vh
       overflow-y: scroll
       -ms-overflow-style: none
       scrollbar-width: none
@@ -83,3 +84,14 @@
     input[type="radio"]:checked + label
       background: #1e1d1d
       color: white
+
+.tooltip
+  fill: #fff
+  -webkit-filter: drop-shadow(0 0 .75rem black)
+  filter: drop-shadow(0 0 .75rem black)
+  stroke: #333
+  stroke-width: 5px
+  font-size: 6rem
+  font-family: 'Mollen'
+  text-align: center
+  transition: opacity 0.2s ease-in-out
