@@ -1,4 +1,20 @@
 export const cells = [
+  // {
+  //   name: 'Bug Hotel',
+  //   type: 'cell-large',
+  //   category: 'coding',
+  //   image: '',
+  //   font: '"Work Sans"',
+  //   link: '/projects/bug-hotel'
+  // },
+  {
+    name: 'Halloween Candy Chocolate Bar Graph',
+    type: 'cell-large',
+    category: 'coding',
+    image: '/images/halloween-candy/halloween-candy.png',
+    font: '"Mollen"',
+    link: '/projects/halloween-candy'
+  },
   {
     name: 'Animal Crossing Tinder',
     type: 'cell-large',

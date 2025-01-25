@@ -1,7 +1,7 @@
 export const villagers = [
   {
     name: "Admiral",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "1-27",
     horoscope: "aquarius",
@@ -12,7 +12,7 @@ export const villagers = [
   },
   {
     name: "Agent S",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fitness",
     birthday: "7-2",
     horoscope: "cancer",
@@ -23,7 +23,7 @@ export const villagers = [
   },
   {
     name: "Agnes",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "4-21",
     horoscope: "taurus",
@@ -34,7 +34,7 @@ export const villagers = [
   },
   {
     name: "Al",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Fitness",
     birthday: "10-18",
     horoscope: "libra",
@@ -45,7 +45,7 @@ export const villagers = [
   },
   {
     name: "Alfonso",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "6-9",
     horoscope: "gemini",
@@ -56,7 +56,7 @@ export const villagers = [
   },
   {
     name: "Alice",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "8-19",
     horoscope: "leo",
@@ -67,7 +67,7 @@ export const villagers = [
   },
   {
     name: "Alli",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "11-8",
     horoscope: "scorpio",
@@ -78,7 +78,7 @@ export const villagers = [
   },
   {
     name: "Amelia",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "11-19",
     horoscope: "scorpio",
@@ -89,7 +89,7 @@ export const villagers = [
   },
   {
     name: "Anabelle",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "2-16",
     horoscope: "aquarius",
@@ -100,7 +100,7 @@ export const villagers = [
   },
   {
     name: "Anchovy",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "3-4",
     horoscope: "pisces",
@@ -111,7 +111,7 @@ export const villagers = [
   },
   {
     name: "Angus",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "4-30",
     horoscope: "taurus",
@@ -122,7 +122,7 @@ export const villagers = [
   },
   {
     name: "Anicotti",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "2-24",
     horoscope: "pisces",
@@ -133,7 +133,7 @@ export const villagers = [
   },
   {
     name: "Ankha",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Nature",
     birthday: "9-22",
     horoscope: "virgo",
@@ -144,7 +144,7 @@ export const villagers = [
   },
   {
     name: "Annalisa",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "2-6",
     horoscope: "aquarius",
@@ -155,7 +155,7 @@ export const villagers = [
   },
   {
     name: "Annalise",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "12-2",
     horoscope: "sagittarius",
@@ -166,7 +166,7 @@ export const villagers = [
   },
   {
     name: "Antonio",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "10-20",
     horoscope: "libra",
@@ -177,7 +177,7 @@ export const villagers = [
   },
   {
     name: "Apollo",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "7-4",
     horoscope: "cancer",
@@ -188,7 +188,7 @@ export const villagers = [
   },
   {
     name: "Apple",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "9-24",
     horoscope: "libra",
@@ -199,7 +199,7 @@ export const villagers = [
   },
   {
     name: "Astrid",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "9-8",
     horoscope: "virgo",
@@ -210,7 +210,7 @@ export const villagers = [
   },
   {
     name: "Audie",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fitness",
     birthday: "8-31",
     horoscope: "virgo",
@@ -221,7 +221,7 @@ export const villagers = [
   },
   {
     name: "Aurora",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "1-27",
     horoscope: "aquarius",
@@ -232,7 +232,7 @@ export const villagers = [
   },
   {
     name: "Ava",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "4-28",
     horoscope: "taurus",
@@ -243,7 +243,7 @@ export const villagers = [
   },
   {
     name: "Avery",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "2-22",
     horoscope: "pisces",
@@ -254,7 +254,7 @@ export const villagers = [
   },
   {
     name: "Axel",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "3-23",
     horoscope: "aries",
@@ -265,7 +265,7 @@ export const villagers = [
   },
   {
     name: "Baabara",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "3-28",
     horoscope: "aries",
@@ -276,7 +276,7 @@ export const villagers = [
   },
   {
     name: "Bam",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "11-7",
     horoscope: "scorpio",
@@ -287,7 +287,7 @@ export const villagers = [
   },
   {
     name: "Bangle",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "8-27",
     horoscope: "virgo",
@@ -298,7 +298,7 @@ export const villagers = [
   },
   {
     name: "Barold",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "3-2",
     horoscope: "pisces",
@@ -309,7 +309,7 @@ export const villagers = [
   },
   {
     name: "Bea",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "10-15",
     horoscope: "libra",
@@ -320,7 +320,7 @@ export const villagers = [
   },
   {
     name: "Beardo",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "9-27",
     horoscope: "libra",
@@ -331,7 +331,7 @@ export const villagers = [
   },
   {
     name: "Beau",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "4-5",
     horoscope: "aries",
@@ -342,7 +342,7 @@ export const villagers = [
   },
   {
     name: "Becky",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "12-9",
     horoscope: "sagittarius",
@@ -353,7 +353,7 @@ export const villagers = [
   },
   {
     name: "Bella",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Music",
     birthday: "12-28",
     horoscope: "capricorn",
@@ -364,7 +364,7 @@ export const villagers = [
   },
   {
     name: "Benedict",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "10-10",
     horoscope: "libra",
@@ -375,7 +375,7 @@ export const villagers = [
   },
   {
     name: "Benjamin",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "8-3",
     horoscope: "leo",
@@ -386,7 +386,7 @@ export const villagers = [
   },
   {
     name: "Bertha",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "4-25",
     horoscope: "taurus",
@@ -397,7 +397,7 @@ export const villagers = [
   },
   {
     name: "Bettina",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "6-12",
     horoscope: "gemini",
@@ -408,7 +408,7 @@ export const villagers = [
   },
   {
     name: "Bianca",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "12-13",
     horoscope: "sagittarius",
@@ -419,7 +419,7 @@ export const villagers = [
   },
   {
     name: "Biff",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "3-29",
     horoscope: "aries",
@@ -430,7 +430,7 @@ export const villagers = [
   },
   {
     name: "Big Top",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "10-3",
     horoscope: "libra",
@@ -441,7 +441,7 @@ export const villagers = [
   },
   {
     name: "Bill",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "2-1",
     horoscope: "aquarius",
@@ -452,7 +452,7 @@ export const villagers = [
   },
   {
     name: "Billy",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "3-25",
     horoscope: "aries",
@@ -463,7 +463,7 @@ export const villagers = [
   },
   {
     name: "Biskit",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "5-13",
     horoscope: "taurus",
@@ -474,7 +474,7 @@ export const villagers = [
   },
   {
     name: "Bitty",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "10-6",
     horoscope: "libra",
@@ -485,7 +485,7 @@ export const villagers = [
   },
   {
     name: "Blaire",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "7-3",
     horoscope: "cancer",
@@ -496,7 +496,7 @@ export const villagers = [
   },
   {
     name: "Blanche",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Nature",
     birthday: "12-21",
     horoscope: "sagittarius",
@@ -507,7 +507,7 @@ export const villagers = [
   },
   {
     name: "Bluebear",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "6-24",
     horoscope: "cancer",
@@ -518,7 +518,7 @@ export const villagers = [
   },
   {
     name: "Bob",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "1-1",
     horoscope: "capricorn",
@@ -529,7 +529,7 @@ export const villagers = [
   },
   {
     name: "Bonbon",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "3-3",
     horoscope: "pisces",
@@ -540,7 +540,7 @@ export const villagers = [
   },
   {
     name: "Bones",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "8-4",
     horoscope: "leo",
@@ -551,7 +551,7 @@ export const villagers = [
   },
   {
     name: "Boomer",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Fitness",
     birthday: "2-7",
     horoscope: "aquarius",
@@ -562,7 +562,7 @@ export const villagers = [
   },
   {
     name: "Boone",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "9-12",
     horoscope: "virgo",
@@ -573,7 +573,7 @@ export const villagers = [
   },
   {
     name: "Boots",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "8-7",
     horoscope: "leo",
@@ -584,7 +584,7 @@ export const villagers = [
   },
   {
     name: "Boris",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "11-6",
     horoscope: "scorpio",
@@ -595,7 +595,7 @@ export const villagers = [
   },
   {
     name: "Boyd",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "10-1",
     horoscope: "libra",
@@ -606,7 +606,7 @@ export const villagers = [
   },
   {
     name: "Bree",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "7-7",
     horoscope: "cancer",
@@ -617,7 +617,7 @@ export const villagers = [
   },
   {
     name: "Broccolo",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "6-30",
     horoscope: "cancer",
@@ -628,7 +628,7 @@ export const villagers = [
   },
   {
     name: "Broffina",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "10-24",
     horoscope: "scorpio",
@@ -639,7 +639,7 @@ export const villagers = [
   },
   {
     name: "Bruce",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "5-26",
     horoscope: "gemini",
@@ -650,7 +650,7 @@ export const villagers = [
   },
   {
     name: "Bubbles",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "9-18",
     horoscope: "virgo",
@@ -661,7 +661,7 @@ export const villagers = [
   },
   {
     name: "Buck",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "4-4",
     horoscope: "aries",
@@ -672,7 +672,7 @@ export const villagers = [
   },
   {
     name: "Bud",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "8-8",
     horoscope: "leo",
@@ -683,7 +683,7 @@ export const villagers = [
   },
   {
     name: "Bunnie",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "5-9",
     horoscope: "taurus",
@@ -694,7 +694,7 @@ export const villagers = [
   },
   {
     name: "Butch",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "11-1",
     horoscope: "scorpio",
@@ -705,7 +705,7 @@ export const villagers = [
   },
   {
     name: "Buzz",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "12-7",
     horoscope: "sagittarius",
@@ -716,7 +716,7 @@ export const villagers = [
   },
   {
     name: "Cally",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "9-4",
     horoscope: "virgo",
@@ -727,7 +727,7 @@ export const villagers = [
   },
   {
     name: "Camofrog",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "6-5",
     horoscope: "gemini",
@@ -738,7 +738,7 @@ export const villagers = [
   },
   {
     name: "Canberra",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "5-14",
     horoscope: "taurus",
@@ -749,7 +749,7 @@ export const villagers = [
   },
   {
     name: "Candi",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "4-13",
     horoscope: "aries",
@@ -760,7 +760,7 @@ export const villagers = [
   },
   {
     name: "Carmen",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "1-6",
     horoscope: "capricorn",
@@ -771,7 +771,7 @@ export const villagers = [
   },
   {
     name: "Caroline",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "7-15",
     horoscope: "cancer",
@@ -782,7 +782,7 @@ export const villagers = [
   },
   {
     name: "Carrie",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "12-5",
     horoscope: "sagittarius",
@@ -793,7 +793,7 @@ export const villagers = [
   },
   {
     name: "Cashmere",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "4-2",
     horoscope: "aries",
@@ -804,7 +804,7 @@ export const villagers = [
   },
   {
     name: "Celia",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "3-25",
     horoscope: "aries",
@@ -815,7 +815,7 @@ export const villagers = [
   },
   {
     name: "Cesar",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "9-6",
     horoscope: "virgo",
@@ -826,7 +826,7 @@ export const villagers = [
   },
   {
     name: "Chadder",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Fitness",
     birthday: "12-15",
     horoscope: "sagittarius",
@@ -837,7 +837,7 @@ export const villagers = [
   },
   {
     name: "Charlise",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Fitness",
     birthday: "4-17",
     horoscope: "aries",
@@ -848,7 +848,7 @@ export const villagers = [
   },
   {
     name: "Cheri",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "3-17",
     horoscope: "pisces",
@@ -859,7 +859,7 @@ export const villagers = [
   },
   {
     name: "Cherry",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "5-11",
     horoscope: "taurus",
@@ -870,7 +870,7 @@ export const villagers = [
   },
   {
     name: "Chester",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "8-6",
     horoscope: "leo",
@@ -881,7 +881,7 @@ export const villagers = [
   },
   {
     name: "Chevre",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "3-6",
     horoscope: "pisces",
@@ -892,7 +892,7 @@ export const villagers = [
   },
   {
     name: "Chief",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "12-19",
     horoscope: "sagittarius",
@@ -903,7 +903,7 @@ export const villagers = [
   },
   {
     name: "Chops",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "10-13",
     horoscope: "libra",
@@ -914,7 +914,7 @@ export const villagers = [
   },
   {
     name: "Chow",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "7-22",
     horoscope: "cancer",
@@ -925,7 +925,7 @@ export const villagers = [
   },
   {
     name: "Chrissy",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "8-28",
     horoscope: "virgo",
@@ -936,7 +936,7 @@ export const villagers = [
   },
   {
     name: "Claude",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "12-3",
     horoscope: "sagittarius",
@@ -947,7 +947,7 @@ export const villagers = [
   },
   {
     name: "Claudia",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "11-22",
     horoscope: "sagittarius",
@@ -958,7 +958,7 @@ export const villagers = [
   },
   {
     name: "Clay",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "10-19",
     horoscope: "libra",
@@ -969,7 +969,7 @@ export const villagers = [
   },
   {
     name: "Cleo",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "2-9",
     horoscope: "aquarius",
@@ -980,7 +980,7 @@ export const villagers = [
   },
   {
     name: "Clyde",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "5-1",
     horoscope: "taurus",
@@ -991,7 +991,7 @@ export const villagers = [
   },
   {
     name: "Coach",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "4-29",
     horoscope: "taurus",
@@ -1002,7 +1002,7 @@ export const villagers = [
   },
   {
     name: "Cobb",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Education",
     birthday: "10-7",
     horoscope: "libra",
@@ -1013,7 +1013,7 @@ export const villagers = [
   },
   {
     name: "Coco",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "3-1",
     horoscope: "pisces",
@@ -1024,7 +1024,7 @@ export const villagers = [
   },
   {
     name: "Cole",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "8-10",
     horoscope: "leo",
@@ -1035,7 +1035,7 @@ export const villagers = [
   },
   {
     name: "Colton",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Nature",
     birthday: "5-22",
     horoscope: "gemini",
@@ -1046,7 +1046,7 @@ export const villagers = [
   },
   {
     name: "Cookie",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "6-18",
     horoscope: "gemini",
@@ -1057,7 +1057,7 @@ export const villagers = [
   },
   {
     name: "Cousteau",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "12-17",
     horoscope: "sagittarius",
@@ -1068,7 +1068,7 @@ export const villagers = [
   },
   {
     name: "Cranston",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "9-23",
     horoscope: "libra",
@@ -1079,7 +1079,7 @@ export const villagers = [
   },
   {
     name: "Croque",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "7-18",
     horoscope: "cancer",
@@ -1090,7 +1090,7 @@ export const villagers = [
   },
   {
     name: "Cube",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "1-29",
     horoscope: "aquarius",
@@ -1101,7 +1101,7 @@ export const villagers = [
   },
   {
     name: "Curlos",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Nature",
     birthday: "5-8",
     horoscope: "taurus",
@@ -1112,7 +1112,7 @@ export const villagers = [
   },
   {
     name: "Curly",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "7-26",
     horoscope: "leo",
@@ -1123,7 +1123,7 @@ export const villagers = [
   },
   {
     name: "Curt",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "7-1",
     horoscope: "cancer",
@@ -1134,7 +1134,7 @@ export const villagers = [
   },
   {
     name: "Cyd",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "6-9",
     horoscope: "gemini",
@@ -1145,7 +1145,7 @@ export const villagers = [
   },
   {
     name: "Cyrano",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "3-9",
     horoscope: "pisces",
@@ -1156,7 +1156,7 @@ export const villagers = [
   },
   {
     name: "Daisy",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "11-16",
     horoscope: "scorpio",
@@ -1167,7 +1167,7 @@ export const villagers = [
   },
   {
     name: "Deena",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "6-27",
     horoscope: "cancer",
@@ -1178,7 +1178,7 @@ export const villagers = [
   },
   {
     name: "Deirdre",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "5-4",
     horoscope: "taurus",
@@ -1189,7 +1189,7 @@ export const villagers = [
   },
   {
     name: "Del",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "5-27",
     horoscope: "gemini",
@@ -1200,7 +1200,7 @@ export const villagers = [
   },
   {
     name: "Deli",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "5-24",
     horoscope: "gemini",
@@ -1211,7 +1211,7 @@ export const villagers = [
   },
   {
     name: "Derwin",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "5-25",
     horoscope: "gemini",
@@ -1222,7 +1222,7 @@ export const villagers = [
   },
   {
     name: "Diana",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "1-4",
     horoscope: "capricorn",
@@ -1233,7 +1233,7 @@ export const villagers = [
   },
   {
     name: "Diva",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Fitness",
     birthday: "10-2",
     horoscope: "libra",
@@ -1244,7 +1244,7 @@ export const villagers = [
   },
   {
     name: "Dizzy",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "7-14",
     horoscope: "cancer",
@@ -1255,7 +1255,7 @@ export const villagers = [
   },
   {
     name: "Dobie",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "2-17",
     horoscope: "aquarius",
@@ -1266,7 +1266,7 @@ export const villagers = [
   },
   {
     name: "Doc",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Education",
     birthday: "3-16",
     horoscope: "pisces",
@@ -1277,7 +1277,7 @@ export const villagers = [
   },
   {
     name: "Dom",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "3-18",
     horoscope: "pisces",
@@ -1288,7 +1288,7 @@ export const villagers = [
   },
   {
     name: "Dora",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "2-18",
     horoscope: "aquarius",
@@ -1299,7 +1299,7 @@ export const villagers = [
   },
   {
     name: "Dotty",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "3-14",
     horoscope: "pisces",
@@ -1310,7 +1310,7 @@ export const villagers = [
   },
   {
     name: "Drago",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "2-12",
     horoscope: "aquarius",
@@ -1321,7 +1321,7 @@ export const villagers = [
   },
   {
     name: "Drake",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "6-25",
     horoscope: "cancer",
@@ -1332,7 +1332,7 @@ export const villagers = [
   },
   {
     name: "Drift",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "10-9",
     horoscope: "libra",
@@ -1343,7 +1343,7 @@ export const villagers = [
   },
   {
     name: "Ed",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Nature",
     birthday: "9-16",
     horoscope: "virgo",
@@ -1354,7 +1354,7 @@ export const villagers = [
   },
   {
     name: "Egbert",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "10-14",
     horoscope: "libra",
@@ -1365,7 +1365,7 @@ export const villagers = [
   },
   {
     name: "Elise",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "3-21",
     horoscope: "aries",
@@ -1376,7 +1376,7 @@ export const villagers = [
   },
   {
     name: "Ellie",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "5-12",
     horoscope: "taurus",
@@ -1387,7 +1387,7 @@ export const villagers = [
   },
   {
     name: "Elmer",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "10-5",
     horoscope: "libra",
@@ -1398,7 +1398,7 @@ export const villagers = [
   },
   {
     name: "Eloise",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "12-8",
     horoscope: "sagittarius",
@@ -1409,7 +1409,7 @@ export const villagers = [
   },
   {
     name: "Elvis",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "7-23",
     horoscope: "leo",
@@ -1420,7 +1420,7 @@ export const villagers = [
   },
   {
     name: "Erik",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "7-27",
     horoscope: "leo",
@@ -1431,7 +1431,7 @@ export const villagers = [
   },
   {
     name: "Eugene",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "10-26",
     horoscope: "scorpio",
@@ -1442,7 +1442,7 @@ export const villagers = [
   },
   {
     name: "Eunice",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Fashion",
     birthday: "4-3",
     horoscope: "aries",
@@ -1453,7 +1453,7 @@ export const villagers = [
   },
   {
     name: "Fang",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "12-18",
     horoscope: "sagittarius",
@@ -1464,7 +1464,7 @@ export const villagers = [
   },
   {
     name: "Fauna",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "3-26",
     horoscope: "aries",
@@ -1475,7 +1475,7 @@ export const villagers = [
   },
   {
     name: "Felicity",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "3-30",
     horoscope: "aries",
@@ -1486,7 +1486,7 @@ export const villagers = [
   },
   {
     name: "Filbert",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "6-3",
     horoscope: "gemini",
@@ -1497,7 +1497,7 @@ export const villagers = [
   },
   {
     name: "Flip",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Music",
     birthday: "11-21",
     horoscope: "scorpio",
@@ -1508,7 +1508,7 @@ export const villagers = [
   },
   {
     name: "Flo",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "9-2",
     horoscope: "virgo",
@@ -1519,7 +1519,7 @@ export const villagers = [
   },
   {
     name: "Flora",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "2-9",
     horoscope: "aquarius",
@@ -1530,7 +1530,7 @@ export const villagers = [
   },
   {
     name: "Flurry",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "1-30",
     horoscope: "aquarius",
@@ -1541,7 +1541,7 @@ export const villagers = [
   },
   {
     name: "Francine",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "1-22",
     horoscope: "aquarius",
@@ -1552,7 +1552,7 @@ export const villagers = [
   },
   {
     name: "Frank",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "7-30",
     horoscope: "leo",
@@ -1563,7 +1563,7 @@ export const villagers = [
   },
   {
     name: "Freckles",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "2-19",
     horoscope: "pisces",
@@ -1574,7 +1574,7 @@ export const villagers = [
   },
   {
     name: "Freya",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "12-14",
     horoscope: "sagittarius",
@@ -1585,7 +1585,7 @@ export const villagers = [
   },
   {
     name: "Friga",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "10-16",
     horoscope: "libra",
@@ -1596,7 +1596,7 @@ export const villagers = [
   },
   {
     name: "Frita",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "7-16",
     horoscope: "cancer",
@@ -1607,7 +1607,7 @@ export const villagers = [
   },
   {
     name: "Frobert",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "2-8",
     horoscope: "aquarius",
@@ -1618,7 +1618,7 @@ export const villagers = [
   },
   {
     name: "Fuchsia",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "9-19",
     horoscope: "virgo",
@@ -1629,7 +1629,7 @@ export const villagers = [
   },
   {
     name: "Gabi",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "12-16",
     horoscope: "sagittarius",
@@ -1640,7 +1640,7 @@ export const villagers = [
   },
   {
     name: "Gala",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "3-5",
     horoscope: "pisces",
@@ -1651,7 +1651,7 @@ export const villagers = [
   },
   {
     name: "Gaston",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "10-28",
     horoscope: "scorpio",
@@ -1662,7 +1662,7 @@ export const villagers = [
   },
   {
     name: "Gayle",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "5-17",
     horoscope: "taurus",
@@ -1673,7 +1673,7 @@ export const villagers = [
   },
   {
     name: "Genji",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "1-21",
     horoscope: "aquarius",
@@ -1684,7 +1684,7 @@ export const villagers = [
   },
   {
     name: "Gigi",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "8-11",
     horoscope: "leo",
@@ -1695,7 +1695,7 @@ export const villagers = [
   },
   {
     name: "Gladys",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "1-15",
     horoscope: "capricorn",
@@ -1706,7 +1706,7 @@ export const villagers = [
   },
   {
     name: "Gloria",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "8-12",
     horoscope: "leo",
@@ -1717,7 +1717,7 @@ export const villagers = [
   },
   {
     name: "Goldie",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "12-27",
     horoscope: "capricorn",
@@ -1728,7 +1728,7 @@ export const villagers = [
   },
   {
     name: "Gonzo",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "10-13",
     horoscope: "libra",
@@ -1739,7 +1739,7 @@ export const villagers = [
   },
   {
     name: "Goose",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "10-4",
     horoscope: "libra",
@@ -1750,7 +1750,7 @@ export const villagers = [
   },
   {
     name: "Graham",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "6-20",
     horoscope: "gemini",
@@ -1761,7 +1761,7 @@ export const villagers = [
   },
   {
     name: "Greta",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "9-5",
     horoscope: "virgo",
@@ -1772,7 +1772,7 @@ export const villagers = [
   },
   {
     name: "Grizzly",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "7-31",
     horoscope: "leo",
@@ -1783,7 +1783,7 @@ export const villagers = [
   },
   {
     name: "Groucho",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "10-23",
     horoscope: "scorpio",
@@ -1794,7 +1794,7 @@ export const villagers = [
   },
   {
     name: "Gruff",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "8-29",
     horoscope: "virgo",
@@ -1805,7 +1805,7 @@ export const villagers = [
   },
   {
     name: "Gwen",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "1-23",
     horoscope: "aquarius",
@@ -1816,7 +1816,7 @@ export const villagers = [
   },
   {
     name: "Hamlet",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "5-30",
     horoscope: "gemini",
@@ -1827,7 +1827,7 @@ export const villagers = [
   },
   {
     name: "Hamphrey",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "2-25",
     horoscope: "pisces",
@@ -1838,7 +1838,7 @@ export const villagers = [
   },
   {
     name: "Hans",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Fitness",
     birthday: "12-5",
     horoscope: "sagittarius",
@@ -1849,7 +1849,7 @@ export const villagers = [
   },
   {
     name: "Harry",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "1-7",
     horoscope: "capricorn",
@@ -1860,7 +1860,7 @@ export const villagers = [
   },
   {
     name: "Hazel",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "8-30",
     horoscope: "virgo",
@@ -1871,7 +1871,7 @@ export const villagers = [
   },
   {
     name: "Henry",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "9-21",
     horoscope: "virgo",
@@ -1882,7 +1882,7 @@ export const villagers = [
   },
   {
     name: "Hippeux",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "10-15",
     horoscope: "libra",
@@ -1893,7 +1893,7 @@ export const villagers = [
   },
   {
     name: "Hopkins",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "3-11",
     horoscope: "pisces",
@@ -1904,7 +1904,7 @@ export const villagers = [
   },
   {
     name: "Hopper",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "4-6",
     horoscope: "aries",
@@ -1915,7 +1915,7 @@ export const villagers = [
   },
   {
     name: "Hornsby",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "3-20",
     horoscope: "pisces",
@@ -1926,7 +1926,7 @@ export const villagers = [
   },
   {
     name: "Huck",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Fitness",
     birthday: "7-9",
     horoscope: "cancer",
@@ -1937,7 +1937,7 @@ export const villagers = [
   },
   {
     name: "Hugh",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "12-30",
     horoscope: "capricorn",
@@ -1948,7 +1948,7 @@ export const villagers = [
   },
   {
     name: "Iggly",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "11-2",
     horoscope: "scorpio",
@@ -1959,7 +1959,7 @@ export const villagers = [
   },
   {
     name: "Ike",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "5-16",
     horoscope: "taurus",
@@ -1970,7 +1970,7 @@ export const villagers = [
   },
   {
     name: "Jacob",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "8-24",
     horoscope: "virgo",
@@ -1981,7 +1981,7 @@ export const villagers = [
   },
   {
     name: "Jacques",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "6-22",
     horoscope: "cancer",
@@ -1992,7 +1992,7 @@ export const villagers = [
   },
   {
     name: "Jambette",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Fashion",
     birthday: "10-27",
     horoscope: "scorpio",
@@ -2003,7 +2003,7 @@ export const villagers = [
   },
   {
     name: "Jay",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "7-17",
     horoscope: "cancer",
@@ -2014,7 +2014,7 @@ export const villagers = [
   },
   {
     name: "Jeremiah",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "7-8",
     horoscope: "cancer",
@@ -2025,7 +2025,7 @@ export const villagers = [
   },
   {
     name: "Jitters",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "2-2",
     horoscope: "aquarius",
@@ -2036,7 +2036,7 @@ export const villagers = [
   },
   {
     name: "Joey",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "1-3",
     horoscope: "capricorn",
@@ -2047,7 +2047,7 @@ export const villagers = [
   },
   {
     name: "Judy",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "3-10",
     horoscope: "pisces",
@@ -2058,7 +2058,7 @@ export const villagers = [
   },
   {
     name: "Julia",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "7-31",
     horoscope: "leo",
@@ -2069,7 +2069,7 @@ export const villagers = [
   },
   {
     name: "Julian",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "3-15",
     horoscope: "pisces",
@@ -2080,7 +2080,7 @@ export const villagers = [
   },
   {
     name: "June",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "5-21",
     horoscope: "gemini",
@@ -2091,7 +2091,7 @@ export const villagers = [
   },
   {
     name: "Kabuki",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "11-29",
     horoscope: "sagittarius",
@@ -2102,7 +2102,7 @@ export const villagers = [
   },
   {
     name: "Katt",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "4-27",
     horoscope: "taurus",
@@ -2113,7 +2113,7 @@ export const villagers = [
   },
   {
     name: "Keaton",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "6-1",
     horoscope: "gemini",
@@ -2124,7 +2124,7 @@ export const villagers = [
   },
   {
     name: "Ken",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "12-23",
     horoscope: "capricorn",
@@ -2135,7 +2135,7 @@ export const villagers = [
   },
   {
     name: "Ketchup",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "7-27",
     horoscope: "leo",
@@ -2146,7 +2146,7 @@ export const villagers = [
   },
   {
     name: "Kevin",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "4-26",
     horoscope: "taurus",
@@ -2157,7 +2157,7 @@ export const villagers = [
   },
   {
     name: "Kid Cat",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "8-1",
     horoscope: "leo",
@@ -2168,7 +2168,7 @@ export const villagers = [
   },
   {
     name: "Kidd",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "6-28",
     horoscope: "cancer",
@@ -2179,7 +2179,7 @@ export const villagers = [
   },
   {
     name: "Kiki",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "10-8",
     horoscope: "libra",
@@ -2190,7 +2190,7 @@ export const villagers = [
   },
   {
     name: "Kitt",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "10-11",
     horoscope: "libra",
@@ -2201,7 +2201,7 @@ export const villagers = [
   },
   {
     name: "Kitty",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "2-15",
     horoscope: "aquarius",
@@ -2212,7 +2212,7 @@ export const villagers = [
   },
   {
     name: "Klaus",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "3-31",
     horoscope: "pisces",
@@ -2223,7 +2223,7 @@ export const villagers = [
   },
   {
     name: "Knox",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "11-23",
     horoscope: "sagittarius",
@@ -2234,7 +2234,7 @@ export const villagers = [
   },
   {
     name: "Kody",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "9-28",
     horoscope: "libra",
@@ -2245,7 +2245,7 @@ export const villagers = [
   },
   {
     name: "Kyle",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "12-6",
     horoscope: "sagittarius",
@@ -2256,7 +2256,7 @@ export const villagers = [
   },
   {
     name: "Leonardo",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "5-15",
     horoscope: "taurus",
@@ -2267,7 +2267,7 @@ export const villagers = [
   },
   {
     name: "Leopold",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "8-14",
     horoscope: "leo",
@@ -2278,7 +2278,7 @@ export const villagers = [
   },
   {
     name: "Lily",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "2-4",
     horoscope: "aquarius",
@@ -2289,7 +2289,7 @@ export const villagers = [
   },
   {
     name: "Limberg",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "10-17",
     horoscope: "libra",
@@ -2300,7 +2300,7 @@ export const villagers = [
   },
   {
     name: "Lionel",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "7-29",
     horoscope: "leo",
@@ -2311,7 +2311,7 @@ export const villagers = [
   },
   {
     name: "Lobo",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "11-5",
     horoscope: "scorpio",
@@ -2322,7 +2322,7 @@ export const villagers = [
   },
   {
     name: "Lolly",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "3-27",
     horoscope: "aries",
@@ -2333,7 +2333,7 @@ export const villagers = [
   },
   {
     name: "Lopez",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "8-20",
     horoscope: "leo",
@@ -2344,7 +2344,7 @@ export const villagers = [
   },
   {
     name: "Louie",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "3-26",
     horoscope: "aries",
@@ -2355,7 +2355,7 @@ export const villagers = [
   },
   {
     name: "Lucha",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Fitness",
     birthday: "12-12",
     horoscope: "sagittarius",
@@ -2366,7 +2366,7 @@ export const villagers = [
   },
   {
     name: "Lucky",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "11-4",
     horoscope: "scorpio",
@@ -2377,7 +2377,7 @@ export const villagers = [
   },
   {
     name: "Lucy",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "6-2",
     horoscope: "gemini",
@@ -2388,7 +2388,7 @@ export const villagers = [
   },
   {
     name: "Lyman",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "10-12",
     horoscope: "libra",
@@ -2399,7 +2399,7 @@ export const villagers = [
   },
   {
     name: "Mac",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "11-11",
     horoscope: "scorpio",
@@ -2410,7 +2410,7 @@ export const villagers = [
   },
   {
     name: "Maddie",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "1-11",
     horoscope: "capricorn",
@@ -2421,7 +2421,7 @@ export const villagers = [
   },
   {
     name: "Maelle",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "4-8",
     horoscope: "aries",
@@ -2432,7 +2432,7 @@ export const villagers = [
   },
   {
     name: "Maggie",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "9-3",
     horoscope: "virgo",
@@ -2443,7 +2443,7 @@ export const villagers = [
   },
   {
     name: "Mallary",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "11-17",
     horoscope: "scorpio",
@@ -2454,7 +2454,7 @@ export const villagers = [
   },
   {
     name: "Maple",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "6-15",
     horoscope: "gemini",
@@ -2465,7 +2465,7 @@ export const villagers = [
   },
   {
     name: "Marcel",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "12-31",
     horoscope: "capricorn",
@@ -2476,7 +2476,7 @@ export const villagers = [
   },
   {
     name: "Marcie",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "5-31",
     horoscope: "gemini",
@@ -2487,7 +2487,7 @@ export const villagers = [
   },
   {
     name: "Margie",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "1-28",
     horoscope: "aquarius",
@@ -2498,7 +2498,7 @@ export const villagers = [
   },
   {
     name: "Marina",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "6-26",
     horoscope: "cancer",
@@ -2509,7 +2509,7 @@ export const villagers = [
   },
   {
     name: "Marshal",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "9-29",
     horoscope: "libra",
@@ -2520,7 +2520,7 @@ export const villagers = [
   },
   {
     name: "Mathilda",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fitness",
     birthday: "11-12",
     horoscope: "scorpio",
@@ -2531,7 +2531,7 @@ export const villagers = [
   },
   {
     name: "Megan",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "3-13",
     horoscope: "pisces",
@@ -2542,7 +2542,7 @@ export const villagers = [
   },
   {
     name: "Melba",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "4-12",
     horoscope: "aries",
@@ -2553,7 +2553,7 @@ export const villagers = [
   },
   {
     name: "Merengue",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "3-19",
     horoscope: "pisces",
@@ -2564,7 +2564,7 @@ export const villagers = [
   },
   {
     name: "Merry",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "6-29",
     horoscope: "cancer",
@@ -2575,7 +2575,7 @@ export const villagers = [
   },
   {
     name: "Midge",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "3-12",
     horoscope: "pisces",
@@ -2586,7 +2586,7 @@ export const villagers = [
   },
   {
     name: "Mint",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "5-2",
     horoscope: "taurus",
@@ -2597,7 +2597,7 @@ export const villagers = [
   },
   {
     name: "Mira",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Fitness",
     birthday: "7-6",
     horoscope: "cancer",
@@ -2608,7 +2608,7 @@ export const villagers = [
   },
   {
     name: "Miranda",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "4-23",
     horoscope: "taurus",
@@ -2619,7 +2619,7 @@ export const villagers = [
   },
   {
     name: "Mitzi",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "9-25",
     horoscope: "libra",
@@ -2630,7 +2630,7 @@ export const villagers = [
   },
   {
     name: "Moe",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "1-12",
     horoscope: "capricorn",
@@ -2641,7 +2641,7 @@ export const villagers = [
   },
   {
     name: "Molly",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "3-7",
     horoscope: "pisces",
@@ -2652,7 +2652,7 @@ export const villagers = [
   },
   {
     name: "Monique",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "9-30",
     horoscope: "libra",
@@ -2663,7 +2663,7 @@ export const villagers = [
   },
   {
     name: "Monty",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "12-7",
     horoscope: "sagittarius",
@@ -2674,7 +2674,7 @@ export const villagers = [
   },
   {
     name: "Moose",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "9-13",
     horoscope: "virgo",
@@ -2685,7 +2685,7 @@ export const villagers = [
   },
   {
     name: "Mott",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "7-10",
     horoscope: "cancer",
@@ -2696,7 +2696,7 @@ export const villagers = [
   },
   {
     name: "Muffy",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "2-14",
     horoscope: "aquarius",
@@ -2707,7 +2707,7 @@ export const villagers = [
   },
   {
     name: "Murphy",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "12-29",
     horoscope: "capricorn",
@@ -2718,7 +2718,7 @@ export const villagers = [
   },
   {
     name: "Nan",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "8-24",
     horoscope: "virgo",
@@ -2729,7 +2729,7 @@ export const villagers = [
   },
   {
     name: "Nana",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "8-23",
     horoscope: "virgo",
@@ -2740,7 +2740,7 @@ export const villagers = [
   },
   {
     name: "Naomi",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "2-28",
     horoscope: "pisces",
@@ -2751,7 +2751,7 @@ export const villagers = [
   },
   {
     name: "Nate",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "8-16",
     horoscope: "leo",
@@ -2762,7 +2762,7 @@ export const villagers = [
   },
   {
     name: "Nibbles",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "7-19",
     horoscope: "cancer",
@@ -2773,7 +2773,7 @@ export const villagers = [
   },
   {
     name: "Norma",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "9-20",
     horoscope: "virgo",
@@ -2784,7 +2784,7 @@ export const villagers = [
   },
   {
     name: "O'Hare",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Nature",
     birthday: "7-24",
     horoscope: "leo",
@@ -2795,7 +2795,7 @@ export const villagers = [
   },
   {
     name: "Octavian",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Play",
     birthday: "9-20",
     horoscope: "virgo",
@@ -2806,7 +2806,7 @@ export const villagers = [
   },
   {
     name: "Olaf",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "5-19",
     horoscope: "taurus",
@@ -2817,7 +2817,7 @@ export const villagers = [
   },
   {
     name: "Olive",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "7-12",
     horoscope: "cancer",
@@ -2828,7 +2828,7 @@ export const villagers = [
   },
   {
     name: "Olivia",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "2-3",
     horoscope: "aquarius",
@@ -2839,7 +2839,7 @@ export const villagers = [
   },
   {
     name: "Opal",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "1-20",
     horoscope: "aquarius",
@@ -2850,7 +2850,7 @@ export const villagers = [
   },
   {
     name: "Ozzie",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "5-7",
     horoscope: "taurus",
@@ -2861,7 +2861,7 @@ export const villagers = [
   },
   {
     name: "Pancetti",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Music",
     birthday: "11-14",
     horoscope: "scorpio",
@@ -2872,7 +2872,7 @@ export const villagers = [
   },
   {
     name: "Pango",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "11-9",
     horoscope: "scorpio",
@@ -2883,7 +2883,7 @@ export const villagers = [
   },
   {
     name: "Paolo",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "5-5",
     horoscope: "taurus",
@@ -2894,7 +2894,7 @@ export const villagers = [
   },
   {
     name: "Papi",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "1-10",
     horoscope: "capricorn",
@@ -2905,7 +2905,7 @@ export const villagers = [
   },
   {
     name: "Pashmina",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "12-26",
     horoscope: "capricorn",
@@ -2916,7 +2916,7 @@ export const villagers = [
   },
   {
     name: "Pate",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "2-23",
     horoscope: "pisces",
@@ -2927,7 +2927,7 @@ export const villagers = [
   },
   {
     name: "Patty",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "5-10",
     horoscope: "taurus",
@@ -2938,7 +2938,7 @@ export const villagers = [
   },
   {
     name: "Paula",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Fitness",
     birthday: "3-22",
     horoscope: "aries",
@@ -2949,7 +2949,7 @@ export const villagers = [
   },
   {
     name: "Peaches",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "11-28",
     horoscope: "sagittarius",
@@ -2960,7 +2960,7 @@ export const villagers = [
   },
   {
     name: "Peanut",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "6-8",
     horoscope: "gemini",
@@ -2971,7 +2971,7 @@ export const villagers = [
   },
   {
     name: "Pecan",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "9-10",
     horoscope: "virgo",
@@ -2982,7 +2982,7 @@ export const villagers = [
   },
   {
     name: "Peck",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "7-25",
     horoscope: "leo",
@@ -2993,7 +2993,7 @@ export const villagers = [
   },
   {
     name: "Peewee",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "9-11",
     horoscope: "virgo",
@@ -3004,7 +3004,7 @@ export const villagers = [
   },
   {
     name: "Peggy",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "5-23",
     horoscope: "gemini",
@@ -3015,7 +3015,7 @@ export const villagers = [
   },
   {
     name: "Pekoe",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "5-18",
     horoscope: "taurus",
@@ -3026,7 +3026,7 @@ export const villagers = [
   },
   {
     name: "Penelope",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "2-5",
     horoscope: "aquarius",
@@ -3037,7 +3037,7 @@ export const villagers = [
   },
   {
     name: "Phil",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "11-27",
     horoscope: "sagittarius",
@@ -3048,7 +3048,7 @@ export const villagers = [
   },
   {
     name: "Phoebe",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Fitness",
     birthday: "4-22",
     horoscope: "taurus",
@@ -3059,7 +3059,7 @@ export const villagers = [
   },
   {
     name: "Pierce",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "1-8",
     horoscope: "capricorn",
@@ -3070,7 +3070,7 @@ export const villagers = [
   },
   {
     name: "Pietro",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "4-19",
     horoscope: "aries",
@@ -3081,7 +3081,7 @@ export const villagers = [
   },
   {
     name: "Pinky",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "9-9",
     horoscope: "virgo",
@@ -3092,7 +3092,7 @@ export const villagers = [
   },
   {
     name: "Piper",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "4-18",
     horoscope: "aries",
@@ -3103,7 +3103,7 @@ export const villagers = [
   },
   {
     name: "Pippy",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "6-14",
     horoscope: "gemini",
@@ -3114,7 +3114,7 @@ export const villagers = [
   },
   {
     name: "Plucky",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "10-12",
     horoscope: "libra",
@@ -3125,7 +3125,7 @@ export const villagers = [
   },
   {
     name: "Pompom",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Music",
     birthday: "2-11",
     horoscope: "aquarius",
@@ -3136,7 +3136,7 @@ export const villagers = [
   },
   {
     name: "Poncho",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "1-2",
     horoscope: "capricorn",
@@ -3147,7 +3147,7 @@ export const villagers = [
   },
   {
     name: "Poppy",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Education",
     birthday: "8-5",
     horoscope: "leo",
@@ -3158,7 +3158,7 @@ export const villagers = [
   },
   {
     name: "Portia",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "10-25",
     horoscope: "scorpio",
@@ -3169,7 +3169,7 @@ export const villagers = [
   },
   {
     name: "Prince",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "7-21",
     horoscope: "cancer",
@@ -3180,7 +3180,7 @@ export const villagers = [
   },
   {
     name: "Puck",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Fitness",
     birthday: "2-21",
     horoscope: "pisces",
@@ -3191,7 +3191,7 @@ export const villagers = [
   },
   {
     name: "Puddles",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "1-13",
     horoscope: "capricorn",
@@ -3202,7 +3202,7 @@ export const villagers = [
   },
   {
     name: "Pudge",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "6-11",
     horoscope: "gemini",
@@ -3213,7 +3213,7 @@ export const villagers = [
   },
   {
     name: "Punchy",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "4-11",
     horoscope: "aries",
@@ -3224,7 +3224,7 @@ export const villagers = [
   },
   {
     name: "Purrl",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "5-29",
     horoscope: "gemini",
@@ -3235,7 +3235,7 @@ export const villagers = [
   },
   {
     name: "Queenie",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "11-13",
     horoscope: "scorpio",
@@ -3246,7 +3246,7 @@ export const villagers = [
   },
   {
     name: "Quillson",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "12-22",
     horoscope: "capricorn",
@@ -3257,7 +3257,7 @@ export const villagers = [
   },
   {
     name: "Raddle",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "6-6",
     horoscope: "gemini",
@@ -3268,7 +3268,7 @@ export const villagers = [
   },
   {
     name: "Rasher",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "4-7",
     horoscope: "aries",
@@ -3279,7 +3279,7 @@ export const villagers = [
   },
   {
     name: "Raymond",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Nature",
     birthday: "10-1",
     horoscope: "libra",
@@ -3290,7 +3290,7 @@ export const villagers = [
   },
   {
     name: "Renee",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "5-28",
     horoscope: "gemini",
@@ -3301,7 +3301,7 @@ export const villagers = [
   },
   {
     name: "Reneigh",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "6-4",
     horoscope: "gemini",
@@ -3312,7 +3312,7 @@ export const villagers = [
   },
   {
     name: "Rex",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "7-24",
     horoscope: "leo",
@@ -3323,7 +3323,7 @@ export const villagers = [
   },
   {
     name: "Rhonda",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "1-24",
     horoscope: "aquarius",
@@ -3334,7 +3334,7 @@ export const villagers = [
   },
   {
     name: "Ribbot",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "2-13",
     horoscope: "aquarius",
@@ -3345,7 +3345,7 @@ export const villagers = [
   },
   {
     name: "Ricky",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "9-14",
     horoscope: "virgo",
@@ -3356,7 +3356,7 @@ export const villagers = [
   },
   {
     name: "Rizzo",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "1-17",
     horoscope: "capricorn",
@@ -3367,7 +3367,7 @@ export const villagers = [
   },
   {
     name: "Roald",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "1-5",
     horoscope: "capricorn",
@@ -3378,7 +3378,7 @@ export const villagers = [
   },
   {
     name: "Robin",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "12-4",
     horoscope: "sagittarius",
@@ -3389,7 +3389,7 @@ export const villagers = [
   },
   {
     name: "Rocco",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "8-18",
     horoscope: "leo",
@@ -3400,7 +3400,7 @@ export const villagers = [
   },
   {
     name: "Rocket",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Fitness",
     birthday: "4-14",
     horoscope: "aries",
@@ -3411,7 +3411,7 @@ export const villagers = [
   },
   {
     name: "Rod",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "8-14",
     horoscope: "leo",
@@ -3422,7 +3422,7 @@ export const villagers = [
   },
   {
     name: "Rodeo",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Fitness",
     birthday: "10-29",
     horoscope: "scorpio",
@@ -3433,7 +3433,7 @@ export const villagers = [
   },
   {
     name: "Rodney",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "11-10",
     horoscope: "scorpio",
@@ -3444,7 +3444,7 @@ export const villagers = [
   },
   {
     name: "Rolf",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "8-22",
     horoscope: "leo",
@@ -3455,7 +3455,7 @@ export const villagers = [
   },
   {
     name: "Rooney",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "12-1",
     horoscope: "sagittarius",
@@ -3466,7 +3466,7 @@ export const villagers = [
   },
   {
     name: "Rory",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Music",
     birthday: "8-7",
     horoscope: "leo",
@@ -3477,7 +3477,7 @@ export const villagers = [
   },
   {
     name: "Roscoe",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "6-16",
     horoscope: "gemini",
@@ -3488,7 +3488,7 @@ export const villagers = [
   },
   {
     name: "Rosie",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Music",
     birthday: "2-27",
     horoscope: "pisces",
@@ -3499,7 +3499,7 @@ export const villagers = [
   },
   {
     name: "Rowan",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "8-26",
     horoscope: "virgo",
@@ -3510,7 +3510,7 @@ export const villagers = [
   },
   {
     name: "Ruby",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Nature",
     birthday: "12-25",
     horoscope: "capricorn",
@@ -3521,7 +3521,7 @@ export const villagers = [
   },
   {
     name: "Rudy",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "12-20",
     horoscope: "sagittarius",
@@ -3532,7 +3532,7 @@ export const villagers = [
   },
   {
     name: "Sally",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "6-19",
     horoscope: "gemini",
@@ -3543,7 +3543,7 @@ export const villagers = [
   },
   {
     name: "Samson",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "7-5",
     horoscope: "cancer",
@@ -3554,7 +3554,7 @@ export const villagers = [
   },
   {
     name: "Sandy",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "10-21",
     horoscope: "libra",
@@ -3565,7 +3565,7 @@ export const villagers = [
   },
   {
     name: "Savannah",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "1-25",
     horoscope: "aquarius",
@@ -3576,7 +3576,7 @@ export const villagers = [
   },
   {
     name: "Scoot",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "6-13",
     horoscope: "gemini",
@@ -3587,7 +3587,7 @@ export const villagers = [
   },
   {
     name: "Shari",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "4-10",
     horoscope: "aries",
@@ -3598,7 +3598,7 @@ export const villagers = [
   },
   {
     name: "Sheldon",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "2-26",
     horoscope: "pisces",
@@ -3609,7 +3609,7 @@ export const villagers = [
   },
   {
     name: "Shep",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Education",
     birthday: "11-24",
     horoscope: "sagittarius",
@@ -3620,7 +3620,7 @@ export const villagers = [
   },
   {
     name: "Sherb",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "1-18",
     horoscope: "capricorn",
@@ -3631,7 +3631,7 @@ export const villagers = [
   },
   {
     name: "Simon",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "1-19",
     horoscope: "capricorn",
@@ -3642,7 +3642,7 @@ export const villagers = [
   },
   {
     name: "Skye",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "3-24",
     horoscope: "aries",
@@ -3653,7 +3653,7 @@ export const villagers = [
   },
   {
     name: "Sly",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "11-15",
     horoscope: "scorpio",
@@ -3664,7 +3664,7 @@ export const villagers = [
   },
   {
     name: "Snake",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "11-3",
     horoscope: "scorpio",
@@ -3675,7 +3675,7 @@ export const villagers = [
   },
   {
     name: "Snooty",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "10-24",
     horoscope: "scorpio",
@@ -3686,7 +3686,7 @@ export const villagers = [
   },
   {
     name: "Soleil",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "8-9",
     horoscope: "leo",
@@ -3697,7 +3697,7 @@ export const villagers = [
   },
   {
     name: "Sparro",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "11-20",
     horoscope: "scorpio",
@@ -3708,7 +3708,7 @@ export const villagers = [
   },
   {
     name: "Spike",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Nature",
     birthday: "6-17",
     horoscope: "gemini",
@@ -3719,7 +3719,7 @@ export const villagers = [
   },
   {
     name: "Spork",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "9-3",
     horoscope: "virgo",
@@ -3730,7 +3730,7 @@ export const villagers = [
   },
   {
     name: "Sprinkle",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Play",
     birthday: "2-20",
     horoscope: "pisces",
@@ -3741,7 +3741,7 @@ export const villagers = [
   },
   {
     name: "Sprocket",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Music",
     birthday: "12-1",
     horoscope: "sagittarius",
@@ -3752,7 +3752,7 @@ export const villagers = [
   },
   {
     name: "Static",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Music",
     birthday: "7-9",
     horoscope: "cancer",
@@ -3763,7 +3763,7 @@ export const villagers = [
   },
   {
     name: "Stella",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "4-9",
     horoscope: "aries",
@@ -3774,7 +3774,7 @@ export const villagers = [
   },
   {
     name: "Sterling",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "12-11",
     horoscope: "sagittarius",
@@ -3785,7 +3785,7 @@ export const villagers = [
   },
   {
     name: "Stinky",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "8-17",
     horoscope: "leo",
@@ -3796,7 +3796,7 @@ export const villagers = [
   },
   {
     name: "Stitches",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "2-10",
     horoscope: "aquarius",
@@ -3807,7 +3807,7 @@ export const villagers = [
   },
   {
     name: "Stu",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "4-20",
     horoscope: "taurus",
@@ -3818,7 +3818,7 @@ export const villagers = [
   },
   {
     name: "Sydney",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Music",
     birthday: "6-21",
     horoscope: "gemini",
@@ -3829,7 +3829,7 @@ export const villagers = [
   },
   {
     name: "Sylvana",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "10-22",
     horoscope: "libra",
@@ -3840,7 +3840,7 @@ export const villagers = [
   },
   {
     name: "Sylvia",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "5-3",
     horoscope: "taurus",
@@ -3851,7 +3851,7 @@ export const villagers = [
   },
   {
     name: "T-Bone",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "5-20",
     horoscope: "taurus",
@@ -3862,7 +3862,7 @@ export const villagers = [
   },
   {
     name: "Tabby",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Music",
     birthday: "8-13",
     horoscope: "leo",
@@ -3873,7 +3873,7 @@ export const villagers = [
   },
   {
     name: "Tad",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "8-3",
     horoscope: "leo",
@@ -3884,7 +3884,7 @@ export const villagers = [
   },
   {
     name: "Tammi",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "4-2",
     horoscope: "aries",
@@ -3895,7 +3895,7 @@ export const villagers = [
   },
   {
     name: "Tammy",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Play",
     birthday: "6-23",
     horoscope: "cancer",
@@ -3906,7 +3906,7 @@ export const villagers = [
   },
   {
     name: "Tangy",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Music",
     birthday: "6-17",
     horoscope: "gemini",
@@ -3917,7 +3917,7 @@ export const villagers = [
   },
   {
     name: "Tank",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "5-6",
     horoscope: "taurus",
@@ -3928,7 +3928,7 @@ export const villagers = [
   },
   {
     name: "Tasha",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fitness",
     birthday: "11-30",
     horoscope: "sagittarius",
@@ -3939,7 +3939,7 @@ export const villagers = [
   },
   {
     name: "Teddy",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Fitness",
     birthday: "9-26",
     horoscope: "libra",
@@ -3950,7 +3950,7 @@ export const villagers = [
   },
   {
     name: "Tex",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "10-6",
     horoscope: "libra",
@@ -3961,7 +3961,7 @@ export const villagers = [
   },
   {
     name: "Tia",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Nature",
     birthday: "11-18",
     horoscope: "scorpio",
@@ -3972,7 +3972,7 @@ export const villagers = [
   },
   {
     name: "Tiffany",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "1-9",
     horoscope: "capricorn",
@@ -3983,7 +3983,7 @@ export const villagers = [
   },
   {
     name: "Timbra",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "10-21",
     horoscope: "libra",
@@ -3994,7 +3994,7 @@ export const villagers = [
   },
   {
     name: "Tipper",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "8-25",
     horoscope: "virgo",
@@ -4005,7 +4005,7 @@ export const villagers = [
   },
   {
     name: "Tom",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "12-10",
     horoscope: "sagittarius",
@@ -4016,7 +4016,7 @@ export const villagers = [
   },
   {
     name: "Truffles",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "7-28",
     horoscope: "leo",
@@ -4027,7 +4027,7 @@ export const villagers = [
   },
   {
     name: "Tucker",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "9-7",
     horoscope: "virgo",
@@ -4038,7 +4038,7 @@ export const villagers = [
   },
   {
     name: "Tutu",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "9-15",
     horoscope: "virgo",
@@ -4049,7 +4049,7 @@ export const villagers = [
   },
   {
     name: "Twiggy",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "7-13",
     horoscope: "cancer",
@@ -4060,7 +4060,7 @@ export const villagers = [
   },
   {
     name: "Tybalt",
-    personality: "jock",
+    personality: "Jock",
     hobby: "Play",
     birthday: "8-19",
     horoscope: "leo",
@@ -4071,7 +4071,7 @@ export const villagers = [
   },
   {
     name: "Ursala",
-    personality: "bigsister",
+    personality: "Big Sister",
     hobby: "Music",
     birthday: "1-16",
     horoscope: "capricorn",
@@ -4082,7 +4082,7 @@ export const villagers = [
   },
   {
     name: "Velma",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "1-14",
     horoscope: "capricorn",
@@ -4093,7 +4093,7 @@ export const villagers = [
   },
   {
     name: "Vesta",
-    personality: "normal",
+    personality: "Normal",
     hobby: "Fashion",
     birthday: "4-16",
     horoscope: "aries",
@@ -4104,7 +4104,7 @@ export const villagers = [
   },
   {
     name: "Vic",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "12-29",
     horoscope: "capricorn",
@@ -4115,7 +4115,7 @@ export const villagers = [
   },
   {
     name: "Victoria",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fitness",
     birthday: "7-11",
     horoscope: "cancer",
@@ -4126,7 +4126,7 @@ export const villagers = [
   },
   {
     name: "Violet",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fitness",
     birthday: "9-1",
     horoscope: "virgo",
@@ -4137,7 +4137,7 @@ export const villagers = [
   },
   {
     name: "Vivian",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Education",
     birthday: "1-26",
     horoscope: "aquarius",
@@ -4148,7 +4148,7 @@ export const villagers = [
   },
   {
     name: "Vladimir",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Play",
     birthday: "8-2",
     horoscope: "leo",
@@ -4159,7 +4159,7 @@ export const villagers = [
   },
   {
     name: "Wade",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "10-30",
     horoscope: "scorpio",
@@ -4170,7 +4170,7 @@ export const villagers = [
   },
   {
     name: "Walker",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Play",
     birthday: "6-10",
     horoscope: "gemini",
@@ -4181,7 +4181,7 @@ export const villagers = [
   },
   {
     name: "Walt",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Fitness",
     birthday: "4-24",
     horoscope: "taurus",
@@ -4192,7 +4192,7 @@ export const villagers = [
   },
   {
     name: "Wart Jr",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "8-21",
     horoscope: "leo",
@@ -4203,7 +4203,7 @@ export const villagers = [
   },
   {
     name: "Weber",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "6-30",
     horoscope: "cancer",
@@ -4214,7 +4214,7 @@ export const villagers = [
   },
   {
     name: "Wendy",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "8-15",
     horoscope: "leo",
@@ -4225,7 +4225,7 @@ export const villagers = [
   },
   {
     name: "Whitney",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "9-17",
     horoscope: "virgo",
@@ -4236,7 +4236,7 @@ export const villagers = [
   },
   {
     name: "Willow",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "11-26",
     horoscope: "sagittarius",
@@ -4247,7 +4247,7 @@ export const villagers = [
   },
   {
     name: "Winnie",
-    personality: "peppy",
+    personality: "Peppy",
     hobby: "Fashion",
     birthday: "1-31",
     horoscope: "aquarius",
@@ -4258,7 +4258,7 @@ export const villagers = [
   },
   {
     name: "Wolfgang",
-    personality: "cranky",
+    personality: "Cranky",
     hobby: "Education",
     birthday: "11-25",
     horoscope: "sagittarius",
@@ -4269,7 +4269,7 @@ export const villagers = [
   },
   {
     name: "Yuka",
-    personality: "snooty",
+    personality: "Snooty",
     hobby: "Fashion",
     birthday: "7-20",
     horoscope: "cancer",
@@ -4280,7 +4280,7 @@ export const villagers = [
   },
   {
     name: "Zell",
-    personality: "smug",
+    personality: "Smug",
     hobby: "Music",
     birthday: "6-7",
     horoscope: "gemini",
@@ -4291,7 +4291,7 @@ export const villagers = [
   },
   {
     name: "Zucker",
-    personality: "lazy",
+    personality: "Lazy",
     hobby: "Nature",
     birthday: "3-8",
     horoscope: "pisces",

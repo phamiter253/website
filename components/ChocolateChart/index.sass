@@ -1,0 +1,81 @@
+.halloween-chart
+  width: 100%
+
+  &__container
+    &
+      display: flex
+      align-content: center
+      justify-content: center
+      gap: 2rem
+    @media screen and (max-width: 768px)
+      flex-direction: column-reverse
+      flex-wrap: wrap
+      gap: 0
+
+  &__row
+    &
+      display: flex
+      flex-direction: column
+
+    &:nth-of-type(1)
+      &
+        width: 65%
+      @media screen and (max-width: 768px)
+        width: 100%
+    &:nth-of-type(2)
+      &
+        width: 35%
+      @media screen and (max-width: 768px)
+        width: 80%
+
+  &__chart
+    &
+      // height: 85vh
+      overflow-y: scroll
+      -ms-overflow-style: none
+      scrollbar-width: none
+    @media screen and (max-width: 768px)
+      height: 40vh
+
+    ::-webkit-scrollbar
+      display: none
+
+  &__title
+    &
+      margin-bottom: 0
+      font-family: 'Mollen'
+    @media screen and (max-width: 768px)
+      margin-top: 1rem
+
+  &__type-container
+    &
+      display: flex
+      padding: 1rem 0 !important
+      gap: .5rem
+      width: 100%
+    @media screen and (max-width: 600px)
+      gap: .25rem
+      padding: .5rem 0 !important
+
+  &__type-button
+    label
+      &
+        display: inline-block
+        padding: 0 1.5rem
+        font-size: 20px
+        font-family: 'Amiri'
+        cursor: pointer
+        border: 3px #1e1d1d solid
+        border-radius: 24px
+
+      @media screen and (max-width: 600px)
+        font-size: 16px
+        border: 2px #1e1d1d solid
+        padding: .25rem 1rem
+
+    input[type="radio"] + label
+      position: relative
+    
+    input[type="radio"]:checked + label
+      background: #1e1d1d
+      color: white

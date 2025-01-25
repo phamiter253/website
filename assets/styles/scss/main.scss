@@ -3,14 +3,14 @@
 :root {
   @include utopia.generateClamps((
     "minWidth": 320,
-    "maxWidth": 1436,
+    "maxWidth": 1440,
     "pairs": (
       (48, 64),
-      (26, 48),
+      (36, 52),
       (18, 32),
       (16, 24),
       (16, 32),
-      (14, 20),
+      (16, 20),
       (12, 16)
     ),
     "prefix": "fluid-",
@@ -21,7 +21,10 @@
 body {
   background-color: #D6DAC8;
   margin: 0;
-  animation: fadeIn .5s ease-in
+  animation: fadeIn .5s ease-in;
+  overflow-y: scroll;
+  scrollbar-color: #333 transparent;
+  scrollbar-width: thin;
 }
 
 h1 {
@@ -29,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--fluid-26-48)
+  font-size: var(--fluid-36-52)
 }
 
 h3 {
@@ -37,7 +40,7 @@ h3 {
 }
 
 p {
-  font-size: var(--fluid-14-20)
+  font-size: var(--fluid-16-20)
 }
 
 button {

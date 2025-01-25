@@ -1,4 +1,4 @@
 <template lang="pug">
-.pages-home
-  HeroHome
+  .pages-home
+    HeroHome
 </template>

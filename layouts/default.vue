@@ -22,13 +22,42 @@ main:focus
   flex: 1
   justify-content: center
 
-.pages-home
+.pages-home,.pages-contact, .pages-about, .pages-projects, .pages-thank-you
   display: flex
   align-items: center
+  justify-content: center
   flex: 1
+  width: 100%
 
-.pages-contact
-  display: flex
-  align-items: center
-  flex: 1
+.pages-projects__grid
+  width: 100%
+
+.pages-thank-you
+  text-align: center
+
+  h1
+    margin-bottom: 0
+
+  .container
+    &
+      max-width: 800px !important
+
+.button
+  transition: background-color .3s ease
+  margin-top: 2rem
+  font-family: 'Amiri'
+  font-size: 1.25rem
+  padding: .5rem 1.5rem
+  background-color: #1e1d1d
+  color: #fff
+  border-radius: 30px
+  border: 3px solid #1e1d1d
+  width: fit-content
+  margin: 0 auto
+
+  &:hover
+    transition: background-color .3s ease
+    background-color: transparent
+    color: #1e1d1d
+
 </style>

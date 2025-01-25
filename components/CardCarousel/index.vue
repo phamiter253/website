@@ -20,7 +20,7 @@
       if (curr > prev) { 
         gsap.set(slides[curr], { zIndex: 2 , xPercent: 100});
         gsap.fromTo(slides[curr], { xPercent: 100 }, { duration: 1 , xPercent: 0 }) 
-      } else {
+      } else if (curr < prev) {
         gsap.set(slides[curr], { zIndex: 2 , xPercent: -100});
         gsap.fromTo(slides[curr], { xPercent: -100 }, { duration: 1, xPercent: 0 })
       }

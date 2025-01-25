@@ -2,4 +2,3 @@
   .pages-projects
     AnimalSwipe
 </template>
-  

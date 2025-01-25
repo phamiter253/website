@@ -4,9 +4,30 @@
   const { gsap, Flip } = useGsap();
   const catergories = ["All", "Art", "Coding", "Food"];
 
+  const selectedCategory = ref('all')
+
+  const filteredItems = computed(() => {
+    if (selectedCategory.value === 'all') {
+      return cells
+    }
+    return cells.filter(cell => cell.category === selectedCategory.value)
+  })
+
+  const setCategory = category => {
+    selectedCategory.value = category
+  }
+
   onMounted(() => {
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
     const smallElements = document.querySelectorAll(".cell");
     const targets = gsap.utils.toArray(".cell, .cell-large");
+
+    radioButtons.forEach(radioButton => {
+      radioButton.addEventListener('change', () => {
+        const selectedValue = radioButton.value.toLowerCase();
+        setCategory(selectedValue)
+      });
+    });
 
     smallElements.forEach((element) => {
       element.addEventListener("click",()=>{
@@ -31,8 +52,12 @@
 <template lang="pug">
   .grid
     .container
+      fieldset.grid__catergory-container
+        .grid__catergory-button(v-for='(catergory,i) in catergories' :key='`group-catergory-${i}`')
+          input(type='radio' :id='`catergory-${i}`' :value='catergory' name='catergory' :checked='catergory === "All" ? true : false')
+          label(:for='`catergory-${i}`' v-html='catergory')
       .grid__container
-        div(v-for='(cell,i) in cells' :class='cell.type' :id='"cell-"+i')
+        div(v-for='(cell,i) in cells' :class='[cell.type, {"hide": !filteredItems.includes(cell)}]' :id='"cell-"+i')
           .content(v-if='cell.type == "cell"')
             img(v-if='cell.children.length == 0' :src='cell.image' :alt='cell.name')
             CardCarousel(v-else :slidesLength='cell.children.length')
