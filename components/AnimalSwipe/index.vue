@@ -91,7 +91,7 @@
     setTimeout(function() {
       isLoading.value = false
       closeDrawers()
-    }, 3000);
+    }, 1000);
   };
 
   function moveCard(direction) {

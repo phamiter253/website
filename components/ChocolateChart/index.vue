@@ -1,10 +1,8 @@
 <script setup>
   import { candy } from '~/utils/data/candy'
-  // const { gsap, Flip } = useGsap();
   const d3 = useNuxtApp().$d3;
   const types = ["None", "Sugar", "Rating"];
   const selectedType = ref('none')
-  const origCandyList = candy
   const y = ref(0);
   // const y2 = ref(0);
   const y3 = ref(0);
@@ -13,7 +11,7 @@
 
   const candyList = computed(() => {
     if (selectedType.value === 'none') {
-      return origCandyList
+      candy.sort((a,b) => a.label.localeCompare(b.label))
     }
     return candy.sort((a,b) => b[selectedType.value] - a[selectedType.value])
   })
@@ -115,7 +113,7 @@
           return curr;
         })
         .style("fill", (i) =>{return `url(#${i.id})`})
-        .transition() // Add a transition
+        .transition()
         .duration(1000)
         .ease(d3.easeCubicOut)
         .attr("x",function(d){
@@ -157,7 +155,7 @@
   }
   
   watch(selectedType, () => {
-    d3.select('#chart').selectAll('rect').remove() // Clear previous chart
+    d3.select('#chart').selectAll('rect').remove()
     d3.select('#chart').select('defs').remove()
     y.value = 0
     y4.value = 0
@@ -196,6 +194,10 @@
             .halloween-chart__type-button(v-for='(type,i) in types' :key='`group-type-${i}`')
               input(type='radio' :id='`type-${i}`' :value='type' name='type' :checked='type === "None" ? true : false')
               label(:for='`type-${i}`' v-html='type')
+          p Coming Soon
+          h2.halloween-chart__subtitle Sugar
+          p Coming Soon
+          h2.halloween-chart__subtitle Rating
           p Coming Soon
         .halloween-chart__row
           .halloween-chart__chart
