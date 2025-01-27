@@ -15,11 +15,10 @@
 
   const setCategory = category => {
     selectedCategory.value = category
-    //animateUp()
   }
 
   const animateUp = () => {
-    const targets = gsap.utils.toArray(".cell, .cell-large");
+    const targets = gsap.utils.toArray(".cell:not(.hide), .cell-large:not(.hide)");
     gsap.from(targets, {autoAlpha: 0, yPercent: 30, stagger: 0.04});
   }
 
@@ -34,7 +33,6 @@
         setCategory(selectedValue)
       });
     });
-
     animateUp()
 
     smallElements.forEach((element) => {

@@ -1,12 +1,20 @@
 export const cells = [
   // {
-  //   name: 'Bug Hotel',
+  //   name: 'Bug Hotel Game Concept',
   //   type: 'cell-large',
   //   category: 'coding',
   //   image: '',
   //   font: '"Work Sans"',
   //   link: '/projects/bug-hotel'
   // },
+  {
+    name: 'Halloween Candy Chocolate Bar Graph',
+    type: 'cell-large',
+    category: 'coding',
+    image: '/images/halloween-candy/halloween-candy.png',
+    font: '"Mollen"',
+    link: '/projects/halloween-candy'
+  },
   {
     name: 'Brownie Edge Pound Cake',
     type: 'cell',
@@ -16,14 +24,6 @@ export const cells = [
       '/images/projects/project-25.jpg',
       '/images/projects/project-25b.jpg'
     ]
-  },
-  {
-    name: 'Halloween Candy Chocolate Bar Graph',
-    type: 'cell-large',
-    category: 'coding',
-    image: '/images/halloween-candy/halloween-candy.png',
-    font: '"Mollen"',
-    link: '/projects/halloween-candy'
   },
   {
     name: 'Animal Crossing Tinder',
