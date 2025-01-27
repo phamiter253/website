@@ -53,6 +53,7 @@
           .contact-form__group
             label.contact-form__label(for="message" class="form-label") Message*
             textarea(id="message" v-model="form.message" name="message" required)
+          input.bot-field(name="bot-field" type="text")
           button.contact-form__submit(type="submit") Send Message
 </template>
 
