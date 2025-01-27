@@ -58,7 +58,7 @@ useHead({
             "url": "https://priscillahamiter.com/projects/halloween-candy",
             "dateCreated": "2024-01-17",
             "dateModified": "2024-01-25",
-            "description": "A vertical bar chart representing the information from a Halloween Candy dataset from Kaggle",
+            "description": "A horizontal bar chart representing the information from a Halloween Candy dataset from Kaggle",
             "thumbnailUrl": "https://priscillahamiter.com/images/thumbnails/halloween-thumbnail.png"
           }
         ]

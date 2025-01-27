@@ -250,11 +250,11 @@
             .halloween-chart__type-button(v-for='(type,i) in types' :key='`group-type-${i}`')
               input(type='radio' :id='`type-${i}`' :value='type' name='type' :checked='type === "None" ? true : false')
               label(:for='`type-${i}`' v-html='type')
-          p Coming Soon
+          p Drawing from the #[a(href='https://www.kaggle.com/datasets/fivethirtyeight/the-ultimate-halloween-candy-power-ranking') Ultimate Halloween Candy Power Ranking] dataset, Drawing from the Ultimate Halloween Candy Power Ranking dataset, I designed a horizontal bar graph to showcase a comparison of popular fun-sized chocolate bars. The graph highlights both the sugar content and ratings of these treats, providing a clear and engaging visual representation of how sweetness and popularity align. It's a fun way to explore the data and see what makes these candies stand out.
           h2.halloween-chart__subtitle Sugar
-          p Coming Soon
+          p According to the dataset, the sugar value represents the percentile of sugar the candy falls under within the data set. I used this value to compare the chocolate bars, sorting by highest to lowests value.<br><br>When you click on the 'Sugar' button, the bars will update and slowly reveal the percentage value relative to the size of the chocolate bar would be without the wrapper.
           h2.halloween-chart__subtitle Rating
-          p Coming Soon
+          p According to the dataset, the winpercent(rating in my graph) value represents the overall win percentage according to 269,000 matchups. I used this value to compare the chocolate bars, sorting by highest to lowests value.<br><br>When you click on the 'Rating' button, the bars will update and slowly reveal the percentage value as a text component.
         .halloween-chart__row
           .halloween-chart__chart
             svg#chart(viewBox='0 0 760 4900')

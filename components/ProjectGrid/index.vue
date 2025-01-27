@@ -15,6 +15,12 @@
 
   const setCategory = category => {
     selectedCategory.value = category
+    animateUp()
+  }
+
+  const animateUp = () => {
+    const targets = gsap.utils.toArray(".cell, .cell-large");
+    gsap.from(targets, {autoAlpha: 0, yPercent: 30, stagger: 0.04});
   }
 
   onMounted(() => {
@@ -28,6 +34,8 @@
         setCategory(selectedValue)
       });
     });
+
+    animateUp()
 
     smallElements.forEach((element) => {
       element.addEventListener("click",()=>{
@@ -64,7 +72,7 @@
               img.slide(v-for='(image,j) in cell.children' :src='image' :alt='cell.name +"-"+ j')
             h3.cell__caption(v-html='cell.name')
           a.content(v-if='cell.type == "cell-large"' :href='cell.link')
-            img.slide(:src='cell.image' :alt='cell.name +"-"+ j')
+            img.slide(:src='cell.image' :alt='cell.name +"-"+ i')
             h2.cell__title(v-html='cell.name' :style='{ "fontFamily": cell.font}')
 </template>
 
