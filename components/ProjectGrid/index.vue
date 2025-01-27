@@ -15,7 +15,7 @@
 
   const setCategory = category => {
     selectedCategory.value = category
-    animateUp()
+    //animateUp()
   }
 
   const animateUp = () => {
@@ -65,7 +65,7 @@
           input(type='radio' :id='`catergory-${i}`' :value='catergory' name='catergory' :checked='catergory === "All" ? true : false')
           label(:for='`catergory-${i}`' v-html='catergory')
       .grid__container
-        div(v-for='(cell,i) in cells' :class='[cell.type, {"hide": !filteredItems.includes(cell)}]' :id='"cell-"+i')
+        div(v-for='(cell,i) in cells' :class='[cell.type, { "hide": !filteredItems.includes(cell) }]' :id='"cell-"+i')
           .content(v-if='cell.type == "cell"')
             img(v-if='cell.children.length == 0' :src='cell.image' :alt='cell.name')
             CardCarousel(v-else :slidesLength='cell.children.length')
