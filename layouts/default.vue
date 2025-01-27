@@ -36,11 +36,16 @@ main:focus
   text-align: center
 
   h1
-    margin-bottom: 0
+    margin: 0
 
   .container
     &
       max-width: 800px !important
+
+  .circle-image
+    margin: 2rem auto 1rem
+    border-radius: 50%
+    width: 250px
 
 .button
   transition: background-color .3s ease
