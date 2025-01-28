@@ -29,7 +29,7 @@
       .attr("height", "100%")
 
       const tooltip = d3
-        .select("body")
+        .select(".weather-chart")
         .append("div")
         .attr("class", "details")
         .style("position", "absolute")
