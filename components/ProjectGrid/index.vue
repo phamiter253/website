@@ -33,7 +33,7 @@
         setCategory(selectedValue)
       });
     });
-    animateUp()
+    //animateUp()
 
     smallElements.forEach((element) => {
       element.addEventListener("click",()=>{

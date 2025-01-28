@@ -1,9 +1,4 @@
 <script setup>
-// const { data, error } = await useFetch('/api/mongodb');
-
-// if (error.value) {
-//   console.error('Failed to fetch data:', error.value);
-// }
   import { weather } from '~/utils/data/weather'
   const d3 = useNuxtApp().$d3;
   const squareSize = 128
@@ -53,7 +48,7 @@
       .on("mouseover", function (event, d) {
         tooltip
           .style("visibility", "visible")
-          .html(`<span>${d.avgTemperature}°F</span><br>${d.date}`); // Tooltip content
+          .html(`<span>${d.avgTemperature}°F</span><br>${d.date}`);
         d3.select(this)
           .transition()
           .duration(200)
@@ -62,10 +57,10 @@
       .on("mousemove", function (event) {
         tooltip
           .style("top", event.pageY + 10 + "px")
-          .style("left", event.pageX + 10 + "px"); // Position tooltip near cursor
+          .style("left", event.pageX + 10 + "px");
       })
       .on("mouseout", function () {
-        tooltip.style("visibility", "hidden"); // Hide tooltip
+        tooltip.style("visibility", "hidden");
         d3.select(this)
           .transition()
           .duration(200)
@@ -83,9 +78,9 @@
     .container
       .weather-graph__row
         h1.weather-graph__title San Francisco Weather Graph
-        p More Information Coming Soon
+        p Inspired by heatmaps and temperature blankets, this graph visualizes San Francisco's daily average temperatures in 2019. Each square represents a day of the year, color-coded to reflect the temperature range—from cooler blues for colder days to warmer reds for hotter days. This visualization provides a clear overview of the city's mild climate and temperature trends throughout the year, offering insights into seasonal patterns at a glance. 
+        p For more information, hover over the individual squares to see the exact average temperature and date.
         .weather-chart
-        //pre {{weather}}
 </template>
 
 <style lang="sass" src="./index.sass"></style> 

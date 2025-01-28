@@ -7,6 +7,16 @@ export const cells = [
   //   font: '"Work Sans"',
   //   link: '/projects/bug-hotel'
   // },
+  // {
+  //   name: 'Brownie Edge Pound Cake',
+  //   type: 'cell',
+  //   category: 'food',
+  //   image: '',
+  //   children: [
+  //     '/images/projects/project-25.jpg',
+  //     '/images/projects/project-25b.jpg'
+  //   ]
+  // },
   {
     name: 'San Francisco Weather Graph',
     type: 'cell-large',
