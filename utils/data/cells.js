@@ -8,6 +8,14 @@ export const cells = [
   //   link: '/projects/bug-hotel'
   // },
   {
+    name: 'San Francisco Weather Graph',
+    type: 'cell-large',
+    category: 'coding',
+    image: '/images/weather-background.png',
+    font: '"Amiri"',
+    link: '/projects/weather'
+  },
+  {
     name: 'Halloween Candy Chocolate Bar Graph',
     type: 'cell-large',
     category: 'coding',

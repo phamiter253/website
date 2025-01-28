@@ -21,6 +21,7 @@ main:focus
   display: flex
   flex: 1
   justify-content: center
+  overflow-x: hidden
 
 .pages-home,.pages-contact, .pages-about, .pages-projects, .pages-thank-you
   display: flex

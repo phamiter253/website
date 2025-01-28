@@ -1,0 +1,53 @@
+.weather-graph
+  width: 100%
+
+  &__container
+    &
+      display: flex
+      align-content: center
+      justify-content: center
+      gap: 2rem
+    @media screen and (max-width: 768px)
+      flex-direction: column-reverse
+      flex-wrap: wrap
+      gap: 0
+
+  &__row
+    &
+      display: flex
+      flex-direction: column
+
+  &__graph
+    &
+      //position: relative
+      height: 115vh
+      overflow-y: scroll
+      -ms-overflow-style: none
+      scrollbar-width: none
+    // @media screen and (max-width: 768px)
+    //   height: 40vh
+
+    ::-webkit-scrollbar
+      display: none
+
+  &__title
+    &
+      margin-bottom: 0
+      font-family: 'Amiri'
+      line-height: 1
+    // @media screen and (max-width: 768px)
+    //   margin-top: 1rem
+
+  &__subtitle
+    font-family: 'Mollen'
+    margin: 1rem 0 0
+
+.details
+  fill: #fff
+  -webkit-filter: drop-shadow(0 0 .75rem black)
+  filter: drop-shadow(0 0 .75rem black)
+  stroke: #333
+  stroke-width: 5px
+  font-family: 'Amiri'
+  text-align: center
+  transition: opacity 0.2s ease-in-out

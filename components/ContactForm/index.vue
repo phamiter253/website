@@ -54,7 +54,7 @@
             label.contact-form__label(for="message" class="form-label") Message*
             textarea(id="message" v-model="form.message" name="message" required)
           input.bot-field(name="bot-field" type="text")
-          button.contact-form__submit(type="submit") Send Message
+          button.contact-form__submit(type="submit" tabindex=0) Send Message
 </template>
 
 <style lang="sass" src="./index.sass"></style> 

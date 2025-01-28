@@ -48,6 +48,13 @@ button {
   cursor: pointer;
 }
 
+button:focus-visible {
+  outline-offset: 1px;
+  outline-width: medium;
+  outline-style: solid;
+  outline-color: #9694FF;
+}
+
 .container {
   display: flex;
   flex-direction: column;

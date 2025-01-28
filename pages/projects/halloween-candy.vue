@@ -8,7 +8,7 @@
       },
       {
         name: 'keywords',
-        content: 'Projects, Portfolio, Priscilla Hamiter, Frontend Developer, Web App, Halloween Candy, Bar Chart, Bar Graph, D3.js'
+        content: 'Projects, Portfolio, Priscilla Hamiter, Frontend Developer, Halloween Candy, Bar Chart, Bar Graph, D3.js'
       }
     ],
     link: [
