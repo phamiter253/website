@@ -34,8 +34,7 @@
         .attr("class", "details")
         .style("position", "absolute")
         .style("background-color", "white")
-        .style("border", "1px solid black")
-        .style("padding", "5px")
+        .style("padding", "10px 8px")
         .style("border-radius", "5px")
         .style("visibility", "hidden")
         .style("font-size", "16px");
@@ -54,7 +53,7 @@
       .on("mouseover", function (event, d) {
         tooltip
           .style("visibility", "visible")
-          .html(`${d.date}<br>Temp: ${d.avgTemperature}°F`); // Tooltip content
+          .html(`<span>${d.avgTemperature}°F</span><br>${d.date}`); // Tooltip content
         d3.select(this)
           .transition()
           .duration(200)
@@ -72,7 +71,6 @@
           .duration(200)
           .style("opacity", "1")
       });
-
   }
 
   onMounted(() => {
