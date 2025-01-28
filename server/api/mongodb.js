@@ -1,20 +1,17 @@
 import { MongoClient } from 'mongodb'
 
-const client = new MongoClient(process.env.MONGODB_URI);  // Replace with your MongoDB URI
-
 export default defineEventHandler(async () => {
+  const client = new MongoClient(process.env.MONGODB_URI);
   try {
-    await client.connect(); // Connect to the database
-    const db = client.db('weather_data'); // Replace with your database name
-    const collection = db.collection('sf_weather'); // Replace with your collection name
-
-    const data = await collection.find({}).toArray(); // Query all documents in the collection
-    return data; // Return all documents
-  } catch (error) {
-    console.error('Error fetching data from MongoDB:', error);
-    throw createError({ statusCode: 500, message: 'Database query failed' });
+    await client.connect();
+    const db = client.db('weather_data');
+    const collection = db.collection('sf_weather');
+    const data = await collection.find({}).toArray();
+    return data;
+  } catch (err) {
+    return { error: 'Error fetching data from MongoDB' + err};
   } finally {
-    await client.close(); // Close the database connection
+    client.close();
   }
 });
 

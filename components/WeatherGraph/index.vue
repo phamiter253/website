@@ -5,11 +5,8 @@
   const squareSize = 64
   const columns = 28
   const spacing = 0;
-  
   const colors = ['#00876c', '#419b73', '#68af7a', '#8dc282', '#b2d58c', '#fffaa8', '#fcdd89', '#f8bf70', '#f3a15e', '#ec8253', '#e26150', '#d43d51'];
   const zScale = d3.scaleQuantile(weather.map((d) => d.avgTemperature),colors)
-
-  
 
   const renderChart = (data) => {
     const rows = data.length / columns + 1
