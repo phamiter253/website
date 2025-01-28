@@ -22,7 +22,6 @@
 
 <template lang="pug">
   .pages-about
-    .container
-      h1 Coming Soon!
+    AboutSection
 </template>
   
