@@ -1,22 +1,20 @@
 import { MongoClient } from 'mongodb'
 
-const client = new MongoClient(process.env.MONGODB_URI);
+const client = new MongoClient(process.env.MONGODB_URI);  // Replace with your MongoDB URI
 
 export default defineEventHandler(async () => {
   try {
-    await client.connect();
-    const database = client.db('sample_mflix');
-    const movies = database.collection('movies');
+    await client.connect(); // Connect to the database
+    const db = client.db('weather_data'); // Replace with your database name
+    const collection = db.collection('sf_weather'); // Replace with your collection name
 
-    const query = { title: 'Back to the Future' };
-    const movie = await movies.findOne(query);
-
-    return movie;
-  } catch (err) {
-    console.error('Error connecting to MongoDB:', err);
-    return { error: 'Failed to fetch data from MongoDB' };
+    const data = await collection.find({}).toArray(); // Query all documents in the collection
+    return data; // Return all documents
+  } catch (error) {
+    console.error('Error fetching data from MongoDB:', error);
+    throw createError({ statusCode: 500, message: 'Database query failed' });
   } finally {
-    await client.close();
+    await client.close(); // Close the database connection
   }
 });
 
