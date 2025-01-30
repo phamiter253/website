@@ -203,6 +203,8 @@
 
   &__content
     &
+      height: fit-content
+      margin: auto
       width: 50%
       padding: 0 1rem
 
@@ -242,7 +244,26 @@
 
   &__text
     margin-top: 0
+    // color: #484848
+    // font-family: 'Amaranth'
+
+  &__row
+    &
+      display: flex
+      justify-content: space-between
+    @media screen and (max-width: 600px)
+      flex-wrap: wrap
+
+  &__column
+    &
+      width: 60%
+    @media screen and (max-width: 600px)
+      width: 100%
+
+  &__text-labels
+    margin-top: 0
     color: #484848
+    font-size: 20px
     font-family: 'Amaranth'
 
   &__button-group

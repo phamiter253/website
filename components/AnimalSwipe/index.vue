@@ -220,29 +220,31 @@
         .animal-swipe__content
           h1.animal-swipe__title Animal Crossing Tinder
           p.animal-swipe__text Welcome to Animal Crossing Tinder, the matchmaking app for Animal Crossing villagers! Swipe through unique personalities and hobbies to find your dream neighbors and build the perfect island paradise. Your ideal villager is just a swipe away!
-          h2.animal-swipe__subheading Instructions
-          p.animal-swipe__text Before swiping, set your Horoscope and Personality type then click 'Start' You can always edit your horoscope and personality type by selecting the Edit Profile button.  If you want to see all the villagers you've matched with, select the See Matches button at the top.
-          .animal-swipe__buttons
-            .animal-swipe__button-group
-              .animal-swipe__button
-                img.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg')
-              .animal-swipe__text Edit Profile
-            .animal-swipe__button-group
-              .animal-swipe__button
-                img.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg')
-              .animal-swipe__text Home Button
-            .animal-swipe__button-group
-              .animal-swipe__button
-                img.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg')
-              .animal-swipe__text See Matches
-            .animal-swipe__button-group
-              .animal-swipe__button.reject
-                img.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png')
-              .animal-swipe__text Reject Button
-            .animal-swipe__button-group
-              .animal-swipe__button.like
-                img.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png')
-              .animal-swipe__text Like Button
+          .animal-swipe__row
+            .animal-swipe__column
+              h2.animal-swipe__subheading Instructions
+              p.animal-swipe__text Before swiping, set your Horoscope and Personality type then click 'Start' You can always edit your horoscope and personality type by selecting the Edit Profile button.  If you want to see all the villagers you've matched with, select the See Matches button at the top.
+            .animal-swipe__buttons
+              .animal-swipe__button-group
+                .animal-swipe__button
+                  img.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg')
+                .animal-swipe__text-labels Edit Profile
+              .animal-swipe__button-group
+                .animal-swipe__button
+                  img.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg')
+                .animal-swipe__text-labels Home Button
+              .animal-swipe__button-group
+                .animal-swipe__button
+                  img.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg')
+                .animal-swipe__text-labels See Matches
+              .animal-swipe__button-group
+                .animal-swipe__button.reject
+                  img.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png')
+                .animal-swipe__text-labels Reject Button
+              .animal-swipe__button-group
+                .animal-swipe__button.like
+                  img.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png')
+                .animal-swipe__text-labels Like Button
 </template>
 
 <style lang="sass" src="./index.sass"></style>

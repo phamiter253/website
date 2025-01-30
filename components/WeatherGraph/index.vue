@@ -84,8 +84,7 @@
     .container
       .weather-graph__row
         h1.weather-graph__title San Francisco Weather Graph
-        p Inspired by heatmaps and temperature blankets, this graph visualizes San Francisco's daily average temperatures starting from January 27, 2025. Each square represents a day of the year, color-coded to reflect the temperature range—from cooler blues for colder days to warmer reds for hotter days. This visualization provides a clear overview of the city's mild climate and temperature trends throughout the year, offering insights into seasonal patterns at a glance. 
-        p This graph is made with MongoDB, AWS Lambda and API Gateway, and D3.
+        p Inspired by heatmaps and temperature blankets, this graph visualizes San Francisco's daily average temperatures starting from January 27, 2025. Each square represents a day of the year, color-coded to reflect the temperature range—from darker greens for colder days to warmer reds for hotter days. This visualization provides a clear overview of the city's mild climate and temperature trends throughout the year, offering insights into seasonal patterns at a glance. 
         p For more information, hover over the individual squares to see the exact average temperature and date. Best seen on desktop!
         .weather-chart
 </template>
