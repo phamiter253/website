@@ -1,10 +1,6 @@
 <script setup>
   import { weather } from '~/utils/data/weather'
-  const { data, error } = await useFetch('https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures')
 
-  if (error.value) {
-    console.error('Error fetching data:', error.value)
-  }
   const d3 = useNuxtApp().$d3;
   const squareSize = 64
   const columns = 28
@@ -73,9 +69,10 @@
           .style("opacity", "1")
       });
   }
-  onMounted (() => {
-    const parsedData = JSON.parse(data.value)
-    renderChart(parsedData)
+  onMounted (async () => {
+    const response = await fetch("https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures");
+    const data = await response.json();
+    renderChart(data)
   })
 </script>
 
