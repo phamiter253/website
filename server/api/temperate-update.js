@@ -45,9 +45,9 @@ export default defineEventHandler(() => {
     }
   };
 
-  setInterval(async () => {
+  setTimeout(async () => {
     console.log('Running daily temperature update...');
     const temperatureData = await fetchTemperatureData();
     await saveToDatabase(temperatureData);
-  }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+  }, 10); // 24 hours in milliseconds
 });
