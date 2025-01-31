@@ -22,10 +22,11 @@ const setCategory = (category) => {
 const animateUp = () => {
   const targets = gsap.utils.toArray(".cell:not(.hide), .cell-large:not(.hide)");
   gsap.from(targets, { autoAlpha: 0, yPercent: 30, stagger: 0.04 });
-};
+}
 
 // Event delegation for cell clicks
 const handleCellClick = (event) => {
+  event.preventDefault();
   const target = event.target.closest(".cell");
   if (!target) return;
 
@@ -48,19 +49,30 @@ const handleCellClick = (event) => {
   }
 };
 
+function selectRadio(inputId) {
+  const radioInput = document.getElementById(inputId);
+
+  if (radioInput) {
+    radioInput.checked = true;
+    radioInput.focus();
+    setCategory(radioInput.value)
+  }
+}
+
 onMounted(() => {
-  // Animate cells on load
+  const gridContainer = document.querySelector(".grid__container");
+  gridContainer.style.pointerEvents = 'none';
+
   animateUp();
 
-  // Add event listener for category selection
+  setTimeout(() => {
+    gridContainer.style.pointerEvents = 'auto';
+  }, 1500);
+
   const categoryContainer = document.querySelector(".grid__catergory-container");
   categoryContainer.addEventListener("change", (event) => {
     setCategory(event.target.value);
   });
-
-  // Add event listener for cell clicks (event delegation)
-  const gridContainer = document.querySelector(".grid__container");
-  gridContainer.addEventListener("click", handleCellClick);
 });
 </script>
 
@@ -68,19 +80,32 @@ onMounted(() => {
 .grid
   .container
     fieldset.grid__catergory-container
-      .grid__catergory-button(v-for='(category, i) in categories' :key='`group-category-${i}`')
+      .grid__catergory-button(v-for='(category, i) in categories' :key='`group-category-${i}`' )
         input(type='radio' :id='`category-${i}`' :value='category' name='category' :checked='category === "All"')
-        label(:for='`category-${i}`' v-html='category')
+        label(:for='`category-${i}`' v-html='category' tabindex='0' @keyup.enter="selectRadio(`category-${i}`)")
     .grid__container
-      div(v-for='(cell, i) in cells' :class='[cell.type, { "hide": !filteredItems.includes(cell) }]' :id='"cell-"+i')
-        .content(v-if='cell.type == "cell"')
+      template(v-for='(cell, i) in cells' :key='"cell-"+i')
+        .cell(v-if='cell.type == "cell"' 
+          :class='{ "hide": !filteredItems.includes(cell) }' 
+          tabindex="0"
+          :id='"cell-"+i'
+          @click="(e) => handleCellClick(e)"
+          @keyup.enter="(e) => handleCellClick(e)"
+        )
           img(v-if='cell.children.length === 0' :src='cell.image' :alt='cell.name')
           CardCarousel(v-else :slidesLength='cell.children.length')
             img.slide(v-for='(image, j) in cell.children' :src='image' :alt='`${cell.name}-${j}`')
           h3.cell__caption(v-html='cell.name')
-        a.content(v-if='cell.type == "cell-large"' :href='cell.link')
+
+        a.cell-large(v-if='cell.type == "cell-large"'
+          :href='cell.link'
+          :class='{ "hide": !filteredItems.includes(cell) }'
+          tabindex="0"
+          :id='"cell-"+i'
+        )
           img.slide(:src='cell.image' :alt='`${cell.name}-${i}`')
           h2.cell__title(v-html='cell.name' :style='{ fontFamily: cell.font }')
+
 </template>
 
 <style lang="sass" src="./index.sass"></style>

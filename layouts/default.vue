@@ -33,6 +33,9 @@ main:focus
 .pages-projects__grid
   width: 100%
 
+  h1
+    display: none
+
 .pages-thank-you
   text-align: center
 

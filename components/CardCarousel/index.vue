@@ -8,7 +8,12 @@
   });
 
   const setIndex = (i, e) => {
+    if (i === isActive.value) {
+      return
+    }
+    e.preventDefault();
     e.stopPropagation(); 
+   
     const prev = isActive.value;
     isActive.value = i;
 
@@ -35,7 +40,12 @@
       .carousel__inner(ref="carouselRef")
         slot
       .carousel__controls
-        .carousel__indicator(v-for="(dot, i) in slidesLength" :key="`dot-${i}`" :class="{ 'active-dot': isActive === i }" @click="(e) => setIndex(i, e)")
+        .carousel__indicator(v-for="(dot, i) in slidesLength" 
+          :key="`dot-${i}`" 
+          :class="{ 'active-dot': isActive === i }" 
+          @click="(e) => setIndex(i, e)" 
+          @keyup.enter="(e) => setIndex(i, e)" 
+          tabindex='0')
 </template>
 
 <style lang="sass" src="./index.sass"></style>

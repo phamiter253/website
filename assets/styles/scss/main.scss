@@ -27,6 +27,23 @@ body {
   scrollbar-width: thin;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 h1 {
   font-size: var(--fluid-48-64)
 }
@@ -42,6 +59,16 @@ h3 {
 p {
   font-size: var(--fluid-16-20);
   line-height: 1.5;
+
+  a {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+  
+    &:hover {
+      color: #9694FF
+    }
+  }
 }
 
 button {
@@ -49,11 +76,11 @@ button {
   cursor: pointer;
 }
 
-button:focus-visible, a:focus-visible, input:focus-visible {
+button:focus-visible, a:focus-visible {
   outline-offset: 1px;
   outline-width: medium;
-  outline-style: solid;
-  outline-color: #9694FF;
+  outline-style: dashed;
+  outline-color: #F24C4C;
 }
 
 .container {
@@ -66,8 +93,12 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 }
 
 a {
-  color: #333;
+  color: black;
   text-decoration: none;
+
+  &:hover {
+    color: #333
+  }
 }
 
 fieldset {

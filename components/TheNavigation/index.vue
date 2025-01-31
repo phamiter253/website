@@ -1,36 +1,63 @@
 <script setup>
-  import { router } from '~/utils/router';
+import { router } from '~/utils/router';
+import { ref, onMounted, onUnmounted } from 'vue';
 
-  const isDown = ref(false);
-  const isOpen = ref(false);
+const isDown = ref(false);
+const isOpen = ref(false);
 
-  const handleScroll = () => {
-    isDown.value = window.scrollY > 10;
+let scrollTimeout = null;
+const debounce = (fn, delay) => {
+  return () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(fn, delay);
   };
+};
 
-  const toggleDrawer = () => {
-    isOpen.value = !isOpen.value;
-    document.body.classList.toggle("stop-scroll", isOpen.value);
-  };
+const handleScroll = debounce(() => {
+  isDown.value = window.scrollY > 10;
+}, 10);
 
-  onMounted(() => {
-    window.addEventListener('scroll', handleScroll);
-  });
+const toggleDrawer = () => {
+  isOpen.value = !isOpen.value;
+  const body = document.body;
+
+  if (isOpen.value) {
+    !body.classList.contains("stop-scroll") && body.classList.add("stop-scroll");
+  } else {
+    body.classList.remove("stop-scroll");
+  }
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <template lang="pug">
-  header.navigation(:class="{ active: isDown }")
-    .container
-      .navigation__container
-        NuxtLink(to="/" aria-label="Home")
-          img.navigation__logo(src="/logo.svg" alt="Priscilla Hamiter Logo")
-        button.navigation__hamburger(@click="toggleDrawer")
-          span
-          span
-          span
+header.navigation(:class="{ active: isDown }")
+  .container
+    .navigation__container
+      NuxtLink(to="/" aria-label="Home")
+        img.navigation__logo(src="/logo.svg" alt="Priscilla Hamiter Logo")
+      button.navigation__hamburger(
+        aria-label="Open menu"
+        :aria-expanded="{ isOpen }"
+        aria-controls="menu"
+        @click="toggleDrawer"
+      )
+        span
+        span
+        span
   button.navigation__overlay(v-if="isOpen" @click="toggleDrawer")
   .navigation__drawer(:class="{ open: isOpen }")
-    button.navigation__close(@click="toggleDrawer")
+    button.navigation__close(
+      aria-label="Close menu"
+      @click="toggleDrawer"
+    )
       span
       span
     ul.navigation__links

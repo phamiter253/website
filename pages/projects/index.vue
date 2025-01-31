@@ -22,6 +22,7 @@
 
 <template lang="pug">
   .pages-projects__grid
+    h1 Projects
     ProjectGrid
 </template>
   
