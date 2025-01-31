@@ -67,7 +67,7 @@ onMounted(() => {
 
   setTimeout(() => {
     gridContainer.style.pointerEvents = 'auto';
-  }, 1500);
+  }, cells.length * 40);
 
   const categoryContainer = document.querySelector(".grid__catergory-container");
   categoryContainer.addEventListener("change", (event) => {

@@ -220,10 +220,13 @@
         .animal-swipe__content
           h1.animal-swipe__title Animal Crossing Tinder
           p.animal-swipe__text Welcome to Animal Crossing Tinder, the matchmaking app for Animal Crossing villagers! Swipe through unique personalities and hobbies to find your dream neighbors and build the perfect island paradise. Your ideal villager is just a swipe away!
+          p.animal-swipe__text The data is from the #[a(href='https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset?select=villagers.csv' aria-label='Open Animal Crossing villagers dataset in new tab' target='_blank') Animal Crossing New Horizons Catalog Dataset], however I removed unused data, and added catchphrases, horoscope and image paths. This project utilizes GSAP for animations and draggable actions.
           .animal-swipe__row
             .animal-swipe__column
               h2.animal-swipe__subheading Instructions
-              p.animal-swipe__text Before swiping, set your Horoscope and Personality type then click 'Start' You can always edit your horoscope and personality type by selecting the Edit Profile button.  If you want to see all the villagers you've matched with, select the See Matches button at the top.
+              p.animal-swipe__text Before swiping, set your Horoscope and Personality type then click 'Start'. You can always edit your horoscope and personality type by selecting the Edit Profile button.
+              p.animal-swipe__text You can either swap the card left or right or click on the Like and Reject buttons. Once you get a match, a message will pop up similar to Tinder's Match notification.
+              p.animal-swipe__text If you want to see all the villagers you've matched with, select the See Matches button at the top.
             .animal-swipe__buttons
               .animal-swipe__button-group
                 .animal-swipe__button

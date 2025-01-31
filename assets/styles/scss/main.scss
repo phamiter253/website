@@ -36,12 +36,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #333;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: black;
 }
 
 h1 {
@@ -62,11 +62,11 @@ p {
 
   a {
     font-weight: 600;
-    color: black;
+    color: #49240F;
     text-decoration: none;
   
     &:hover {
-      color: #9694FF
+      color: #8C3061;
     }
   }
 }

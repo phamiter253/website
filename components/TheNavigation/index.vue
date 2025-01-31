@@ -1,6 +1,5 @@
 <script setup>
 import { router } from '~/utils/router';
-import { ref, onMounted, onUnmounted } from 'vue';
 
 const isDown = ref(false);
 const isOpen = ref(false);
@@ -61,7 +60,7 @@ header.navigation(:class="{ active: isDown }")
       span
       span
     ul.navigation__links
-      li.navigation__link-item(v-for="(page, i) in router" :key="`link-${i}`" @click="toggleDrawer")
+      li.navigation__link-item(v-for="(page, i) in router.slice(1)" :key="`link-${i}`" @click="toggleDrawer")
         NuxtLink.navigation__link(:to="page.path") {{ page.name }}
 </template>
 

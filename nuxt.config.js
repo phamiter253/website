@@ -32,16 +32,18 @@ export default defineNuxtConfig({
     '~/plugins/gsap.client.js'
   ],
   vite: {
-      css: {
-        preprocessorOptions: {
-          sass: {
-            additionalData:  '@use "~/assets/styles/sass/global.sass" as *\n'
-          }
+    build: {
+      chunkSizeWarningLimit: 1000
+    },
+    css: {
+      preprocessorOptions: {
+        sass: {
+          additionalData:  '@use "~/assets/styles/sass/global.sass" as *\n'
         }
       }
-    },
+    }
+  },
   nitro: {
-    preset: 'node-server',
     prerender: {
       crawlLinks: true,
       failOnError: false
