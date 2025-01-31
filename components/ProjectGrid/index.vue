@@ -1,77 +1,86 @@
 <script setup>
-  import { cells } from '~/utils/data/cells'
+import { cells } from '~/utils/data/cells';
+const { gsap, Flip } = useGsap();
 
-  const { gsap, Flip } = useGsap();
-  const catergories = ["All", "Art", "Coding", "Food"];
+// Categories
+const categories = ["All", "Art", "Coding", "Food"];
+const selectedCategory = ref("all");
 
-  const selectedCategory = ref('all')
+// Filtered items based on selected category
+const filteredItems = computed(() =>
+  selectedCategory.value === "all"
+    ? cells
+    : cells.filter((cell) => cell.category.toLowerCase() === selectedCategory.value)
+);
 
-  const filteredItems = computed(() => {
-    if (selectedCategory.value === 'all') {
-      return cells
-    }
-    return cells.filter(cell => cell.category === selectedCategory.value)
-  })
+// Set selected category
+const setCategory = (category) => {
+  selectedCategory.value = category.toLowerCase();
+};
 
-  const setCategory = category => {
-    selectedCategory.value = category
-  }
+// Animation on items appearing
+const animateUp = () => {
+  const targets = gsap.utils.toArray(".cell:not(.hide), .cell-large:not(.hide)");
+  gsap.from(targets, { autoAlpha: 0, yPercent: 30, stagger: 0.04 });
+};
 
-  const animateUp = () => {
-    const targets = gsap.utils.toArray(".cell:not(.hide), .cell-large:not(.hide)");
-    gsap.from(targets, {autoAlpha: 0, yPercent: 30, stagger: 0.04});
-  }
+// Event delegation for cell clicks
+const handleCellClick = (event) => {
+  const target = event.target.closest(".cell");
+  if (!target) return;
 
-  onMounted(() => {
-    const radioButtons = document.querySelectorAll('input[type="radio"]');
-    const smallElements = document.querySelectorAll(".cell");
-    const targets = gsap.utils.toArray(".cell, .cell-large");
+  const allTargets = gsap.utils.toArray(".cell, .cell-large");
+  const state = Flip.getState(allTargets);
 
-    radioButtons.forEach(radioButton => {
-      radioButton.addEventListener('change', () => {
-        const selectedValue = radioButton.value.toLowerCase();
-        setCategory(selectedValue)
-      });
-    });
-    //animateUp()
+  target.classList.toggle("active");
 
-    smallElements.forEach((element) => {
-      element.addEventListener("click",()=>{
-        const state = Flip.getState(targets);
-        element.classList.toggle("active");
-        Flip.from(state, {
-          duration: .3,
-          ease: "power1.in"
-        });
-        if (element.classList.contains("active")) {
-          gsap.to(window, {
-            duration: .5, 
-            delay: .4,
-            scrollTo:{y:"#"+element.id, offsetY:80}
-          });
-        }
-      })
-    });
+  Flip.from(state, {
+    duration: 0.3,
+    ease: "power1.in",
   });
+
+  if (target.classList.contains("active")) {
+    gsap.to(window, {
+      duration: 0.5,
+      delay: 0.4,
+      scrollTo: { y: "#" + target.id, offsetY: 80 },
+    });
+  }
+};
+
+onMounted(() => {
+  // Animate cells on load
+  animateUp();
+
+  // Add event listener for category selection
+  const categoryContainer = document.querySelector(".grid__catergory-container");
+  categoryContainer.addEventListener("change", (event) => {
+    setCategory(event.target.value);
+  });
+
+  // Add event listener for cell clicks (event delegation)
+  const gridContainer = document.querySelector(".grid__container");
+  gridContainer.addEventListener("click", handleCellClick);
+});
 </script>
 
 <template lang="pug">
-  .grid
-    .container
-      fieldset.grid__catergory-container
-        .grid__catergory-button(v-for='(catergory,i) in catergories' :key='`group-catergory-${i}`')
-          input(type='radio' :id='`catergory-${i}`' :value='catergory' name='catergory' :checked='catergory === "All" ? true : false')
-          label(:for='`catergory-${i}`' v-html='catergory')
-      .grid__container
-        div(v-for='(cell,i) in cells' :class='[cell.type, { "hide": !filteredItems.includes(cell) }]' :id='"cell-"+i')
-          .content(v-if='cell.type == "cell"')
-            img(v-if='cell.children.length == 0' :src='cell.image' :alt='cell.name')
-            CardCarousel(v-else :slidesLength='cell.children.length')
-              img.slide(v-for='(image,j) in cell.children' :src='image' :alt='cell.name +"-"+ j')
-            h3.cell__caption(v-html='cell.name')
-          a.content(v-if='cell.type == "cell-large"' :href='cell.link')
-            img.slide(:src='cell.image' :alt='cell.name +"-"+ i')
-            h2.cell__title(v-html='cell.name' :style='{ "fontFamily": cell.font}')
+.grid
+  .container
+    fieldset.grid__catergory-container
+      .grid__catergory-button(v-for='(category, i) in categories' :key='`group-category-${i}`')
+        input(type='radio' :id='`category-${i}`' :value='category' name='category' :checked='category === "All"')
+        label(:for='`category-${i}`' v-html='category')
+    .grid__container
+      div(v-for='(cell, i) in cells' :class='[cell.type, { "hide": !filteredItems.includes(cell) }]' :id='"cell-"+i')
+        .content(v-if='cell.type == "cell"')
+          img(v-if='cell.children.length === 0' :src='cell.image' :alt='cell.name')
+          CardCarousel(v-else :slidesLength='cell.children.length')
+            img.slide(v-for='(image, j) in cell.children' :src='image' :alt='`${cell.name}-${j}`')
+          h3.cell__caption(v-html='cell.name')
+        a.content(v-if='cell.type == "cell-large"' :href='cell.link')
+          img.slide(:src='cell.image' :alt='`${cell.name}-${i}`')
+          h2.cell__title(v-html='cell.name' :style='{ fontFamily: cell.font }')
 </template>
 
-<style lang="sass" src="./index.sass"></style>  
+<style lang="sass" src="./index.sass"></style>

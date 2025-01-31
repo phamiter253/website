@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template lang="pug">
   .about-section
     .container
