@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  site: { 
+    url: 'priscillahamiter.com' 
+  },
   build: {
     transpile: ['gsap']
   },
@@ -28,6 +31,10 @@ export default defineNuxtConfig({
       ]
     }
   },
+  modules: [
+    '@nuxt/eslint',
+    '@nuxtjs/sitemap'
+  ],
   sitemap: {
     hostname: 'https://priscillahamiter.com',
     routes: [
@@ -65,9 +72,5 @@ export default defineNuxtConfig({
     '/dashboard/**': { ssr: false }
   },
   css: ['~/assets/styles/scss/main.scss'],
-  compatibilityDate: '2024-12-31',
-  modules: [
-    '@nuxt/eslint',
-    '@nuxtjs/sitemap'
-  ]
+  compatibilityDate: '2024-12-31'
 })

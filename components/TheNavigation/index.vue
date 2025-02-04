@@ -44,7 +44,7 @@ header.navigation(:class="{ active: isDown }")
         img.navigation__logo(src="/logo.svg" alt="Priscilla Hamiter Logo")
       button.navigation__hamburger(
         aria-label="Open menu"
-        :aria-expanded="{ isOpen }"
+        :aria-expanded="isOpen"
         aria-controls="navigation__drawer"
         @click="toggleDrawer"
       )
