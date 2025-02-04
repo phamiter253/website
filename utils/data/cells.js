@@ -1,21 +1,11 @@
 export const cells = [
   // {
-  //   name: 'Bug Hotel Game Concept',
+  //   name: 'Game Concept: Insecticide',
   //   type: 'cell-large',
   //   category: 'coding',
   //   image: '',
   //   font: '"Work Sans"',
-  //   link: '/projects/bug-hotel'
-  // },
-  // {
-  //   name: 'Brownie Edge Pound Cake',
-  //   type: 'cell',
-  //   category: 'food',
-  //   image: '',
-  //   children: [
-  //     '/images/projects/project-25.jpg',
-  //     '/images/projects/project-25b.jpg'
-  //   ]
+  //   link: '/projects/insecticide'
   // },
   {
     name: 'San Francisco Weather Graph',

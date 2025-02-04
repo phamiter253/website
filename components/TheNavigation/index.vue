@@ -45,7 +45,7 @@ header.navigation(:class="{ active: isDown }")
       button.navigation__hamburger(
         aria-label="Open menu"
         :aria-expanded="{ isOpen }"
-        aria-controls="menu"
+        aria-controls="navigation__drawer"
         @click="toggleDrawer"
       )
         span

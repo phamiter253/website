@@ -28,6 +28,18 @@ export default defineNuxtConfig({
       ]
     }
   },
+  sitemap: {
+    hostname: 'https://priscillahamiter.com',
+    routes: [
+      '/',
+      '/about',
+      '/projects',
+      '/projects/animal-crossing',
+      '/projects/halloween-candy',
+      '/projects/weather',
+      '/contact',
+    ],
+  },
   plugins: [
     '~/plugins/gsap.client.js'
   ],
@@ -54,5 +66,8 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/styles/scss/main.scss'],
   compatibilityDate: '2024-12-31',
-  modules: ['@nuxt/eslint']
+  modules: [
+    '@nuxt/eslint',
+    '@nuxtjs/sitemap'
+  ]
 })
