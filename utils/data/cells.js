@@ -37,7 +37,7 @@ export const cells = [
     name: 'Animal Crossing Tinder',
     type: 'cell-large',
     category: 'coding',
-    image: '/images/animal-crossing-background.jpg',
+    image: '/images/animal-crossing/animal-crossing-background.jpg',
     font: '"Rats Fink Heavy"',
     link: '/projects/animal-crossing'
   },
