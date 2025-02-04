@@ -1,0 +1,1 @@
+import{u as e}from"./BwiWEhvb.js";import{c as i,o as s}from"./BXy1YGc1.js";const t={class:"pages-projects"},a={__name:"index",setup:a=>(e({title:"Game Concept: Insecticide | Priscilla Hamiter",link:[{rel:"canonical",href:"https://priscillahamiter.com/projects/insecticide"}]}),(e,a)=>(s(),i("div",t)))};export{a as default};
