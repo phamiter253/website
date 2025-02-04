@@ -177,7 +177,7 @@
             img.animal-swipe__profile-image(src='/images/animal-crossing/posters/villager.png')
             .animal-swipe__name
               h3.animal-swipe__title Villager
-              img.animal-swipe__zodiac(:src='`/images/animal-crossing/horoscope/${user.zodiac}.svg`')
+              NuxtImg.animal-swipe__zodiac(:src='`/images/animal-crossing/horoscope/${user.zodiac}.svg`' format="webp")
             fieldset.animal-swipe__group
               legend.animal-swipe__radio-title Pick your Horoscope
               .animal-swipe__radio-group(v-for='(zodiac,i) in zodiacs' :key='`zodiac-${i}`')
@@ -191,31 +191,31 @@
             button.animal-swipe__start-button(@click='createAnimalList()' :class="{ moving: isLoading }") Start!
           .animal-swipe__controls
             button.animal-swipe__button(@click='openProfile()')
-              img.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg')
+              NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg' format="webp")
             button.animal-swipe__button(@click='closeDrawers()')
-              img.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg')
+              NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg' format="webp")
             button.animal-swipe__button(@click='openMatches()')
-              img.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg')
+              NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg' format="webp")
           .animal-swipe__card
             TinderCard(:user='list[indexOne]')
           .animal-swipe__card
             TinderCard(:user='list[indexTwo]')
           .animal-swipe__buttons
             button.animal-swipe__button.reject(@click='moveCard("left")')
-              img.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png')
+              NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png' format="webp")
             button.animal-swipe__button.like(@click='moveCard("right")')
-              img.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png')
+              NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png' format="webp")
           .animal-swipe__match-drawer(:class="{ active: matchDrawer }")
             .animal-swipe__matches
               .animal-swipe__match(v-for='(match, i) in matches' :key='`key-${i}`')
-                img.animal-swipe__match-image(:src='`/images/animal-crossing/posters/${formatImage(match.name)}.png`')
+                NuxtImg.animal-swipe__match-image(:src='`/images/animal-crossing/posters/${formatImage(match.name)}.png`' format="webp")
                 h3.animal-swipe__match-name(v-html='match.name')
           .animal-swipe__match-screen
             h2.animal-swipe__title It's a Match!
             p.animal-swipe__text(v-html='`You and ${matches[matches.length-1] ? matches[matches.length-1].name : ""} liked each other.`')
             .animal-swipe__match-images
-              img.animal-swipe__match-screen-image(src='/images/animal-crossing/posters/villager.png')
-              img.animal-swipe__match-screen-image(:src='`/images/animal-crossing/posters/${matches[matches.length-1] ? formatImage(matches[matches.length-1].name) : "villager"}.png`')
+              NuxtImg.animal-swipe__match-screen-image(src='/images/animal-crossing/posters/villager.png' format="webp")
+              NuxtImg.animal-swipe__match-screen-image(:src='`/images/animal-crossing/posters/${matches[matches.length-1] ? formatImage(matches[matches.length-1].name) : "villager"}.png`' format="webp")
             button.animal-swipe__match-button(@click='toggleMatch()') Continue
         .animal-swipe__content
           h1.animal-swipe__title Animal Crossing Tinder
@@ -230,23 +230,23 @@
             .animal-swipe__buttons
               .animal-swipe__button-group
                 .animal-swipe__button
-                  img.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg')
+                  NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/edit-profile.svg' format="webp")
                 .animal-swipe__text-labels Edit Profile
               .animal-swipe__button-group
                 .animal-swipe__button
-                  img.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg')
+                  NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/Animal_Crossing_Leaf.svg' format="webp")
                 .animal-swipe__text-labels Home Button
               .animal-swipe__button-group
                 .animal-swipe__button
-                  img.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg')
+                  NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/matches.svg' format="webp")
                 .animal-swipe__text-labels See Matches
               .animal-swipe__button-group
                 .animal-swipe__button.reject
-                  img.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png')
+                  NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/x-small.png' format="webp")
                 .animal-swipe__text-labels Reject Button
               .animal-swipe__button-group
                 .animal-swipe__button.like
-                  img.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png')
+                  NuxtImg.animal-swipe__icon(src='/images/animal-crossing/icons/heart-solid.png' format="webp")
                 .animal-swipe__text-labels Like Button
 </template>
 

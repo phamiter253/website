@@ -26,14 +26,15 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'canonical',
-          href: 'https://priscillahamiter.com/'
+          href: 'https://priscillahamiter.com'
         }
       ]
     }
   },
   modules: [
     '@nuxt/eslint',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxt/image'
   ],
   sitemap: {
     hostname: 'https://priscillahamiter.com',
@@ -41,18 +42,25 @@ export default defineNuxtConfig({
       '/',
       '/about',
       '/projects',
-      '/projects/animal-crossing',
-      '/projects/halloween-candy',
-      '/projects/weather',
       '/contact',
     ],
+  },
+  image: {
+    format: ['webp', 'avif']
   },
   plugins: [
     '~/plugins/gsap.client.js'
   ],
   vite: {
     build: {
-      chunkSizeWarningLimit: 1000
+      chunkSizeWarningLimit: 1000,
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          unused: true,
+        }
+      }
     },
     css: {
       preprocessorOptions: {
@@ -62,14 +70,23 @@ export default defineNuxtConfig({
       }
     }
   },
+  router: {
+    trailingSlash: false
+  },
+  generate: {
+    fallback: true
+  },
   nitro: {
     prerender: {
       crawlLinks: true,
       failOnError: false
+    },
+    routeRules: {
+      '/_nuxt/**': { headers: { 'Cache-Control': 'public, max-age=31536000, immutable' } },
+      '/static/**': { headers: { 'Cache-Control': 'public, max-age=31536000, immutable' } },
+      '/favicon.ico': { headers: { 'Cache-Control': 'public, max-age=86400' } },
+      '/**': { headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' } },  // No caching for HTML
     }
-  },
-  routeRules: {
-    '/dashboard/**': { ssr: false }
   },
   css: ['~/assets/styles/scss/main.scss'],
   compatibilityDate: '2024-12-31'
