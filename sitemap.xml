@@ -2,198 +2,24 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://priscillahamiter.com/</loc>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/logo.svg</image:loc>
-        </image:image>
     </url>
     <url>
         <loc>https://priscillahamiter.com/404</loc>
     </url>
     <url>
         <loc>https://priscillahamiter.com/about</loc>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/profile.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/github.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/linkedin.svg</image:loc>
-        </image:image>
     </url>
     <url>
         <loc>https://priscillahamiter.com/contact</loc>
     </url>
     <url>
         <loc>https://priscillahamiter.com/projects</loc>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/weather-background.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/halloween-candy/halloween-candy.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-25.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-25b.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing-background.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-24.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-21.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-21b.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-21c.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-21d.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-22.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-22b.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-23.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-20.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-19.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-18.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-17.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-16.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-15.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-14.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-13.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-12.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-11.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-10.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-9.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-8.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-7.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-6.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-5.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-4.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-4b.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-3.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-2.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-2b.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-2c.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-1.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-1b.jpg</image:loc>
-        </image:image>
     </url>
     <url>
         <loc>https://priscillahamiter.com/thank-you</loc>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/projects/project-24.jpg</image:loc>
-        </image:image>
     </url>
     <url>
         <loc>https://priscillahamiter.com/projects/animal-crossing</loc>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/villager.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/aries.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/edit-profile.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/Animal_Crossing_Leaf.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/matches.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/sylvia.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/taurus.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/info.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/down-arrow.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/briefcase.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/djkk.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/poppy.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/leo.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/forestlife.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/x-small.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/heart-solid.png</image:loc>
-        </image:image>
     </url>
     <url>
         <loc>https://priscillahamiter.com/projects/halloween-candy</loc>
@@ -205,4 +31,4 @@
         <loc>https://priscillahamiter.com/projects/weather</loc>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-02-04T17:19:54.463Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-02-04T17:32:06.308Z -->
