@@ -1,0 +1,1 @@
+import{u as e}from"./2HB6K5iG.js";import{c,o as t}from"./DP6LS9m3.js";const i={class:"pages-projects"},l={__name:"insecticide",setup(s){return e({title:"Game Concept: Insecticide | Priscilla Hamiter",link:[{rel:"canonical",href:"https://priscillahamiter.com/projects/insecticide"}]}),(a,r)=>(t(),c("div",i))}};export{l as default};
