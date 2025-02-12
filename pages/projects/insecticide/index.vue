@@ -20,6 +20,7 @@
   })
 </script>
 <template lang="pug">
-  .pages-projects
-    //- ChocolateChart
+  .pages-projects__game
+    HeroInsecticide
+    InsecticideContent
 </template>

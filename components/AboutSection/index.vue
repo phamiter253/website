@@ -14,9 +14,9 @@
             a.about-section__button(href='/2025PriscillaHamiterCV.pdf' rel='noopener noreferrer' target='_blank' aria-label='Opens resume in new window') Resume
             .about-section__group
               a.about-section__icon(href='https://github.com/phamiter253' target='_blank' aria-label='Opens Github account in new window')
-                NuxtImg(src='/images/github.svg' format="webp" alt='Github logo')
+                img(src='/images/github.svg' alt='Github logo')
               a.about-section__icon(href='https://www.linkedin.com/in/priscilla-hamiter-668293124' target='_blank' aria-label='Opens LinkedIn account in new window')
-                NuxtImg(src='/images/linkedin.svg' format="webp" alt='Linkedin logo')
+                img(src='/images/linkedin.svg' alt='Linkedin logo')
 </template>
 
 <style lang="sass" src="./index.sass"></style>

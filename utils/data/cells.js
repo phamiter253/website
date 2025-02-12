@@ -1,12 +1,14 @@
 export const cells = [
-  // {
-  //   name: 'Game Concept: Insecticide',
-  //   type: 'cell-large',
-  //   category: 'coding',
-  //   image: '',
-  //   font: '"Work Sans"',
-  //   link: '/projects/insecticide'
-  // },
+  {
+    name: 'Game Concept:<br>INSECTICIDE',
+    //name: 'COMING SOON!',
+    type: 'cell-large',
+    category: 'coding',
+    image: '/images/insecticide/insecticide-background.jpg',
+    font: '"Bodoni"',
+    link: '/projects/insecticide'
+    //link: '#'
+  },
   {
     name: 'San Francisco Weather Graph',
     type: 'cell-large',

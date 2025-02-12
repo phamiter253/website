@@ -1,15 +1,18 @@
 <script setup>
   import { weather } from '~/utils/data/weather'
-
+  const { data, error } = await useFetch('https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures')
+  if (error.value) {
+    console.error('Error fetching data:', error.value)
+  }
   const d3 = useNuxtApp().$d3;
   const squareSize = 64
-  const columns = 28
-  const spacing = 0;
+  const spacing = 1;
   const colors = ['#00876c', '#419b73', '#68af7a', '#8dc282', '#b2d58c', '#fffaa8', '#fcdd89', '#f8bf70', '#f3a15e', '#ec8253', '#e26150', '#d43d51'];
   const zScale = d3.scaleQuantile(weather.map((d) => d.avgTemperature),colors)
 
   const renderChart = (data) => {
-    const rows = data.length / columns + 1
+    const columns = window.innerWidth <= 768 ? 7 : 21
+    const rows = Math.ceil(data.length / columns)
     const width = columns * (squareSize + spacing)
     const height = rows * (squareSize + spacing)
 
@@ -17,6 +20,8 @@
       row: Math.floor(i / columns),
       col: i % columns
     }));
+    d3.select('.weather-chart').selectAll('rect').remove()
+    d3.select('.weather-chart').select('svg').remove()
 
     const svg = d3.select('.weather-chart')
       .append("svg")
@@ -56,9 +61,19 @@
           .attr("stroke-width", "3")
       })
       .on("mousemove", function (event) {
+        const tooltipWidth = tooltip.node().getBoundingClientRect().width;
+        const screenWidth = window.innerWidth;
+        const padding = 10;
+
+        let xPos = event.pageX + padding;
+
+        if (xPos + tooltipWidth > screenWidth) {
+          xPos = event.pageX - tooltipWidth - padding;
+        }
+
         tooltip
-          .style("top", event.pageY + 10 + "px")
-          .style("left", event.pageX + 10 + "px");
+          .style("left", `${xPos}px`)
+          .style("top", `${event.pageY + 10}px`);
       })
       .on("mouseout", function () {
         tooltip.style("visibility", "hidden");
@@ -67,13 +82,26 @@
           .duration(200)
           .attr("stroke", "none")
           .style("opacity", "1")
-      });
+      })
+      .attr("opacity", 0)
+      .transition()
+      .duration(300)
+      .delay((d, i) => i * 50)
+      .attr("opacity", 1)
   }
   onMounted (async () => {
-    const response = await fetch("https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures");
-    const data = await response.json();
-    renderChart(data)
+    // const response = await fetch("https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures");
+    // const data = await response.json();
+    // renderChart(data)
+    const parsedData = JSON.parse(data.value)
+    renderChart(parsedData)
+    window.addEventListener("resize", renderChart(parsedData));
   })
+
+  onBeforeUnmount(() => {
+    const parsedData = JSON.parse(data.value)
+    window.removeEventListener("resize", renderChart(parsedData));
+  });
 </script>
 
 <template lang="pug">
@@ -83,7 +111,7 @@
         h1.weather-graph__title San Francisco Weather Graph
         p Inspired by heatmaps and temperature blankets, this graph visualizes San Francisco's daily average temperatures starting from January 27, 2025. Each square represents a day of the year, color-coded to reflect the temperature range—from darker greens for colder days to warmer reds for hotter days. This visualization provides a clear overview of the city's mild climate and temperature trends throughout the year, offering insights into seasonal patterns at a glance. 
         p The daily average temperature is provided by #[a(href='https://www.weatherapi.com/' target='_blank' aria-label='Weather API website') Weather API]. It is retrieved daily using an AWS Lambda function and an EventBridge scheduler, stored in a MongoDB collection, and served through AWS API Gateway.
-        p For more information, hover over the individual squares to see the exact average temperature and date. Best seen on desktop!
+        p For more information, hover over the individual squares to see the exact average temperature and date.
         .weather-chart
 </template>
 

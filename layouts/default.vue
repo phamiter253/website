@@ -30,6 +30,17 @@ main:focus
   flex: 1
   width: 100%
 
+.pages-projects__game
+  display: flex
+  align-items: center
+  justify-content: center
+  flex: 1
+  width: 100%
+  flex-direction: column
+
+  .container
+    max-width: 1080px !important
+
 .pages-projects__grid
   width: 100%
 
