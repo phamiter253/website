@@ -1,0 +1,1 @@
+import{o as n,c as o,a as e,_ as t}from"./CtcPe6VX.js";const r={class:"pages-404"};function s(d,a){return n(),o("div",r,a[0]||(a[0]=[e("div",{class:"container"},[e("h1",null,"Page not found "),e("p",null,"We can't find what you're looking for. Please check the link and try again.")],-1)]))}const c={},i=t(c,[["render",s],["__scopeId","data-v-88ac2d94"]]);export{i as default};
