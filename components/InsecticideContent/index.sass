@@ -9,9 +9,11 @@
       align-items: center
       justify-content: center
       overflow: hidden
+      margin-bottom: 3rem
       
     @media screen and (max-width: 768px)
       flex-wrap: wrap
+      margin-bottom: 2rem
 
   &__title
     &
@@ -36,6 +38,8 @@
 
     @media screen and (max-width: 768px)
       text-align: center
+      margin: .5rem 0 0
+      font-size: 2rem
 
   &__body
     width: 100%
@@ -57,6 +61,7 @@
       width: 100%
       padding: 2rem 0
     @media screen and (max-width: 768px)
+      grid-template-columns: repeat(3, 1fr)
       padding: 1rem 0
 
   &__image-container
@@ -93,9 +98,12 @@
 
 
   &__group
-    position: relative
-    padding: .25rem 1rem
-    margin: 1rem 0 
+    &
+      position: relative
+      padding: 2rem 1.5rem
+    @media screen and (max-width: 768px)
+      padding: 1.5rem 1rem
+    // margin: 1rem 0 
 
     &::before
       content: " "
@@ -113,43 +121,17 @@
       margin-bottom: 0
 
   &__car
-    &
-      border: 15px solid #000
-      border-radius: 30px
-      margin: 2rem 0
-      padding: 2rem 1rem
-      display: flex
-      flex-direction: column
-      align-items: center
-      justify-content: center
-      text-align: center
-      min-height: 300px
-      position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    height: 100%
+    position: relative
 
       // .game-content__subtext, p
       //   //color: #e8e1e1
       //   text-shadow: 1px 1px 2px #333, 0 0 1em #958f8f, 0 0 0.2em #b3abab
-
-    @media screen and (max-width: 768px)
-      min-height: 200px
-
-    // &::before
-    //   content: ''
-    //   position: absolute
-    //   bottom: 30px
-    //   left: -25px
-    //   width: 25px
-    //   height: 50%
-    //   background-color: #D6DAC8
-
-    // &::after
-    //   content: ''
-    //   position: absolute
-    //   bottom: 30px
-    //   right: -25px
-    //   width: 25px
-    //   height: 50%
-    //   background-color: #D6DAC8
 
     p
       &
@@ -167,12 +149,15 @@
     z-index: -1
     
   &__subtext
-    font-family: 'Mollen'
-    margin: 1rem 0 0
-    line-height: 1
-    letter-spacing: 4px
-    text-transform: uppercase
-    font-size: 32px
+    &
+      font-family: 'Mollen'
+      margin: 1rem 0 0
+      line-height: 1
+      letter-spacing: 4px
+      text-transform: uppercase
+      font-size: 32px
+    @media screen and (max-width: 768px)
+      font-size: 1.5rem
 
   &__column--spaced
     display: flex

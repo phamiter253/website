@@ -1,16 +1,16 @@
 <script setup>
   useHead({
     title: 'Game Concept: Insecticide | Priscilla Hamiter',
-    // meta: [
-    //   {
-    //     name: 'description',
-    //     content: 'A web-based Tinder Application populated with Animal Crossing villagers images and information'
-    //   },
-    //   {
-    //     name: 'keywords',
-    //     content: 'Projects, Portfolio, Priscilla Hamiter, Frontend Developer, Web App, Animal Crossing, Tinder'
-    //   }
-    // ],
+    meta: [
+      {
+        name: 'description',
+        content: 'Insecticide is a noir mystery adventure where a moth mortician solves a murder aboard a train filled with anthropomorphic insect characters.'
+      },
+      {
+        name: 'keywords',
+        content: 'Projects, Portfolio, Priscilla Hamiter, mystery adventure, noir detective, insect game, train thriller, puzzle investigation, narrative-driven game, indie mystery'
+      }
+    ],
     link: [
       {
         rel: 'canonical',

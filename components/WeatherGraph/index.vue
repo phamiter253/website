@@ -1,9 +1,6 @@
 <script setup>
   import { weather } from '~/utils/data/weather'
-  const { data, error } = await useFetch('https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures')
-  if (error.value) {
-    console.error('Error fetching data:', error.value)
-  }
+  
   const d3 = useNuxtApp().$d3;
   const squareSize = 64
   const spacing = 1;
@@ -22,6 +19,7 @@
     }));
     d3.select('.weather-chart').selectAll('rect').remove()
     d3.select('.weather-chart').select('svg').remove()
+    d3.select('.weather-chart').select('div').remove()
 
     const svg = d3.select('.weather-chart')
       .append("svg")
@@ -56,32 +54,35 @@
           .style("visibility", "visible")
           .html(`<span>${d.avgTemperature}°F</span><br>${d.date}`);
         d3.select(this)
-          .style("opacity", ".3")
           .attr("stroke", "#000")
-          .attr("stroke-width", "3")
+          .attr("stroke-width", "10")
+          .attr("height", "54")
+          .attr("width", "54")
+          .style("transform", "translate(5px, 5px)")
       })
       .on("mousemove", function (event) {
         const tooltipWidth = tooltip.node().getBoundingClientRect().width;
+        const tooltipHeight = tooltip.node().getBoundingClientRect().height;
         const screenWidth = window.innerWidth;
         const padding = 10;
 
         let xPos = event.pageX + padding;
 
         if (xPos + tooltipWidth > screenWidth) {
-          xPos = event.pageX - tooltipWidth - padding;
+          xPos = event.pageX - tooltipWidth - padding
         }
 
         tooltip
           .style("left", `${xPos}px`)
-          .style("top", `${event.pageY + 10}px`);
+          .style("top", `${event.pageY - tooltipHeight + padding}px`);
       })
       .on("mouseout", function () {
         tooltip.style("visibility", "hidden");
         d3.select(this)
-          .transition()
-          .duration(200)
+          .attr("height", "64")
+          .attr("width", "64")
+          .style("transform", "translate(0, 0)")
           .attr("stroke", "none")
-          .style("opacity", "1")
       })
       .attr("opacity", 0)
       .transition()
@@ -90,17 +91,15 @@
       .attr("opacity", 1)
   }
   onMounted (async () => {
-    // const response = await fetch("https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures");
-    // const data = await response.json();
-    // renderChart(data)
-    const parsedData = JSON.parse(data.value)
-    renderChart(parsedData)
-    window.addEventListener("resize", renderChart(parsedData));
+    const response = await fetch("https://tuwu420iv8.execute-api.us-west-1.amazonaws.com/temperatures");
+    const data = await response.json();
+    renderChart(data)
+    window.addEventListener("resize", renderChart(data));
   })
 
   onBeforeUnmount(() => {
-    const parsedData = JSON.parse(data.value)
-    window.removeEventListener("resize", renderChart(parsedData));
+    const data = {}
+    window.removeEventListener("resize", renderChart(data));
   });
 </script>
 
@@ -109,7 +108,7 @@
     .container
       .weather-graph__row
         h1.weather-graph__title San Francisco Weather Graph
-        p Inspired by heatmaps and temperature blankets, this graph visualizes San Francisco's daily average temperatures starting from January 27, 2025. Each square represents a day of the year, color-coded to reflect the temperature range—from darker greens for colder days to warmer reds for hotter days. This visualization provides a clear overview of the city's mild climate and temperature trends throughout the year, offering insights into seasonal patterns at a glance. 
+        p Inspired by heatmaps and temperature blankets, this graph visualizes San Francisco's daily average temperatures starting from January 27, 2025 to yesterday. Each square represents a day of the year, color-coded to reflect the temperature range—from darker greens for colder days to warmer reds for hotter days. This visualization provides a clear overview of the city's mild climate and temperature trends throughout the year, offering insights into seasonal patterns at a glance. 
         p The daily average temperature is provided by #[a(href='https://www.weatherapi.com/' target='_blank' aria-label='Weather API website') Weather API]. It is retrieved daily using an AWS Lambda function and an EventBridge scheduler, stored in a MongoDB collection, and served through AWS API Gateway.
         p For more information, hover over the individual squares to see the exact average temperature and date.
         .weather-chart

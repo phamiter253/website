@@ -13,17 +13,17 @@
           p #[span.game-content__subtext Unique Selling Point:] A noir-inspired world with anthropomorphic insect characters, time-sensitive puzzles, dynamic character relationships, and romance options.
     .game-content__images
       .game-content__image-container
-        NuxtImg.game-content__image(src='/images/insecticide/ghost.jpg' format="webp" )
+        NuxtImg.game-content__image(src='/images/insecticide/ghost.jpg' format="webp" loading="lazy")
       .game-content__image-container
-        NuxtImg.game-content__image(src='/images/insecticide/grimoire.jpg' format="webp" )
+        NuxtImg.game-content__image(src='/images/insecticide/grimoire.jpg' format="webp" loading="lazy")
       .game-content__image-container
-        NuxtImg.game-content__image(src='/images/insecticide/inside.png' format="webp" )
+        NuxtImg.game-content__image(src='/images/insecticide/inside.png' format="webp" loading="lazy")
       .game-content__image-container
-        NuxtImg.game-content__image(src='/images/insecticide/loco.jpg' format="webp" )
+        NuxtImg.game-content__image(src='/images/insecticide/loco.jpg' format="webp" loading="lazy")
       .game-content__image-container
-        NuxtImg.game-content__image(src='/images/insecticide/night.png' format="webp" )
+        NuxtImg.game-content__image(src='/images/insecticide/night.png' format="webp" loading="lazy")
       .game-content__image-container
-        NuxtImg.game-content__image(src='/images/insecticide/dredge.png' format="webp" )
+        NuxtImg.game-content__image(src='/images/insecticide/dredge.png' format="webp" loading="lazy")
     .container
       .game-content__container
         h2.game-content__title Story
@@ -41,31 +41,40 @@
             p Montgomery gathers all evidence and reconvenes the key passengers for a final confrontation. Players must piece together the clues on their "Clue Board" to correctly accuse the murderer and present a compelling case. Depending on the player’s investigative success and relationship choices, different endings may unfold. Romantic arcs reach their climax, with partners offering support or making sacrifices based on their bond with Montgomery. The killer's full motive and the backstory surrounding the murder are unveiled. Players can choose to arrest, expose, or negotiate with the culprit. The train arrives at its final destination. Passengers reflect on the events, and Montgomery’s choices determine both his legacy and his future relationships.
           h3.game-content__subtitle Setting
           p The Nightwing Express is a grand train designed with a fusion of art deco and eco-futurism aesthetics. Its interiors feature sleek, geometric lines, warm metallics, and stained glass motifs inspired by nature. The eco-futurist influence is reflected in lush, self-sustaining plant installations that provide both beauty and function, emphasizing harmony between technology and nature. The train is filled with various compartments and locations, including:
-          .game-content__car
-            //- NuxtImg.game-content__background(src='/images/insecticide/wood-panel.jpg' format="webp")
-            .game-content__subtext Storage Car: 
-            p Contains cargo, hidden evidence, and tense confrontations.
-          .game-content__car
-            .game-content__subtext Sleeping Car:
-            p Rows of compact, elegantly designed sleeping berths where players can rest, overhear conversations, and encounter key events during the night.
-          .game-content__car
-            .game-content__subtext Lounge Car:
-            p A relaxed, social setting with live music performances and light refreshments, where key dialogues and relationship development occur.
-          .game-content__car
-            .game-content__subtext Dining Car:
-            p Social hub where important conversations, conflicts, and romantic moments arise.
-          .game-content__car
-            .game-content__subtext Kitchen Car:
-            p The culinary heart of the train, where chefs prepare meals. It serves as a backdrop for scenes involving staff interactions, hidden clues, and food-based puzzles.
-          .game-content__car
-            .game-content__subtext First-Class Compartments:
-            p Private rooms for elite passengers, offering moments of intimacy and secrecy.
-          .game-content__car
-            .game-content__subtext Observation Car:
-            p Offers scenic views and opportunities for deep conversations and reflection.
-          .game-content__car
-            .game-content__subtext Engine Room:
-            p Holds critical information tied to a sabotage subplot.
+          InsectSlider
+            .slider__slide
+              .game-content__car
+                //- NuxtImg.game-content__background(src='/images/insecticide/wood-panel.jpg' format="webp")
+                .game-content__subtext Storage Car: 
+                p Contains cargo, hidden evidence, and tense confrontations.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext Sleeping Car:
+                p Rows of compact, elegantly designed sleeping berths where players can rest, overhear conversations, and encounter key events during the night.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext Lounge Car:
+                p A relaxed, social setting with live music performances and light refreshments, where key dialogues and relationship development occur.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext Dining Car:
+                p Social hub where important conversations, conflicts, and romantic moments arise.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext Kitchen Car:
+                p The culinary heart of the train, where chefs prepare meals. It serves as a backdrop for scenes involving staff interactions, hidden clues, and food-based puzzles.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext First-Class Compartments:
+                p Private rooms for elite passengers, offering moments of intimacy and secrecy.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext Observation Car:
+                p Offers scenic views and opportunities for deep conversations and reflection.
+            .slider__slide
+              .game-content__car
+                .game-content__subtext Engine Room:
+                p Holds critical information tied to a sabotage subplot.
           h3.game-content__subtitle Characters
           .game-content__row
             .game-content__column
@@ -91,24 +100,26 @@
               p #[span.game-content__subtext Augustus (Rhinoceros Beetle Veteran):] A dignified veteran with a chivalrous code of honor. He acts as a protector for weaker passengers but struggles with memories of his past battles.
               p #[span.game-content__subtext Clara (Damsel Fly Dancer):] An elegant performer who travels between cities on the train. She has a talent for sensing subtle tensions among passengers, often overhearing critical information.
           p Each character has unique dialogue, secrets, and potential romantic arcs.
-      
-      
+    .container
+      .game-content__container
         h2.game-content__title Gameplay Mechanics
         .game-content__body
           h3.game-content__subtitle Core Gameplay Loop
           ol
             li
-              p Explore train compartments and examine crime scenes.
+              p Explore train compartments and examine crime scenes, uncovering hidden clues and environmental storytelling elements.
             li
-              p Collect and analyze clues.
+              p Collect and analyze clues through interactive forensic mini-games, allowing players to reconstruct events and interpret evidence.
             li
-              p Interrogate passengers and manage relationships.
+              p Interrogate passengers and manage relationships using a dynamic conversation system with branching dialogue and reputation tracking.
             li
-              p Solve environmental puzzles to access hidden areas and evidence.
+              p Solve environmental puzzles to access hidden areas, navigate shifting train conditions, and overcome environmental hazards.
             li
-              p Build romantic and platonic connections to unlock new dialogue options, clues, and alternate story outcomes.
+              p Build romantic and platonic connections to unlock unique interactions, additional narrative branches, and secret endings.
             li
-              p Make deductions to uncover the truth behind the murder.
+              p Make deductions through a structured evidence board, linking collected clues to form hypotheses and reach conclusions.
+            li
+              p React to time-sensitive events, such as sudden sabotage, attacks from hostile creatures, or changing train conditions, which impact progression.
         
           h3.game-content__subtitle Mechanics
           p #[span.game-content__subtext Investigation Mode:] Players can switch to a special vision mode to highlight evidence and environmental details.
@@ -119,30 +130,55 @@
 
           h3.game-content__subtitle Objectives
           p Identify the murderer by gathering and interpreting evidence. Save other passengers from potential harm. Build and maintain relationships, including potential romances, to gain trust and critical information.
-        
-          h2.game-content__title Level Design
-          .game-content__body
-            h3.game-content__subtitle Level Structure
-            h3.game-content__subtitle Progression
-            h3.game-content__subtitle Challenges
-          h2.game-content__title Art Style
-          .game-content__body
-            h3.game-content__subtitle Art Direction
-            h3.game-content__subtitle Environment
-            //-h3.game-content__subtitle UI/UX
-          h2.game-content__title Sound & Music
-          .game-content__body
-            h3.game-content__subtitle Music
-            p A jazz-inspired soundtrack with suspenseful and romantic pieces that shift in intensity based on player progress and relationship development.
-            h3.game-content__subtitle Sound Effects
-            p Emphasize train ambiance (clattering wheels, distant whistles), environmental interactions, and subtle audio cues for hidden clues.
-            h3.game-content__subtitle Voice Acting
-            p Character dialogue could be fully voiced to enhance immersion, with special emphasis on romantic scenes.
-          h2.game-content__title Technical Details
-          .game-content__body
-            p #[span.game-content__subtext Game Engine:] Godot
-        //- h3.game-content__subtitle Sound Effects
-        //- h3.game-content__subtitle Voice Acting
+    .container
+      .game-content__container
+        h2.game-content__title Level Design
+        .game-content__body
+          p The game is divided into interconnected compartments on the Nightwing Express, each offering unique challenges, mysteries, and interactions. Level design emphasizes exploration, environmental storytelling, and dynamic interactions with the setting. The layout of the train evolves based on story progression, with areas unlocking as new evidence is discovered. Players will have to navigate environmental hazards, puzzle-based obstacles, and branching narrative moments that affect relationships and the mystery’s outcome.
+          p #[span.game-content__subtext Tutorial Phase:] Introduces players to basic mechanics through a minor investigation. The player learns how to explore, interact with objects, analyze clues, and converse with passengers.
+          p #[span.game-content__subtext Main Investigation:] Unlocks new areas as the story progresses, evidence is gathered, and relationships deepen. Puzzles become increasingly complex, requiring logical deductions, object interactions, and time-sensitive choices.
+          p #[span.game-content__subtext Environmental Challenges:] Players must navigate shifting train conditions, such as unstable compartments, power failures, and surprise attacks from hostile insects or larger predators.
+          p #[span.game-content__subtext Romantic Milestones:] Key locations host events where players can trigger special scenes with romantic partners. Choosing the right moment to interact influences the depth of relationships.
+          p #[span.game-content__subtext Hidden Areas:] Secret compartments and storage areas hold key pieces of evidence, but require problem-solving and character interactions to access.
+          p #[span.game-content__subtext Final Showdown:] A climactic confrontation where all evidence is presented, and the murderer is revealed. Relationship outcomes are also resolved, with the player’s choices leading to multiple possible endings.
+          //- h3.game-content__subtitle Level Structure
+          //- h3.game-content__subtitle Progression
+          //- h3.game-content__subtitle Challenges
+    .container
+      .game-content__container
+        h2.game-content__title Art Style
+        .game-content__body
+          h3.game-content__subtitle Art Direction
+          p A fusion of solarpunk, eco-futurism, 70s aesthetics, and brutalism, creating a unique visual style. The train and environments feature sleek geometric forms, vibrant organic materials, and sustainable architecture, while incorporating rugged, monolithic structures inspired by brutalism. Romantic scenes use warm, ambient lighting and textured, expressive animations to enhance emotional depth.
+          h3.game-content__subtitle Character Design
+          p Anthropomorphic insect characters with exaggerated features that reflect their species and personalities. All characters will have expressive animations similar to Phoenix Wright and Ghost Trick characters, enhancing dialogue, investigation moments, and emotional scenes.
+          h3.game-content__subtitle Environment
+          p The lighting dynamically shifts to enhance the atmosphere of mystery, tension, and romance, with eerie shadows forming in underlit corridors, neon accents highlighting key areas, and organic greenery coexisting with harsh metallic structures. Weather and external environmental effects, such as rain pelting against glass ceilings or fog creeping through open-air sections, further amplify immersion and suspense. Each compartment features unique interactive elements, like shifting walls, hidden compartments, and destructible objects that react to player choices.
+          //-h3.game-content__subtitle UI/UX
+    .container
+      .game-content__container
+        h2.game-content__title Sound & Music
+        .game-content__body
+          h3.game-content__subtitle Music
+          p A soundtrack blending suspenseful and romantic pieces that shift in intensity based on player progress and relationship development. Additional influences include:
+          ul
+            li 
+              p Synthwave and Psychedelic Rock: Enhancing the solarpunk and eco-futurist themes with dreamy, atmospheric, and futuristic tones.
+            li 
+              p Ambient and Organic Soundscapes: Integrating natural and synthetic elements to reflect the harmony between technology and nature, emphasizing the train’s self-sustaining environment.
+            li
+              p Experimental and Minimalist Electronic: Creates a mechanical, structured soundscape for tense investigation and horror sequences.
+          h3.game-content__subtitle Sound Effects
+          p Emphasize train ambiance (clattering wheels, distant whistles), environmental interactions, and subtle audio cues for hidden clues.
+          h3.game-content__subtitle Voice Acting
+          p Character dialogue could be fully voiced to enhance immersion, with special emphasis on romantic scenes.
+    .container
+      .game-content__container 
+        h2.game-content__title Technical Details
+        .game-content__body
+          p #[span.game-content__subtext Game Engine:] Godot
+      //- h3.game-content__subtitle Sound Effects
+      //- h3.game-content__subtitle Voice Acting
 </template>
 
 <style lang="sass" src="./index.sass"></style>

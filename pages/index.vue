@@ -6,23 +6,29 @@ useHead({
     {
       type: 'application/ld+json',
       children: JSON.stringify({
+        "@context": "https://schema.org",
         "@graph": [
           {
-            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "@id": "https://priscillahamiter.com/#profile",
+            "name": "Priscilla Hamiter – Web Developer",
+            "url": "https://priscillahamiter.com",
+            "about": {
+              "@id": "https://priscillahamiter.com#person"
+            }
+          },
+          {
             "@type": "Person",
+            "@id": "https://priscillahamiter.com#person",
             "name": "Priscilla Hamiter",
             "url": "https://priscillahamiter.com",
             "image": "https://priscillahamiter.com/profile.jpg",
             "sameAs": [
               "https://www.linkedin.com/in/priscilla-hamiter-668293124",
-              "https://github.com/phamiter253",
+              "https://github.com/phamiter253"
             ],
             "jobTitle": "Web Developer",
-            // "worksFor": {
-            //   "@type": "Organization",
-            //   "name": "Freelance"
-            // },
-            "knowsAbout": ["Web Development", "JavaScript", "React", "Vue","HTML", "CSS", "D3.js"],
+            "knowsAbout": ["Web Development", "JavaScript", "React", "Vue", "HTML", "CSS", "D3.js"],
             "alumniOf": {
               "@type": "CollegeOrUniversity",
               "name": "University of San Francisco"
@@ -65,7 +71,7 @@ useHead({
       })
     }
   ]
-})
+});
 </script>
 
 <template lang="pug">

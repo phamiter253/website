@@ -47,6 +47,10 @@ main:focus
   h1
     display: none
 
+.pages-about
+  .container
+    max-width: 1080px !important
+
 .pages-thank-you
   text-align: center
 

@@ -1,7 +1,6 @@
 export const cells = [
   {
-    name: 'Game Concept:<br>INSECTICIDE',
-    //name: 'COMING SOON!',
+    name: 'Game<br>Concept<br>Work In Progress!',
     type: 'cell-large',
     category: 'coding',
     image: '/images/insecticide/insecticide-background.jpg',

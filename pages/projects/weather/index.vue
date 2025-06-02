@@ -1,15 +1,16 @@
 <script setup>
   useHead({
-    title: 'Weather Graph | Priscilla Hamiter',
+    title: 'San Francisco Weather Graph | Priscilla Hamiter',
     meta: [
-      // {
-      //   name: 'description',
-      //   content: 'A horizontal bar chart representing the information from a Halloween Candy dataset from Kaggle'
-      // },
-      {
-        name: 'keywords',
-        content: 'Projects, Portfolio, Priscilla Hamiter, Frontend Developer, D3.js'
-      }
+      { 
+        name: "description", content: "Explore a heatmap-inspired visualization of San Francisco's daily average temperatures from January 27, 2025, to yesterday. Each square represents a day, color-coded from cool greens to warm reds, providing insights into seasonal climate trends. Data is updated daily via AWS Lambda, Weather API, and MongoDB." 
+      },
+      { 
+        name: "keywords", content: "San Francisco weather, temperature visualization, heatmap graph, daily average temperature, climate trends, seasonal patterns, AWS Lambda, Weather API, MongoDB, data visualization" 
+      },
+      { 
+        name: "author", content: "Priscilla Hamiter" 
+      },
     ],
     link: [
       {

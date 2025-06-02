@@ -9,26 +9,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'en' },
       charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
-      title: 'Priscilla Hamiter',
-      meta: [
-        {
-          name: 'description',
-          content: 'Welcome to the portfolio of Priscilla Hamiter, a Frontend Developer. Explore my work, skills, and expertise in Frontend Development. Let’s connect and create something amazing!'
-        },
-        {
-          name: 'keywords',
-          content: 'Portfolio, Priscilla Hamiter, Frontend Developer, Work Showcase, Skills, Expertise, Frontend Development'
-        },
-        { name: 'author', content: 'Priscilla Hamiter' },
-        { name: 'robots', content: 'index, follow' },
-      ],
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://priscillahamiter.com'
-        }
-      ]
+      viewport: 'width=device-width, initial-scale=1'
     }
   },
   modules: [
@@ -76,6 +57,7 @@ export default defineNuxtConfig({
   generate: {
     fallback: true
   },
+  ssr: true,
   nitro: {
     prerender: {
       crawlLinks: true,

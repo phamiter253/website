@@ -92,9 +92,15 @@ onMounted(() => {
           @click="(e) => handleCellClick(e)"
           @keyup.enter="(e) => handleCellClick(e)"
         )
-          NuxtImg(v-if='cell.children.length === 0' :src='cell.image' format="webp" :alt='cell.name')
+          NuxtImg(
+            v-if='cell.children.length === 0' 
+            :src='cell.image' format="webp" 
+            :alt='cell.name' 
+            loading="lazy"
+            sizes='100vw sm:50vw md:400px'
+          )
           CardCarousel(v-else :slidesLength='cell.children.length')
-            NuxtImg.slide(v-for='(image, j) in cell.children' :src='image' format="webp" :alt='`${cell.name}-${j}`')
+            NuxtImg.slide(v-for='(image, j) in cell.children' :src='image' format="webp" loading="lazy" :alt='`${cell.name}-${j}`')
           h3.cell__caption(v-html='cell.name')
 
         a.cell-large(v-if='cell.type == "cell-large"'
