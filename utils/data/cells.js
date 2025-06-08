@@ -1,6 +1,16 @@
 export const cells = [
   {
-    name: 'Game<br>Concept<br>Work In Progress!',
+    name: 'Giant BFF Bracelet Graduation Lei',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-26a.jpg',
+    children: []
+    // children: [
+    //   '/images/projects/project-26a.jpg'
+    // ]
+  },
+  {
+    name: 'Insecticide<br>Game Concept',
     type: 'cell-large',
     category: 'coding',
     image: '/images/insecticide/insecticide-background.jpg',

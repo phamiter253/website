@@ -3,13 +3,13 @@
   
   const d3 = useNuxtApp().$d3;
   const squareSize = 64
-  const spacing = 1;
+  const spacing = -1;
   const colors = ['#00876c', '#419b73', '#68af7a', '#8dc282', '#b2d58c', '#fffaa8', '#fcdd89', '#f8bf70', '#f3a15e', '#ec8253', '#e26150', '#d43d51'];
   const zScale = d3.scaleQuantile(weather.map((d) => d.avgTemperature),colors)
 
   const renderChart = (data) => {
     const columns = window.innerWidth <= 768 ? 7 : 21
-    const rows = Math.ceil(data.length / columns)
+    const rows = Math.ceil(data.length / columns) + 1.5
     const width = columns * (squareSize + spacing)
     const height = rows * (squareSize + spacing)
 
@@ -63,19 +63,35 @@
       .on("mousemove", function (event) {
         const tooltipWidth = tooltip.node().getBoundingClientRect().width;
         const tooltipHeight = tooltip.node().getBoundingClientRect().height;
-        const screenWidth = window.innerWidth;
-        const padding = 10;
+        const padding = 16;
 
-        let xPos = event.pageX + padding;
+        const svg = d3.select("svg").node();
+        const svgRect = svg.getBoundingClientRect();
 
-        if (xPos + tooltipWidth > screenWidth) {
-          xPos = event.pageX - tooltipWidth - padding
+        // Convert pageX/Y to SVG-relative
+        let xPos = event.pageX - svgRect.left - (tooltipWidth/4);
+        let yPos = event.pageY - svgRect.top - tooltipHeight + padding;
+
+        // Clamp to right edge
+        if (xPos + tooltipWidth > svgRect.width) {
+          xPos = event.pageX - svgRect.left - tooltipWidth;
+        }
+
+        // Clamp to left edge
+        if (xPos < 0) {
+          xPos = 0 + (tooltipWidth/2);
+        }
+
+        // Clamp to top edge
+        if (yPos < 0) {
+          yPos = 0;
         }
 
         tooltip
           .style("left", `${xPos}px`)
           .style("top", `${event.pageY - tooltipHeight + padding}px`);
       })
+
       .on("mouseout", function () {
         tooltip.style("visibility", "hidden");
         d3.select(this)
