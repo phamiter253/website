@@ -1,4 +1,23 @@
 export const cells = [
+  // {
+  //   name: 'Autumn Birthday Cake',
+  //   type: 'cell',
+  //   category: 'food',
+  //   image: '',
+  //   children: []
+  //   // children: [
+  //   //   '/images/projects/project-26a.jpg'
+  //   // ]
+  // },
+  // {
+  //   name: 'Favorite Movies',
+  //   type: 'cell-large',
+  //   category: 'coding',
+  //   image: '',
+  //   font: '"Bodoni"',
+  //   link: '/projects/favorite-movies'
+  //   //link: '#'
+  // },
   {
     name: 'Giant BFF Bracelet Graduation Lei',
     type: 'cell',

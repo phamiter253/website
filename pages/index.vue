@@ -6,7 +6,7 @@ useHead({
     meta: [
       {
         name: 'description',
-        content: `Portfolio of Priscilla Hamiter's work at a Frontend Developer.`
+        content: `Portfolio of Priscilla Hamiter's work as a Frontend Developer.`
       },
       {
         name: 'keywords',
