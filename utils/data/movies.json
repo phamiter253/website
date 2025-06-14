@@ -1,0 +1,428 @@
+{
+  "categories": {
+    "top10": [
+      {
+        "id": 1,
+        "title": "Fallen Angels",
+        "year": 1995,
+        "rating": "R",
+        "imdbRating": 7.6,
+        "genre": ["Crime", "Drama", "Romance"],
+        "duration": "1h 39m",
+        "poster": "/images/movies/fallen-angel-poster.jpg",
+        "rank": 1
+      },
+      {
+        "id": 8,
+        "title": "Train to Busan",
+        "year": 2016,
+        "rating": "NR",
+        "imdbRating": 7.6,
+        "genre": ["Action", "Horror", "Thriller"],
+        "duration": "1h 58m",
+        "poster": "/images/movies/train-to-busan-poster.jpg",
+        "rank": 2
+      },
+      {
+        "id": 17,
+        "title": "Inception",
+        "year": 2010,
+        "rating": "PG-13",
+        "imdbRating": 8.8,
+        "genre": ["Action", "Sci-Fi", "Thriller"],
+        "duration": "2h 28m",
+        "poster": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+        "rank": 3
+      },
+      {
+        "id": 11,
+        "title": "RRR",
+        "year": 2022,
+        "rating": "NR",
+        "imdbRating": 7.9,
+        "genre": ["Action", "Adventure", "Drama"],
+        "duration": "3h 7m",
+        "poster": "/images/movies/rrr-poster.jpg",
+        "rank": 4
+      },
+      {
+        "id": 15,
+        "title": "Rye Lane",
+        "year": 2023,
+        "rating": "R",
+        "imdbRating": 7.2,
+        "genre": ["Comedy", "Romance"],
+        "duration": "1h 22m",
+        "poster": "/images/movies/rye-lane-poster.jpg",
+        "rank": 5
+      },
+      {
+        "id": 7,
+        "title": "Howl's Moving Castle",
+        "year": 2004,
+        "rating": "PG",
+        "imdbRating": 8.2,
+        "genre": ["Animation", "Adventure", "Family"],
+        "duration": "1h 59m",
+        "poster": "/images/movies/howls-moving-castle-poster.jpg",
+        "rank": 6
+      },
+      {
+        "id": 3,
+        "title": "Rashomon",
+        "year": 1950,
+        "rating": "NR",
+        "imdbRating": 8.2,
+        "genre": ["Crime", "Drama", "Mystery"],
+        "duration": "1h 28m",
+        "poster": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg",
+        "rank": 7
+      },
+      {
+        "id": 9,
+        "title": "Moon",
+        "year": 2009,
+        "rating": "R",
+        "imdbRating": 7.8,
+        "genre": ["Drama", "Mystery", "Sci-Fi"],
+        "duration": "1h 37m",
+        "poster": "/images/movies/moon-poster.jpg",
+        "rank": 8
+      },
+      {
+        "id": 10,
+        "title": "Phantom Thread",
+        "year": 2017,
+        "rating": "R",
+        "imdbRating": 7.4,
+        "genre": ["Drama", "Romance"],
+        "duration": "2h 10m",
+        "poster": "/images/movies/phantom-thread-poster.jpg",
+        "rank": 9
+      },
+      {
+        "id": 5,
+        "title": "Amadeus",
+        "year": 1984,
+        "rating": "PG",
+        "imdbRating": 8.4,
+        "genre": ["Biography", "Drama", "Music"],
+        "duration": "2h 40m",
+        "poster": "/images/movies/amadeus-poster.jpg",
+        "rank": 10
+      }
+    ],
+    "animation": [
+      {
+        "id": 2,
+        "title": "Spirited Away",
+        "year": 2001,
+        "rating": "PG",
+        "imdbRating": 9.3,
+        "genre": ["Animation", "Adventure", "Family"],
+        "duration": "2h 5m",
+        "poster": "/images/movies/spirited-away-wide.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Howl's Moving Castle",
+        "year": 2004,
+        "rating": "PG",
+        "imdbRating": 8.2,
+        "genre": ["Animation", "Adventure", "Family"],
+        "duration": "1h 59m",
+        "poster": "/images/movies/howl-moving-castle-wide.jpg"
+      },
+      {
+        "id": 20,
+        "title": "The Boy and the Beast",
+        "year": 2015,
+        "rating": "PG-13",
+        "imdbRating": 7.6,
+        "genre": ["Animation", "Action", "Adventure"],
+        "duration": "1h 59m",
+        "poster": "/images/movies/boy-and-the-beast-wide.jpg"
+      },
+      {
+        "id": 27,
+        "title": "Scooby-Doo on Zombie Island",
+        "year": 1998,
+        "rating": "NR",
+        "imdbRating": 7.8,
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 17m",
+        "poster": "/images/movies/scooby-doo-zombie-island-wide.jpg"
+      }
+    ],
+    "international": [
+      {
+        "id": 1,
+        "title": "Fallen Angels",
+        "year": 1995,
+        "rating": "R",
+        "imdbRating": 7.6,
+        "genre": ["Crime", "Drama", "Romance"],
+        "duration": "1h 39m",
+        "poster": "/images/movies/fallen-angels-wide.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Train to Busan",
+        "year": 2016,
+        "rating": "NR",
+        "imdbRating": 7.6,
+        "genre": ["Action", "Horror", "Thriller"],
+        "duration": "1h 58m",
+        "poster": "/images/movies/train-to-busan-wide.jpg"
+      },
+      {
+        "id": 11,
+        "title": "RRR",
+        "year": 2022,
+        "rating": "NR",
+        "imdbRating": 7.9,
+        "genre": ["Action", "Adventure", "Drama"],
+        "duration": "3h 7m",
+        "poster": "/images/movies/rrr-wide.jpg"
+      },
+      {
+        "id": 21,
+        "title": "Castaway on the Moon",
+        "year": 2009,
+        "rating": "NR",
+        "imdbRating": 8.0,
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "1h 56m",
+        "poster": "/images/movies/castaway-to-the-moon-wide.jpg"
+      },
+      {
+        "id": 22,
+        "title": "Shall We Dance?",
+        "year": 1996,
+        "rating": "PG",
+        "imdbRating": 7.7,
+        "genre": ["Comedy", "Drama", "Music"],
+        "duration": "2h 16m",
+        "poster": "/images/movies/shall-we-dance-wide.jpg"
+      },
+      {
+        "id": 26,
+        "title": "Tie Me Up! Tie Me Down!",
+        "year": 1989,
+        "rating": "NC-17",
+        "imdbRating": 7.0,
+        "genre": ["Comedy", "Crime", "Drama"],
+        "duration": "1h 41m",
+        "poster": "/images/movies/tie-me-up-tie-me-down-wide.jpg"
+      }
+    ],
+    "recent": [
+      {
+        "id": 12,
+        "title": "Challengers",
+        "year": 2024,
+        "rating": "R",
+        "imdbRating": 7.1,
+        "genre": ["Drama", "Romance", "Sport"],
+        "duration": "2h 11m",
+        "poster": "/images/movies/challenger-wide.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Dune: Part Two",
+        "year": 2024,
+        "rating": "PG-13",
+        "imdbRating": 8.5,
+        "genre": ["Action", "Adventure", "Drama"],
+        "duration": "2h 46m",
+        "poster": "/images/movies/dune-part-two-wide.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Love Lies Bleeding",
+        "year": 2024,
+        "rating": "R",
+        "imdbRating": 6.5,
+        "genre": ["Crime", "Romance", "Thriller"],
+        "duration": "1h 44m",
+        "poster": "/images/movies/love-lies-bleeding-wide.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Rye Lane",
+        "year": 2023,
+        "rating": "R",
+        "imdbRating": 7.2,
+        "genre": ["Comedy", "Romance"],
+        "duration": "1h 22m",
+        "poster": "/images/movies/rye-lane-wide.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Licorice Pizza",
+        "year": 2021,
+        "rating": "R",
+        "imdbRating": 7.1,
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "2h 13m",
+        "poster": "/images/movies/licorice-pizza-wide.jpg"
+      },
+      {
+        "id": 29,
+        "title": "The Half of It",
+        "year": 2020,
+        "rating": "PG-13",
+        "imdbRating": 6.9,
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "1h 44m",
+        "poster": "/images/movies/half-of-it-wide.jpg"
+      },
+      {
+        "id": 30,
+        "title": "Do Revenge",
+        "year": 2022,
+        "rating": "PG-13",
+        "imdbRating": 6.3,
+        "genre": ["Comedy", "Crime"],
+        "duration": "1h 58m",
+        "poster": "/images/movies/do-revenge-wide.jpg"
+      }
+    ],
+    "scifi": [
+      {
+        "id": 17,
+        "title": "Inception",
+        "year": 2010,
+        "rating": "PG-13",
+        "imdbRating": 8.8,
+        "genre": ["Action", "Sci-Fi", "Thriller"],
+        "duration": "2h 28m",
+        "poster": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Moon",
+        "year": 2009,
+        "rating": "R",
+        "imdbRating": 7.8,
+        "genre": ["Drama", "Mystery", "Sci-Fi"],
+        "duration": "1h 37m",
+        "poster": "/images/movies/moon-wide.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Sunshine",
+        "year": 2007,
+        "rating": "R",
+        "imdbRating": 7.2,
+        "genre": ["Drama", "Sci-Fi", "Thriller"],
+        "duration": "1h 47m",
+        "poster": "/images/movies/sunshine-wide.jpg"
+      },
+      {
+        "id": 13,
+        "title": "Dune: Part Two",
+        "year": 2024,
+        "rating": "PG-13",
+        "imdbRating": 8.5,
+        "genre": ["Action", "Adventure", "Drama"],
+        "duration": "2h 46m",
+        "poster": "/images/movies/dune-part-two-wide.jpg"
+      }
+    ],
+    "comedy": [
+      {
+        "id": 25,
+        "title": "Monty Python and the Holy Grail",
+        "year": 1975,
+        "rating": "PG",
+        "imdbRating": 8.2,
+        "genre": ["Adventure", "Comedy"],
+        "duration": "1h 31m",
+        "poster": "/images/movies/holy-grail-wide.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Dungeons & Dragons:<br>Honor Among Thieves",
+        "year": 2023,
+        "rating": "PG-13",
+        "imdbRating": 7.2,
+        "genre": ["Action", "Adventure", "Comedy"],
+        "duration": "2h 14m",
+        "poster": "/images/movies/dungeons-and-dragons-wide.jpg"
+      },
+      {
+        "id": 28,
+        "title": "Stardust",
+        "year": 2007,
+        "rating": "PG-13",
+        "imdbRating": 7.6,
+        "genre": ["Adventure", "Family", "Fantasy"],
+        "duration": "2h 7m",
+        "poster": "/images/movies/stardust-wide.jpg"
+      },
+      {
+        "id": 31,
+        "title": "The Devil Wears Prada",
+        "year": 2006,
+        "rating": "PG-13",
+        "imdbRating": 6.9,
+        "genre": ["Comedy", "Drama"],
+        "duration": "1h 49m",
+        "poster": "/images/movies/devil-wears-prada-wide.jpg"
+      },
+      {
+        "id": 24,
+        "title": "Spanglish",
+        "year": 2004,
+        "rating": "PG-13",
+        "imdbRating": 6.4,
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "2h 11m",
+        "poster": "/images/movies/spanglish-wide.jpg"
+      }
+    ],
+    "auteur": [
+      {
+        "id": 1,
+        "title": "Fallen Angels",
+        "year": 1995,
+        "rating": "R",
+        "imdbRating": 7.6,
+        "genre": ["Crime", "Drama", "Romance"],
+        "duration": "1h 39m",
+        "poster": "/images/movies/fallen-angels-wide.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Rashomon",
+        "year": 1950,
+        "rating": "NR",
+        "imdbRating": 8.2,
+        "genre": ["Crime", "Drama", "Mystery"],
+        "duration": "1h 28m",
+        "poster": "/images/movies/rashomon-wide.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Phantom Thread",
+        "year": 2017,
+        "rating": "R",
+        "imdbRating": 7.4,
+        "genre": ["Drama", "Romance"],
+        "duration": "2h 10m",
+        "poster": "/images/movies/phantom-thread-wide.jpg"
+      },
+      {
+        "id": 23,
+        "title": "Inherent Vice",
+        "year": 2014,
+        "rating": "R",
+        "imdbRating": 6.6,
+        "genre": ["Comedy", "Crime", "Drama"],
+        "duration": "2h 28m",
+        "poster": "/images/movies/inherent-vice-wide.jpg"
+      }
+    ]
+  }
+} 

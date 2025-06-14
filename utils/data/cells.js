@@ -9,15 +9,14 @@ export const cells = [
   //   //   '/images/projects/project-26a.jpg'
   //   // ]
   // },
-  // {
-  //   name: 'Favorite Movies',
-  //   type: 'cell-large',
-  //   category: 'coding',
-  //   image: '',
-  //   font: '"Bodoni"',
-  //   link: '/projects/favorite-movies'
-  //   //link: '#'
-  // },
+  {
+    name: 'Favorite Movies',
+    type: 'cell-large',
+    category: 'coding',
+    image: '/images/movies-thumb.jpg',
+    font: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    link: '/projects/favorite-movies'
+  },
   {
     name: 'Giant BFF Bracelet Graduation Lei',
     type: 'cell',

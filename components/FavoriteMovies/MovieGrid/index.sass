@@ -1,0 +1,106 @@
+.movie-grid
+
+  &__header
+    margin-bottom: 16px
+    padding: 0 60px
+
+    @media (max-width: 768px)
+      padding: 0 24px
+
+  &__title
+    font-size: 20px
+    font-weight: 600
+    color: white
+    margin: 0
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+    @media (max-width: 768px)
+      font-size: 16px
+
+  &__container
+    position: relative
+    overflow-y: hidden
+
+  &__scroll-area
+    display: flex
+    gap: 8px
+    overflow-x: auto
+    overflow-y: hidden
+    padding: 0 60px 60px
+    scroll-behavior: smooth
+    scrollbar-width: none
+    -ms-overflow-style: none
+
+    &::-webkit-scrollbar
+      display: none
+
+    @media (max-width: 768px)
+      padding: 0 24px 50px
+      gap: 6px
+
+    @media (max-width: 480px)
+      gap: 4px
+
+  &__nav-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 48px
+    height: 48px
+    //border-radius: 50%
+    background: rgba(0, 0, 0, 0.8)
+    color: white
+    border: none
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 5
+    transition: all 0.2s ease
+    opacity: 0
+    pointer-events: none
+
+    svg
+      width: 24px
+      height: 24px
+
+    &:hover
+      background: rgba(0, 0, 0, 0.9)
+      transform: translateY(-50%) scale(1.1)
+
+    &--visible
+      opacity: 1
+      pointer-events: auto
+
+    &--left
+      left: 12px
+
+    &--right
+      right: 12px
+
+    @media (max-width: 768px)
+      display: none
+
+  // &__scroll
+  //   padding: 0 24px
+
+  &__container
+    display: flex
+    gap: 16px
+    overflow-x: auto
+    padding-bottom: 16px
+    scrollbar-width: thin
+    scrollbar-color: #4a5568 transparent
+
+    &::-webkit-scrollbar
+      height: 6px
+
+    &::-webkit-scrollbar-track
+      background: transparent
+
+    &::-webkit-scrollbar-thumb
+      background-color: #4a5568
+      border-radius: 3px
+
+    &::-webkit-scrollbar-thumb:hover
+      background-color: #718096 

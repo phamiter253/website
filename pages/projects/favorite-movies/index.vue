@@ -1,25 +1,25 @@
 <script setup>
-  useHead({
-    title: 'Favorite Movies | Priscilla Hamiter',
-    meta: [
-      {
-        name: 'description',
-        content: 'A web-based Tinder Application populated with Animal Crossing villagers images and information'
-      },
-      {
-        name: 'keywords',
-        content: 'Projects, Portfolio, Priscilla Hamiter, Frontend Developer, Web App, Animal Crossing, Tinder'
-      }
-    ],
-    link: [
-      {
-        rel: 'canonical',
-        href: 'https://priscillahamiter.com/projects/animal-crossing'
-      }
-    ]
-  })
+useHead({
+  title: 'Favorite Movies | Priscilla Hamiter',
+  meta: [
+    {
+      name: 'description',
+      content: 'A Netflix-style showcase of my favorite movies with ratings, genres, and descriptions'
+    },
+    {
+      name: 'keywords',
+      content: 'Projects, Portfolio, Priscilla Hamiter, Frontend Developer, Movies, Netflix, Favorite Films'
+    }
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://priscillahamiter.com/projects/favorite-movies'
+    }
+  ]
+})
 </script>
+
 <template lang="pug">
-  .pages-projects
-    
+  FavoriteMovies
 </template>
