@@ -165,10 +165,10 @@
             <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/matches.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/queenie.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/nana.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/scorpio.svg</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/virgo.svg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/info.png</image:loc>
@@ -180,16 +180,16 @@
             <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/briefcase.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/kkgumbo.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/kkballad.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/gladys.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/huck.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/capricorn.svg</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/cancer.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/kkfolk.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/totheedge.png</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/animal-crossing/icons/x-small.png</image:loc>
@@ -204,55 +204,94 @@
     <url>
         <loc>https://priscillahamiter.com/projects/favorite-movies</loc>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/villager.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/pWOKMrSmMRsCCLBhbJqNZyWnNTm.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/aries.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/edit-profile.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/Animal_Crossing_Leaf.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/zE5VOjFLbJvH9GpkqONjHJGa4pJ.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/matches.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/tjK063yCgaBAjfsOpt6OTs90rQZ.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/joey.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/TkTPELv4kC3u1lkloush9Orl3Dd.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/capricorn.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/1NgP75uuUTBqC6zOn5Z4gVHA6u0.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/info.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/wwBhWqnbpiGgaSpF4QXvNF4f3cG.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/down-arrow.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/yqXWTU6KyIIyHUqkDTNhxlpI9jt.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/briefcase.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/nWs0auTqn2UaFGfTKtUE5tlTeBu.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/marinesong2001.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/chops.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/lTzHrlcXCOT8YLWJtYXnsq7zKqy.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/libra.svg</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/5dkQC8NXeWBLVkxLgRO2XlbQsCn.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/kkmoody.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/eFvUWhTcfsD2wBHHiHLKwfzGFqh.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/animal-crossing/icons/x-small.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/lQrwKZbNZmU4YvBsFkBkMP2ZYJO.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/animal-crossing/icons/heart-solid.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/H6vke7zGiuLsz4v4RPeReb9rsv.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/animal-crossing/posters/villager.png</image:loc>
+            <image:loc>https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/tBhO0dWtJPJhJlVhKgLUZOsxcD.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/89I5NiwhHjIvjX4VGJWjXJXjqNt.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/qyJFWlQOJbakCUjIgFbxsw2SfJq.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/6oNeschBXT5faqcsLkTr2WeZYu2.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/akIjKJDHcVN4bzifcEarKVPNpoa.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/3Rf6vPH5bkyAXKJhJzz9W8uNbJN.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/8AVb7tyxZRsbKJqzb7z8wQp9Jqd.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/A7AoNT06aRAc4SV89Dwxj3EYAgC.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/iMKs1nOdZF4OfZr5xaIBzUcRqmq.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/jjKNYoGrqQvVOLVKNOVYlUNm8Ks.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://image.tmdb.org/t/p/w500/9D2y2pN8mybSFsVNqWaGJRfgGkA.jpg</image:loc>
         </image:image>
     </url>
     <url>
@@ -286,4 +325,4 @@
         <loc>https://priscillahamiter.com/projects/weather</loc>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-06-09T01:50:03.215Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-06-14T17:51:16.548Z -->
