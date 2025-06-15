@@ -25,22 +25,28 @@ const _closeModal = () => {
       :movies="_categories.top10"
       @movie-click="_showMovieDetails"
     )
+
+    FavoriteMoviesMovieGrid(
+      title="Action & Adventure"
+      :movies="_categories.action"
+      @movie-click="_showMovieDetails"
+    )
     
     FavoriteMoviesMovieGrid(
       title="Animation"
       :movies="_categories.animation"
       @movie-click="_showMovieDetails"
     )
-    
+
     FavoriteMoviesMovieGrid(
-      title="International Cinema"
-      :movies="_categories.international"
+      title="Comedy & Feel Good"
+      :movies="_categories.comedy"
       @movie-click="_showMovieDetails"
     )
-    
+
     FavoriteMoviesMovieGrid(
-      title="Recent Favorites"
-      :movies="_categories.recent"
+      title="Drama"
+      :movies="_categories.drama"
       @movie-click="_showMovieDetails"
     )
     
@@ -49,19 +55,43 @@ const _closeModal = () => {
       :movies="_categories.scifi"
       @movie-click="_showMovieDetails"
     )
-    
+
     FavoriteMoviesMovieGrid(
-      title="Comedy & Feel Good"
-      :movies="_categories.comedy"
+      title="Superhero"
+      :movies="_categories.superhero"
+      @movie-click="_showMovieDetails"
+    )
+
+    FavoriteMoviesMovieGrid(
+      title="Romance"
+      :movies="_categories.romance"
       @movie-click="_showMovieDetails"
     )
     
     FavoriteMoviesMovieGrid(
-      title="Auteur Cinema"
-      :movies="_categories.auteur"
+      title="Musical"
+      :movies="_categories.musical"
       @movie-click="_showMovieDetails"
     )
-  
+
+    FavoriteMoviesMovieGrid(
+      title="Thriller"
+      :movies="_categories.thriller"
+      @movie-click="_showMovieDetails"
+    )
+
+    FavoriteMoviesMovieGrid(
+      title="Horror"
+      :movies="_categories.horror"
+      @movie-click="_showMovieDetails"
+    )
+
+    FavoriteMoviesMovieGrid(
+      title="International Cinema"
+      :movies="_categories.international"
+      @movie-click="_showMovieDetails"
+    )
+
   FavoriteMoviesMovieModal(
     :movie="selectedMovie"
     :is-visible="isModalVisible"

@@ -1,6 +1,6 @@
 .movie-card
   flex-shrink: 0
-  width: 280px
+  width: 350px
   cursor: pointer
   transition: all 0.3s ease
   background: transparent
@@ -16,21 +16,21 @@
     transform: scale(1.05)
     z-index: 10
 
-    // .movie-card__overlay
-    //   opacity: 1
-
     .movie-card__focus-info
       opacity: 1
       transform: translateY(0)
 
+  @media (max-width: 1400px)
+    width: 320px
+
   @media (max-width: 1200px)
-    width: 240px
+    width: 280px
 
   @media (max-width: 768px)
-    width: 200px
+    width: 240px
 
   @media (max-width: 480px)
-    width: 160px
+    width: 200px
 
   &__image-container
     position: relative
@@ -49,22 +49,20 @@
     position: absolute
     inset: 0
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 50%)
-    opacity: 1
-    transition: opacity 0.3s ease
     display: flex
     flex-direction: column
     justify-content: flex-end
-    padding: 12px
+    padding: 16px
 
   &__actions
     display: flex
-    gap: 8px
+    gap: 10px
     align-self: flex-end
     margin-top: auto
 
   &__play, &__add, &__like, &__more
-    width: 32px
-    height: 32px
+    width: 36px
+    height: 36px
     border-radius: 50%
     border: 2px solid rgba(255, 255, 255, 0.5)
     background: rgba(0, 0, 0, 0.6)
@@ -76,8 +74,8 @@
     transition: all 0.2s ease
 
     svg
-      width: 16px
-      height: 16px
+      width: 18px
+      height: 18px
 
     &:hover
       border-color: white
@@ -98,31 +96,31 @@
 
   &__match
     color: #46d369
-    font-size: 12px
+    font-size: 14px
     font-weight: 700
-    margin-bottom: 4px
+    margin-bottom: 6px
 
   &__meta
     display: flex
     align-items: center
-    gap: 6px
-    font-size: 11px
-    margin-bottom: 6px
+    gap: 8px
+    font-size: 12px
+    margin-bottom: 8px
 
   &__year, &__duration
     color: #d2d2d2
 
   &__age-rating
     border: 1px solid #d2d2d2
-    padding: 1px 4px
-    font-size: 9px
+    padding: 2px 6px
+    font-size: 10px
     color: #d2d2d2
 
   &__genres
     display: flex
-    gap: 4px
+    gap: 6px
     flex-wrap: wrap
-    font-size: 10px
+    font-size: 11px
 
   &__genre
     color: #d2d2d2
@@ -130,7 +128,7 @@
 
     &:not(:last-child)::after
       content: '•'
-      margin-left: 4px
+      margin-left: 6px
       color: #666
 
   &__focus-info
@@ -139,36 +137,36 @@
     left: 0
     right: 0
     background: #2f2f2f
-    padding: 12px
+    padding: 16px
     border-radius: 0 0 4px 4px
     opacity: 0
     transform: translateY(-8px)
     transition: all 0.3s ease
     color: white
     font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
-    //box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6)
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6)
 
   &__title
-    font-size: 16px
+    font-size: 22px
     font-weight: 600
-    margin: 0 0 6px 0
+    margin: 0 0 8px 0
     line-height: 1.2
     color: white
 
     @media (max-width: 768px)
-      font-size: 12px
+      font-size: 14px
 
   &__call-out
-    font-size: 11px
+    font-size: 12px
     color: #d2d2d2
     background: rgba(255, 255, 255, 0.15)
-    padding: 2px 6px
+    padding: 3px 8px
     border-radius: 2px
     display: inline-block
     font-weight: 500
 
     @media (max-width: 768px)
-      font-size: 10px
+      font-size: 11px
 
   &__rating
     position: absolute
@@ -187,9 +185,12 @@
 
   &__title
     font-weight: 600
-    font-size: 0.875rem
+    font-size: 22px
     margin-bottom: 4px
     line-height: 1.2
+
+    @media (max-width: 768px)
+      font-size: 16px
 
   &__meta
     color: #9ca3af

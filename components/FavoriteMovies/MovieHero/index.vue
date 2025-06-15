@@ -1,7 +1,12 @@
 <template lang="pug">
 .movie-hero
   .movie-hero__background
-    NuxtImg.movie-hero__backdrop(src="" alt="" format="webp")
+    iframe.movie-hero__backdrop(
+      src="https://www.youtube.com/embed/KiEeIxZJ9x0?autoplay=1&mute=1&loop=1&playlist=KiEeIxZJ9x0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&enablejsapi=0"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    )
     .movie-hero__gradient
   .container
     .movie-hero__content

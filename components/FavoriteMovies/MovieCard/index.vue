@@ -27,7 +27,7 @@ const getCallOut = (movie) => {
   .movie-card__image-container
     NuxtImg.movie-card__image(:src="movie.poster" :alt="movie.title" format="webp" loading="lazy")
     .movie-card__overlay
-      h3.movie-card__title(v-html='movie.title')
+      .movie-card__title(v-html='movie.title')
   .movie-card__focus-info
     .movie-card__info
       .movie-card__meta
