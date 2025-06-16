@@ -14,7 +14,7 @@
             
             .about-section__hero-text
               p Crafting beautiful frontend experiences and custom website designs that blend technical precision with creative vision.
-              p With over 5 years in engineering leadership, I specialize in modern web development using React, Vue.js, and Nuxt.js. When I'm not coding, you'll find me experimenting with new baking recipes or working on art projects—creativity flows through everything I do, from pixel-perfect interfaces to perfectly risen sourdough.
+              p I specialize in modern web development using React, Vue.js, and Nuxt.js. When I'm not coding, you'll find me experimenting with new baking recipes or working on art projects—creativity flows through everything I do, from pixel-perfect interfaces to perfectly risen sourdough.
 
             .about-section__socials
               a.about-section__social-link(href='https://github.com/phamiter253' target='_blank' aria-label='Opens Github account in new window')

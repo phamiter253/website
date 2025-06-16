@@ -640,6 +640,16 @@
     ],
     "superhero": [
       {
+        "title": "Logan",
+        "year": 2017,
+        "rating": "R",
+        "genre": ["Action", "Drama", "Sci-Fi"],
+        "duration": "2h 17m",
+        "poster": "/images/movies/logan-wide.jpg",
+        "description": "An aging Wolverine cares for Professor X while protecting a young mutant girl from dark forces. A gritty, emotional farewell to Hugh Jackman's iconic character that redefines superhero storytelling.",
+        "trailer": "https://www.youtube.com/embed/Div0iP65aZo"
+      },
+      {
         "title": "The Batman",
         "year": 2022,
         "rating": "PG-13",
@@ -740,16 +750,6 @@
         "poster": "/images/movies/florida-project-wide.jpg",
         "description": "A six-year-old girl and her friends spend their summer exploring the world around a budget motel while her mother struggles with unemployment. Sean Baker's heartbreaking portrait of childhood innocence amid poverty.",
         "trailer": "https://www.youtube.com/embed/WwQ-NH1rRT4"
-      },
-      {
-        "title": "Untamed Heart",
-        "year": 1993,
-        "rating": "PG-13",
-        "genre": ["Drama", "Romance"],
-        "duration": "1h 42m",
-        "poster": "/images/movies/untamed-heart-wide.png",
-        "description": "A shy busboy with a heart condition falls in love with a waitress who doesn't believe in love. A tender romantic drama about finding connection and overcoming past trauma.",
-        "trailer": "https://www.youtube.com/embed/9o-NJbPVZbk"
       },
       {
         "title": "Mona Lisa Smile",
@@ -1232,16 +1232,6 @@
         "trailer": "https://www.youtube.com/embed/hEJnMQG9ev8"
       },
       {
-        "title": "Logan",
-        "year": 2017,
-        "rating": "R",
-        "genre": ["Action", "Drama", "Sci-Fi"],
-        "duration": "2h 17m",
-        "poster": "/images/movies/logan-wide.jpg",
-        "description": "An aging Wolverine cares for Professor X while protecting a young mutant girl from dark forces. A gritty, emotional farewell to Hugh Jackman's iconic character that redefines superhero storytelling.",
-        "trailer": "https://www.youtube.com/embed/Div0iP65aZo"
-      },
-      {
         "title": "Scott Pilgrim vs. The World",
         "year": 2010,
         "rating": "PG-13",
@@ -1352,6 +1342,16 @@
         "poster": "/images/movies/13-30-wide.jpg",
         "description": "A 13-year-old girl wakes up in her 30-year-old body and must navigate adult life and love. A charming romantic fantasy about growing up, second chances, and finding true love.",
         "trailer": "https://www.youtube.com/embed/_pmFp2W65Fs"
+      },
+      {
+        "title": "Untamed Heart",
+        "year": 1993,
+        "rating": "PG-13",
+        "genre": ["Drama", "Romance"],
+        "duration": "1h 42m",
+        "poster": "/images/movies/untamed-heart-wide.png",
+        "description": "A shy busboy with a heart condition falls in love with a waitress who doesn't believe in love. A tender romantic drama about finding connection and overcoming past trauma.",
+        "trailer": "https://www.youtube.com/embed/9o-NJbPVZbk"
       },
       {
         "title": "Sometimes I Think About Dying",

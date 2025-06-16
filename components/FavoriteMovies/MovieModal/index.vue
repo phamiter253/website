@@ -82,13 +82,6 @@ watch(() => props.movie, () => {
       .movie-modal__genres
         span.movie-modal__genre(v-for="genre in movie.genre" :key="genre") {{ genre }}
       p.movie-modal__description(v-if="movie.description") {{ movie.description }}
-      .movie-modal__actions
-        button.movie-modal__play(
-          v-if="movie.trailer"
-          @click="_handlePlayTrailer"
-          :disabled="isPlayingTrailer"
-        ) {{ isPlayingTrailer ? 'Playing Trailer...' : '▶ Play Trailer' }}
-        button.movie-modal__play(v-else disabled) ▶ Trailer Not Available
 </template>
 
 <style lang="sass" src="./index.sass"></style> 

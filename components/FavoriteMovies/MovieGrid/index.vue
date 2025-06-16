@@ -24,13 +24,57 @@ const _handleMovieClick = (movie) => {
 
 const _scrollLeft = () => {
   if (scrollArea.value) {
-    scrollArea.value.scrollBy({ left: -300, behavior: 'smooth' })
+    const container = scrollArea.value
+    const containerWidth = container.clientWidth
+    const scrollLeft = container.scrollLeft
+    
+    // Find the first fully visible item from the left
+    let targetScrollLeft = 0
+    for (let i = 0; i < container.children.length; i++) {
+      const item = container.children[i]
+      const itemLeft = item.offsetLeft
+      const itemWidth = item.offsetWidth
+      
+      if (itemLeft + itemWidth > scrollLeft) {
+        // This is the first visible item, scroll to show the previous item at the edge
+        if (i > 0) {
+          const prevItem = container.children[i - 1]
+          targetScrollLeft = prevItem.offsetLeft
+        }
+        break
+      }
+    }
+    
+    container.scrollTo({ left: targetScrollLeft, behavior: 'smooth' })
   }
 }
 
 const _scrollRight = () => {
   if (scrollArea.value) {
-    scrollArea.value.scrollBy({ left: 300, behavior: 'smooth' })
+    const container = scrollArea.value
+    const containerWidth = container.clientWidth
+    const scrollLeft = container.scrollLeft
+    const containerRight = scrollLeft + containerWidth
+    
+    // Find the last fully visible item
+    let lastVisibleIndex = -1
+    for (let i = 0; i < container.children.length; i++) {
+      const item = container.children[i]
+      const itemLeft = item.offsetLeft
+      const itemRight = itemLeft + item.offsetWidth
+      
+      // If this item is fully visible
+      if (itemLeft >= scrollLeft && itemRight <= containerRight) {
+        lastVisibleIndex = i
+        break
+      }
+    }
+    
+    // Scroll to show the next item after the last fully visible one
+    if (lastVisibleIndex >= 0 && lastVisibleIndex < container.children.length - 1) {
+      const nextItem = container.children[lastVisibleIndex + 1]
+      container.scrollTo({ left: nextItem.offsetLeft, behavior: 'smooth' })
+    }
   }
 }
 

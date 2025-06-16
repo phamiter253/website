@@ -124,11 +124,13 @@ onUnmounted(() => {
     gap: 24px
 
 .netflix-logo
-  font-size: 24px
+  font-family: 'Bebas Neue'
+  font-size: 40px
   font-weight: 900
   color: #e50914
   text-decoration: none
   letter-spacing: 2px
+  line-height: 1
   transition: color 0.2s ease
   
   &:hover
