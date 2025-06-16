@@ -76,9 +76,6 @@ watch(() => props.movie, () => {
     .movie-modal__info
       h2.movie-modal__title {{ movie.title }}
       .movie-modal__meta
-        .movie-modal__rating
-          span.movie-modal__star ★
-          span.movie-modal__score {{ movie.imdbRating }}
         span.movie-modal__age-rating {{ movie.rating }}
         span.movie-modal__year {{ movie.year }}
         span.movie-modal__duration {{ movie.duration }}

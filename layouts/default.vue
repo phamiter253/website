@@ -50,6 +50,7 @@ main:focus
 .pages-about
   .container
     max-width: 1080px !important
+    column-gap: 4rem
 
 .pages-thank-you
   text-align: center

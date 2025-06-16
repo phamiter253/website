@@ -63,19 +63,7 @@ useHead({
             "name": "Priscilla Hamiter",
             "url": "https://priscillahamiter.com",
             "mainEntity": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter",
-              "givenName": "Priscilla",
-              "familyName": "Hamiter",
-              "alernateName": "phamiter",
-              "jobTitle": "Web Developer",
-              "image": {
-                "@type": "ImageObject",
-                "width": "375",
-                "height": "375",
-                "caption": "Headshot of Priscilla Hamiter",
-                "url": "https://priscillahamiter.com/images/profile.jpg"
-              }  
+              "@id": "https://priscillahamiter.com#person"
             },
             "description": "Portfolio of Priscilla Hamiter, a frontend web developer specializing in JavaScript, D3.js, and creative visual applications.",
             "image": "https://priscillahamiter.com/images/profile.jpg",
@@ -130,6 +118,18 @@ useHead({
                 "description": "A game concept with insects, trains, and murder!",
                 "image": "https://priscillahamiter.com/images/insecticide/insecticide-logo.svg",
                 "url": "https://priscillahamiter.com/projects/insecticide"
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Favorite Movies Collection",
+                "author": {
+                  "@type": "Person",
+                  "name": "Priscilla Hamiter"
+                },
+                "datePublished": "2024-04-15",
+                "description": "A Netflix-style interface showcasing a curated list of favorite movies, built with Nuxt.js and Vue.",
+                "image": "https://priscillahamiter.com/images/favorite-movies-background.png",
+                "url": "https://priscillahamiter.com/projects/favorite-movies"
               }
             ]
           },

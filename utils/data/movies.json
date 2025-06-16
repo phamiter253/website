@@ -62,7 +62,7 @@
         "rating": "R",
         "genre": ["Drama", "Romance", "Sci-Fi"],
         "duration": "1h 48m",
-        "poster": "/images/movies/eternal-sunshine-mind-wide.jpg",
+        "poster": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
         "wideImage": "/images/movies/eternal-sunshine-mind-wide.jpg",
         "description": "After a painful breakup, Joel undergoes a procedure to erase memories of his ex-girlfriend Clementine. Charlie Kaufman's poignant exploration of love, memory, and the beauty of imperfect relationships.",
         "trailer": "https://www.youtube.com/embed/GBEke6JixyE"

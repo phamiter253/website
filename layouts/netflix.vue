@@ -161,9 +161,6 @@ onUnmounted(() => {
   display: flex
   align-items: center
   
-  @media (max-width: 768px)
-    margin-right: 16px
-  
   &__avatar
     width: 32px
     height: 32px

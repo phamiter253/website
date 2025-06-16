@@ -57,6 +57,14 @@ const _onMouseEnter = () => {
     .movie-grid__header
       h2.movie-grid__title {{ _props.title }}
     .movie-grid__container(@mouseenter="_onMouseEnter")
+      button.movie-grid__nav-button.movie-grid__nav-button--left(
+        :class="{ 'movie-grid__nav-button--visible': showLeftNav }"
+        @click="_scrollLeft"
+        aria-label="Previous movies"
+      )
+        svg(viewBox="0 0 24 24" fill="currentColor")
+          path(d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z")
+      
       .movie-grid__scroll-area(ref="scrollArea" @scroll="_onScroll")
         FavoriteMoviesMovieCard(
           v-for="movie in _props.movies" 
@@ -64,6 +72,14 @@ const _onMouseEnter = () => {
           :movie="movie" 
           @click="_handleMovieClick"
         )
+      
+      button.movie-grid__nav-button.movie-grid__nav-button--right(
+        :class="{ 'movie-grid__nav-button--visible': showRightNav }"
+        @click="_scrollRight"
+        aria-label="Next movies"
+      )
+        svg(viewBox="0 0 24 24" fill="currentColor")
+          path(d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z")
 </template>
 
 <style lang="sass" src="./index.sass"></style> 
