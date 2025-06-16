@@ -13,6 +13,21 @@
         .netflix-profile
           .netflix-profile__avatar
             span P
+        // Mobile menu button
+        .netflix-mobile-menu-btn(@click="toggleMobileMenu" :class="{ active: isMobileMenuOpen }")
+          span
+          span
+          span
+  
+  // Mobile menu overlay
+  .netflix-mobile-menu(:class="{ open: isMobileMenuOpen }")
+    .netflix-mobile-menu__close(@click="closeMobileMenu")
+      span ×
+    .netflix-mobile-menu__container
+      .netflix-mobile-nav
+        NuxtLink.netflix-mobile-nav__item(to="/projects" @click="closeMobileMenu") Projects
+        NuxtLink.netflix-mobile-nav__item(to="/about" @click="closeMobileMenu") About
+        NuxtLink.netflix-mobile-nav__item(to="/contact" @click="closeMobileMenu") Contact
   
   main.netflix-main
     NuxtPage
@@ -22,13 +37,38 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isScrolled = ref(false)
+const isMobileMenuOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value
+  // Prevent body scroll when mobile menu is open
+  if (isMobileMenuOpen.value) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+}
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false
+  document.body.style.overflow = ''
+}
+
+// Close mobile menu when clicking outside or pressing escape
+const handleKeydown = (event) => {
+  if (event.key === 'Escape' && isMobileMenuOpen.value) {
+    closeMobileMenu()
+  }
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+  document.addEventListener('keydown', handleKeydown)
   // Add Netflix class to body
   document.body.classList.add('netflix-body')
   // Set initial scroll state
@@ -37,8 +77,11 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  document.removeEventListener('keydown', handleKeydown)
   // Remove Netflix class from body
   document.body.classList.remove('netflix-body')
+  // Reset body overflow
+  document.body.style.overflow = ''
 })
 </script>
 
@@ -118,6 +161,9 @@ onUnmounted(() => {
   display: flex
   align-items: center
   
+  @media (max-width: 768px)
+    margin-right: 16px
+  
   &__avatar
     width: 32px
     height: 32px
@@ -133,6 +179,116 @@ onUnmounted(() => {
     
     &:hover
       background: #f40612
+
+// Mobile menu button
+.netflix-mobile-menu-btn
+  display: none
+  flex-direction: column
+  justify-content: center
+  width: 24px
+  height: 24px
+  cursor: pointer
+  z-index: 1001
+  
+  @media (max-width: 768px)
+    display: flex
+  
+  span
+    width: 100%
+    height: 2px
+    background: #ffffff
+    margin: 3px 0
+    transition: all 0.3s ease
+    transform-origin: center
+    
+  &.active
+    span:nth-child(1)
+      transform: rotate(45deg) translate(6px, 6px)
+      
+    span:nth-child(2)
+      opacity: 0
+      
+    span:nth-child(3)
+      transform: rotate(-45deg) translate(6px, -6px)
+
+// Mobile menu overlay
+.netflix-mobile-menu
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background: rgba(20, 20, 20, 0.98)
+  backdrop-filter: blur(10px)
+  z-index: 1000
+  display: flex
+  align-items: center
+  justify-content: center
+  transform: translateX(-100%)
+  transition: transform 0.3s ease
+  
+  @media (min-width: 769px)
+    display: none
+  
+  &.open
+    transform: translateX(0)
+  
+  &__container
+    width: 100%
+    max-width: 400px
+    padding: 0 32px
+    position: relative
+  
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    width: 48px
+    height: 48px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    //border-radius: 50%
+    //background: rgba(255, 255, 255, 0.1)
+    backdrop-filter: blur(10px)
+    transition: all 0.3s ease
+    
+    &:hover
+      background: rgba(229, 9, 20, 0.2)
+      //transform: scale(1)
+    
+    span
+      color: #ffffff
+      font-size: 38px
+      font-weight: 300
+      line-height: 1
+
+.netflix-mobile-nav
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 32px
+  
+  &__item
+    color: #ffffff
+    text-decoration: none
+    font-size: 24px
+    font-weight: 400
+    //padding: 16px 0
+    transition: all 0.3s ease
+    border-bottom: 1px solid transparent
+    text-align: center
+    width: 100%
+    
+    &:hover
+      color: #e50914
+      border-bottom-color: #e50914
+    
+    &.router-link-active
+      color: #e50914
+      font-weight: 500
+      border-bottom-color: #e50914
 
 .netflix-main
   padding-top: 0
