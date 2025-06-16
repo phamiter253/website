@@ -13,7 +13,7 @@ export const cells = [
     name: 'Favorite Movies',
     type: 'cell-large',
     category: 'coding',
-    image: '/images/favorite-movies-background.jpg',
+    image: '/images/favorite-movies-background.png',
     font: '"Helvetica Neue", Helvetica, Arial, sans-serif',
     link: '/projects/favorite-movies'
   },
