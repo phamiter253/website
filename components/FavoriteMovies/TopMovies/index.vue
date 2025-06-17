@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const props = defineProps({
+const _props = defineProps({
   movies: {
     type: Array,
     required: true
@@ -13,15 +13,15 @@ const emit = defineEmits(['movieClick'])
 const scrollArea = ref(null)
 const showLeftNav = ref(false)
 const showRightNav = ref(false)
+const isHovered = ref(false)
 
-const handleMovieClick = (movie) => {
+const _handleMovieClick = (movie) => {
   emit('movieClick', movie)
 }
 
-const scrollLeft = () => {
+const _scrollLeft = () => {
   if (scrollArea.value) {
     const container = scrollArea.value
-    const containerWidth = container.clientWidth
     const scrollLeft = container.scrollLeft
     
     // Find the first fully visible item from the left
@@ -45,12 +45,11 @@ const scrollLeft = () => {
   }
 }
 
-const scrollRight = () => {
+const _scrollRight = () => {
   if (scrollArea.value) {
     const container = scrollArea.value
-    const containerWidth = container.clientWidth
     const scrollLeft = container.scrollLeft
-    const containerRight = scrollLeft + containerWidth
+    const containerRight = scrollLeft + container.clientWidth
     
     // Find the last fully visible item
     let lastVisibleIndex = -1
@@ -62,7 +61,6 @@ const scrollRight = () => {
       // If this item is fully visible
       if (itemLeft >= scrollLeft && itemRight <= containerRight) {
         lastVisibleIndex = i
-        break
       }
     }
     
@@ -82,12 +80,17 @@ const updateNavButtons = () => {
   showRightNav.value = scrollLeft < scrollWidth - clientWidth - 10
 }
 
-const onScroll = () => {
+const _onScroll = () => {
   updateNavButtons()
 }
 
-const onMouseEnter = () => {
+const _onMouseEnter = () => {
+  isHovered.value = true
   updateNavButtons()
+}
+
+const _onMouseLeave = () => {
+  isHovered.value = false
 }
 </script>
 
@@ -95,21 +98,21 @@ const onMouseEnter = () => {
 .top-movies
   .container
     .top-movies__header
-      h2.top-movies__title Top 10 Movies Today
-    .top-movies__container(@mouseenter="onMouseEnter")
+      h2.top-movies__title Top 10 Favorite Movies
+    .top-movies__container(@mouseenter="_onMouseEnter" @mouseleave="_onMouseLeave")
       button.top-movies__nav-button.top-movies__nav-button--left(
-        :class="{ 'top-movies__nav-button--visible': showLeftNav }"
-        @click="scrollLeft"
+        :class="{ 'top-movies__nav-button--visible': showLeftNav && isHovered }"
+        @click="_scrollLeft"
         aria-label="Previous movies"
       )
         svg(viewBox="0 0 24 24" fill="currentColor")
           path(d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z")
       
-      .top-movies__row(ref="scrollArea" @scroll="onScroll")
+      .top-movies__row(ref="scrollArea" @scroll="_onScroll")
         .top-movies__item(
-          v-for="(movie, index) in props.movies.slice(0, 10)"
+          v-for="(movie, index) in _props.movies.slice(0, 10)"
           :key="movie.id"
-          @click="handleMovieClick(movie)"
+          @click="_handleMovieClick(movie)"
         )
           .top-movies__rank-container
             .top-movies__rank {{ index + 1 }}
@@ -124,8 +127,8 @@ const onMouseEnter = () => {
                   span.top-movies__year {{ movie.year }}
       
       button.top-movies__nav-button.top-movies__nav-button--right(
-        :class="{ 'top-movies__nav-button--visible': showRightNav }"
-        @click="scrollRight"
+        :class="{ 'top-movies__nav-button--visible': showRightNav && isHovered }"
+        @click="_scrollRight"
         aria-label="Next movies"
       )
         svg(viewBox="0 0 24 24" fill="currentColor")

@@ -17,6 +17,7 @@ const emit = defineEmits(['movieClick'])
 const scrollArea = ref(null)
 const showLeftNav = ref(false)
 const showRightNav = ref(false)
+const isHovered = ref(false)
 
 const _handleMovieClick = (movie) => {
   emit('movieClick', movie)
@@ -25,7 +26,6 @@ const _handleMovieClick = (movie) => {
 const _scrollLeft = () => {
   if (scrollArea.value) {
     const container = scrollArea.value
-    const containerWidth = container.clientWidth
     const scrollLeft = container.scrollLeft
     
     // Find the first fully visible item from the left
@@ -66,7 +66,6 @@ const _scrollRight = () => {
       // If this item is fully visible
       if (itemLeft >= scrollLeft && itemRight <= containerRight) {
         lastVisibleIndex = i
-        break
       }
     }
     
@@ -91,7 +90,12 @@ const _onScroll = () => {
 }
 
 const _onMouseEnter = () => {
+  isHovered.value = true
   updateNavButtons()
+}
+
+const _onMouseLeave = () => {
+  isHovered.value = false
 }
 </script>
 
@@ -100,9 +104,9 @@ const _onMouseEnter = () => {
   .container
     .movie-grid__header
       h2.movie-grid__title {{ _props.title }}
-    .movie-grid__container(@mouseenter="_onMouseEnter")
+    .movie-grid__container(@mouseenter="_onMouseEnter" @mouseleave="_onMouseLeave")
       button.movie-grid__nav-button.movie-grid__nav-button--left(
-        :class="{ 'movie-grid__nav-button--visible': showLeftNav }"
+        :class="{ 'movie-grid__nav-button--visible': showLeftNav && isHovered }"
         @click="_scrollLeft"
         aria-label="Previous movies"
       )
@@ -118,7 +122,7 @@ const _onMouseEnter = () => {
         )
       
       button.movie-grid__nav-button.movie-grid__nav-button--right(
-        :class="{ 'movie-grid__nav-button--visible': showRightNav }"
+        :class="{ 'movie-grid__nav-button--visible': showRightNav && isHovered }"
         @click="_scrollRight"
         aria-label="Next movies"
       )

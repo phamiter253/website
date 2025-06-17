@@ -79,15 +79,15 @@
         "trailer": "https://www.youtube.com/embed/FetfR0vQvd4"
       },
       {
-        "title": "Phantom Thread",
-        "year": 2017,
-        "rating": "R",
-        "genre": ["Drama", "Romance"],
-        "duration": "2h 10m",
-        "poster": "/images/movies/phantom-thread-poster.jpg",
-        "wideImage": "/images/movies/phantom-thread-wide.jpg",
-        "description": "A renowned dressmaker's carefully controlled life is disrupted by a young woman who becomes his muse and lover. Paul Thomas Anderson's elegant psychological drama about obsession, control, and toxic love.",
-        "trailer": "https://www.youtube.com/embed/xNsiQMeSvMk"
+        "title": "Shall We Dance?",
+        "year": 1996,
+        "rating": "PG",
+        "genre": ["Comedy", "Drama", "Music"],
+        "duration": "2h 16m",
+        "poster": "/images/movies/shall-we-dance-poster.jpg",
+        "wideImage": "/images/movies/shall-we-dance-wide.jpg",
+        "description": "A middle-aged businessman secretly takes ballroom dancing lessons to escape his mundane life. A gentle Japanese comedy-drama about finding passion, self-expression, and joy in unexpected places.",
+        "trailer": "https://www.youtube.com/embed/46HQAq2te-M"
       },
       {
         "title": "Amadeus",
@@ -101,15 +101,15 @@
         "trailer": "https://www.youtube.com/embed/ZQV9yySOmhs"
       },
       {
-        "title": "Shall We Dance?",
-        "year": 1996,
-        "rating": "PG",
-        "genre": ["Comedy", "Drama", "Music"],
-        "duration": "2h 16m",
-        "poster": "/images/movies/shall-we-dance-poster.jpg",
-        "wideImage": "/images/movies/shall-we-dance-wide.jpg",
-        "description": "A middle-aged businessman secretly takes ballroom dancing lessons to escape his mundane life. A gentle Japanese comedy-drama about finding passion, self-expression, and joy in unexpected places.",
-        "trailer": "https://www.youtube.com/embed/46HQAq2te-M"
+        "title": "Phantom Thread",
+        "year": 2017,
+        "rating": "R",
+        "genre": ["Drama", "Romance"],
+        "duration": "2h 10m",
+        "poster": "/images/movies/phantom-thread-poster.jpg",
+        "wideImage": "/images/movies/phantom-thread-wide.jpg",
+        "description": "A renowned dressmaker's carefully controlled life is disrupted by a young woman who becomes his muse and lover. Paul Thomas Anderson's elegant psychological drama about obsession, control, and toxic love.",
+        "trailer": "https://www.youtube.com/embed/xNsiQMeSvMk"
       }
     ],
     "animation": [
@@ -452,8 +452,128 @@
         "poster": "/images/movies/osmosis-jones-wide.jpg",
         "description": "A white blood cell cop teams up with a cold pill to fight a deadly virus inside a man's body. A unique blend of live-action and animation that makes biology fun and accessible for kids.",
         "trailer": "https://www.youtube.com/embed/CJ5Pkibjbv0"
+      },
+      {
+        "title": "Yellow Submarine",
+        "year": 1968,
+        "rating": "G",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 25m",
+        "poster": "/images/movies/yellow-submarine-wide.jpg",
+        "description": "The Beatles embark on a psychedelic adventure to save Pepperland from the music-hating Blue Meanies. A groundbreaking animated musical featuring innovative visuals and classic Beatles songs.",
+        "trailer": "https://www.youtube.com/embed/uOlwwoZLoKE"
+      },
+      {
+        "title": "Wallace and Gromit: The Curse of the Were-Rabbit",
+        "year": 2005,
+        "rating": "G",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 25m",
+        "poster": "/images/movies/wallace-gromit-wererabbit-wide.jpg",
+        "description": "Wallace and his dog Gromit investigate a mysterious creature terrorizing their town's vegetable gardens. Aardman's charming claymation feature that perfectly captures the humor and heart of the beloved shorts.",
+        "trailer": "https://www.youtube.com/embed/o4VBxIEUD70"
+      },
+      {
+        "title": "Your Name",
+        "year": 2016,
+        "rating": "PG",
+        "genre": ["Animation", "Drama", "Romance"],
+        "duration": "1h 46m",
+        "poster": "/images/movies/your-name-wide.jpg",
+        "description": "Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Makoto Shinkai's breathtaking anime about love, fate, and the threads that connect us across time and space.",
+        "trailer": "https://www.youtube.com/embed/o4-URMnBOPU"
+      },
+      {
+        "title": "Scooby-Doo and the Cyber Chase",
+        "year": 2001,
+        "rating": "NR",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 15m",
+        "poster": "/images/movies/scooby-doo-cyberchase-wide.jpg",
+        "description": "The Mystery Inc. gang gets transported into a video game and must navigate through different levels to escape. A tech-savvy Scooby adventure that embraces early 2000s digital culture.",
+        "trailer": "https://www.youtube.com/embed/GHD8p4x6d_o"
+      },
+      {
+        "title": "Scooby-Doo and the Alien Invaders",
+        "year": 2000,
+        "rating": "NR",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 14m",
+        "poster": "/images/movies/scooby-doo-alien-invaders-wide.jpg",
+        "description": "Scooby and the gang encounter real aliens in the desert, leading to romance and genuine extraterrestrial mystery. A unique Scooby film that blends traditional mystery-solving with sci-fi elements.",
+        "trailer": "https://www.youtube.com/embed/FeGJhGJHUjM"
+      },
+      {
+        "title": "The SpongeBob SquarePants Movie",
+        "year": 2004,
+        "rating": "PG",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 27m",
+        "poster": "/images/movies/spongebob-movie-wide.jpg",
+        "description": "SpongeBob and Patrick embark on a quest to save Mr. Krabs and prove SpongeBob's worth as a manager. The beloved Nickelodeon series makes its big-screen debut with humor that appeals to all ages.",
+        "trailer": "https://www.youtube.com/embed/47ceXAEr2Oo"
+      },
+      {
+        "title": "The Simpsons Movie",
+        "year": 2007,
+        "rating": "PG-13",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 27m",
+        "poster": "/images/movies/simpsons-movie-wide.jpg",
+        "description": "Homer's environmental disaster forces the Simpson family to flee Springfield when the town is quarantined under a giant dome. The long-awaited big-screen adventure of America's favorite animated family.",
+        "trailer": "https://www.youtube.com/embed/XPG0MqIcby8"
+      },
+      {
+        "title": "Pokémon 3: The Movie",
+        "year": 2000,
+        "rating": "G",
+        "genre": ["Animation", "Adventure", "Family"],
+        "duration": "1h 33m",
+        "poster": "/images/movies/pokemon-3-wide.jpg",
+        "description": "A young girl's wish brings the legendary Pokémon Entei to life, but her fantasy world threatens to replace reality. An emotional Pokémon adventure about family, loss, and the power of imagination.",
+        "trailer": "https://www.youtube.com/embed/SEqstQn0sag"
+      },
+      {
+        "title": "Wolf Children",
+        "year": 2012,
+        "rating": "PG",
+        "genre": ["Animation", "Drama", "Family"],
+        "duration": "1h 57m",
+        "poster": "/images/movies/wolf-children-wide.jpg",
+        "description": "A young mother raises her half-wolf children after their werewolf father dies. Mamoru Hosoda's beautiful tale about parenthood, identity, and finding your place between two worlds.",
+        "trailer": "https://www.youtube.com/embed/8SlB-SpDMKI"
+      },
+      {
+        "title": "The Lego Batman Movie",
+        "year": 2017,
+        "rating": "PG",
+        "genre": ["Animation", "Action", "Comedy"],
+        "duration": "1h 44m",
+        "poster": "/images/movies/lego-batman-wide.jpg",
+        "description": "Batman must learn to work with others when the Joker's latest scheme threatens Gotham City. A hilarious and heartfelt take on the Dark Knight that celebrates Batman's mythology while poking fun at it.",
+        "trailer": "https://www.youtube.com/embed/zhIRbLHVD8o"
+      },
+      {
+        "title": "Flushed Away",
+        "year": 2006,
+        "rating": "PG",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 25m",
+        "poster": "/images/movies/flushed-away-wide.jpg",
+        "description": "A pampered pet mouse gets flushed into the sewers of London and must find his way home. Aardman's computer-animated adventure featuring their signature British humor and inventive storytelling.",
+        "trailer": "https://www.youtube.com/embed/YIwja07VVg4"
+      },
+      {
+        "title": "Over the Hedge",
+        "year": 2006,
+        "rating": "PG",
+        "genre": ["Animation", "Adventure", "Comedy"],
+        "duration": "1h 23m",
+        "poster": "/images/movies/over-the-hedge-wide.jpg",
+        "description": "A scheming raccoon convinces a family of woodland creatures to help him repay a debt by raiding a new suburban neighborhood. A clever animated comedy about nature versus suburbia.",
+        "trailer": "https://www.youtube.com/embed/kkrGBlvGK4I"
       }
-      ],
+    ],
     "international": [
       {
         "title": "Rashomon",
@@ -594,6 +714,26 @@
         "poster": "/images/movies/troll-hunter-wide.jpg",
         "description": "A group of students follow a mysterious hunter through Norwegian forests, discovering he secretly hunts trolls for the government. André Øvredal's found-footage fantasy that cleverly blends Norwegian folklore with modern filmmaking.",
         "trailer": "https://www.youtube.com/embed/uvwEyHeRSvE"
+      },
+      {
+        "title": "Monsoon Wedding",
+        "year": 2001,
+        "rating": "R",
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "1h 54m",
+        "poster": "/images/movies/monsoon-wedding-wide.jpg",
+        "description": "A Punjabi family prepares for an arranged marriage in Delhi while dealing with family secrets and modern versus traditional values. Mira Nair's vibrant celebration of Indian culture, family, and love in all its forms.",
+        "trailer": "https://www.youtube.com/embed/sjQjw-UyAX0"
+      },
+      {
+        "title": "White Nights",
+        "year": 1959,
+        "rating": "NR",
+        "genre": ["Drama", "Romance"],
+        "duration": "1h 37m",
+        "poster": "/images/movies/white-nights-wide.jpg",
+        "description": "A lonely man falls in love with a woman waiting for her lover's return during the white nights of St. Petersburg. Luchino Visconti's poetic adaptation of Dostoyevsky's story about unrequited love and urban isolation.",
+        "trailer": "https://www.youtube.com/embed/_XCPFsWl1tg"
       }
     ],
     "thriller": [
@@ -678,6 +818,46 @@
         "poster": "/images/movies/guardian-galaxy-wide.jpg",
         "description": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe. Marvel's space opera that combines humor, heart, and an awesome soundtrack.",
         "trailer": "https://www.youtube.com/embed/d96cjJhvlMA"
+      },
+      {
+        "title": "Spider-Man: Homecoming",
+        "year": 2017,
+        "rating": "PG-13",
+        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "duration": "2h 13m",
+        "poster": "/images/movies/spiderman-homecoming-wide.jpg",
+        "description": "Peter Parker balances his life as an ordinary high school student with his superhero alter-ego Spider-Man. Tom Holland's debut as the web-slinger brings youthful energy and humor to the MCU.",
+        "trailer": "https://www.youtube.com/embed/rk-dF1lIbIg"
+      },
+      {
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "rating": "PG-13",
+        "genre": ["Action", "Adventure", "Drama"],
+        "duration": "2h 29m",
+        "poster": "/images/movies/avengers-infinity-war-wide.jpg",
+        "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos. The culmination of the MCU's first decade featuring epic battles and devastating consequences.",
+        "trailer": "https://www.youtube.com/embed/6ZfuNTqbHE8"
+      },
+      {
+        "title": "X-Men: First Class",
+        "year": 2011,
+        "rating": "PG-13",
+        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "duration": "2h 12m",
+        "poster": "/images/movies/xmen-first-class-wide.jpg",
+        "description": "The early years of Charles Xavier and Erik Lensherr, and the origin of their groups the X-Men and the Brotherhood of Mutants. A fresh take on the X-Men franchise set during the Cuban Missile Crisis.",
+        "trailer": "https://www.youtube.com/embed/kyQKi5-k0UU"
+      },
+      {
+        "title": "X-Men: Days of Future Past",
+        "year": 2014,
+        "rating": "PG-13",
+        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "duration": "2h 12m",
+        "poster": "/images/movies/xmen-days-future-past-wide.jpg",
+        "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants. A time-traveling epic that unites two X-Men timelines.",
+        "trailer": "https://www.youtube.com/embed/pK2zYHWDZKo"
       }
     ],
     "drama": [
@@ -790,6 +970,36 @@
         "poster": "/images/movies/joy-luck-club-wide.jpg",
         "description": "Four Chinese-American women and their daughters navigate the complexities of family, tradition, and cultural identity. Wayne Wang's powerful adaptation of Amy Tan's novel about mother-daughter relationships and the immigrant experience.",
         "trailer": "https://www.youtube.com/embed/0nYDMp1LdT8"
+      },
+      {
+        "title": "Forrest Gump",
+        "year": 1994,
+        "rating": "PG-13",
+        "genre": ["Drama", "Romance"],
+        "duration": "2h 22m",
+        "poster": "/images/movies/forrest-gump-wide.jpg",
+        "description": "A simple man with a low IQ witnesses and influences several defining historical events in 20th century America. Tom Hanks delivers an iconic performance in this heartwarming tale about life, love, and destiny.",
+        "trailer": "https://www.youtube.com/embed/bLvqoHBptjg"
+      },
+      {
+        "title": "Set It Off",
+        "year": 1996,
+        "rating": "R",
+        "genre": ["Action", "Crime", "Drama"],
+        "duration": "2h 3m",
+        "poster": "/images/movies/set-it-off-wide.jpg",
+        "description": "Four friends from the projects decide to rob banks when they can't make ends meet. F. Gary Gray's powerful heist film about friendship, desperation, and the lengths people go to survive.",
+        "trailer": "https://www.youtube.com/embed/mfLdKJV42aY"
+      },
+      {
+        "title": "Eve's Bayou",
+        "year": 1997,
+        "rating": "R",
+        "genre": ["Drama"],
+        "duration": "1h 49m",
+        "poster": "/images/movies/eves-bayou-wide.jpg",
+        "description": "A young girl discovers dark family secrets in 1960s Louisiana. Kasi Lemmons' haunting Southern Gothic tale about memory, family trauma, and the loss of innocence, told through a child's perspective.",
+        "trailer": "https://www.youtube.com/embed/6mXU9qVFRpM"
       }
     ],
     "horror": [
@@ -842,6 +1052,16 @@
         "poster": "/images/movies/crimson-peak-wide.jpg",
         "description": "In the aftermath of a family tragedy, an aspiring author is torn between love for her childhood friend and the temptation of a mysterious outsider. Guillermo del Toro's gothic romance filled with stunning visuals and supernatural terror.",
         "trailer": "https://www.youtube.com/embed/oquZifON8Eg"
+      },
+      {
+        "title": "Companion",
+        "year": 2025,
+        "rating": "R",
+        "genre": ["Horror", "Sci-Fi", "Thriller"],
+        "duration": "1h 37m",
+        "poster": "/images/movies/companion-wide.jpg",
+        "description": "A young woman discovers her perfect boyfriend may not be what he seems in this tech-thriller about artificial intelligence and relationships. A modern cautionary tale about love in the digital age.",
+        "trailer": "https://www.youtube.com/embed/Qr_kX0D3DNA"
       }
     ],
     "scifi": [
@@ -904,6 +1124,36 @@
         "poster": "/images/movies/hitchhikers-guide-wide.jpg",
         "description": "An ordinary human joins an alien friend on a wild journey through space after Earth is destroyed. Garth Jennings' adaptation of Douglas Adams' beloved comedy about the absurdity of existence and the number 42.",
         "trailer": "https://www.youtube.com/embed/xDRJRXSNqzw"
+      },
+      {
+        "title": "Minority Report",
+        "year": 2002,
+        "rating": "PG-13",
+        "genre": ["Action", "Crime", "Mystery"],
+        "duration": "2h 25m",
+        "poster": "/images/movies/minority-report-wide.jpg",
+        "description": "In a future where crimes are prevented before they happen, a police officer is accused of a future murder. Steven Spielberg's prescient thriller about free will, surveillance, and the price of security.",
+        "trailer": "https://www.youtube.com/embed/aGWQYgZZEEQ"
+      },
+      {
+        "title": "Pacific Rim",
+        "year": 2013,
+        "rating": "PG-13",
+        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "duration": "2h 11m",
+        "poster": "/images/movies/pacific-rim-wide.jpg",
+        "description": "Giant robots piloted by humans fight massive monsters emerging from an interdimensional portal in the Pacific Ocean. Guillermo del Toro's love letter to kaiju and mecha genres with spectacular action sequences.",
+        "trailer": "https://www.youtube.com/embed/5guMumPFBag"
+      },
+      {
+        "title": "Looper",
+        "year": 2012,
+        "rating": "R",
+        "genre": ["Action", "Drama", "Sci-Fi"],
+        "duration": "1h 59m",
+        "poster": "/images/movies/looper-wide.jpg",
+        "description": "A time-traveling assassin must kill his future self when time travel is used by crime syndicates to dispose of victims. Rian Johnson's clever sci-fi thriller about identity, fate, and moral choices.",
+        "trailer": "https://www.youtube.com/embed/2iQuhsmtfHw"
       }
     ],
     "comedy": [
@@ -1136,6 +1386,36 @@
         "poster": "/images/movies/holdovers-wide.jpg",
         "description": "A curmudgeonly teacher is forced to remain on campus during Christmas break with a troubled student. Alexander Payne's heartwarming comedy-drama about unlikely friendships and second chances.",
         "trailer": "https://www.youtube.com/embed/AhKLpJmHhIg"
+      },
+      {
+        "title": "The Mask",
+        "year": 1994,
+        "rating": "PG-13",
+        "genre": ["Action", "Comedy", "Crime"],
+        "duration": "1h 41m",
+        "poster": "/images/movies/the-mask-wide.jpg",
+        "description": "A bank clerk discovers a magical mask that transforms him into a mischievous green-faced superhero. Jim Carrey's breakout role in this zany comedy that blends slapstick humor with impressive visual effects.",
+        "trailer": "https://www.youtube.com/embed/csvOWBDx1oM"
+      },
+      {
+        "title": "What We Do in the Shadows",
+        "year": 2014,
+        "rating": "R",
+        "genre": ["Comedy", "Horror"],
+        "duration": "1h 26m",
+        "poster": "/images/movies/what-we-do-shadows-wide.jpg",
+        "description": "A mockumentary following four vampire flatmates as they navigate modern life in New Zealand. Taika Waititi and Jemaine Clement's hilarious take on vampire mythology with deadpan Kiwi humor.",
+        "trailer": "https://www.youtube.com/embed/IAZEWtyhpes"
+      },
+      {
+        "title": "The Royal Tenenbaums",
+        "year": 2001,
+        "rating": "R",
+        "genre": ["Comedy", "Drama"],
+        "duration": "1h 50m",
+        "poster": "/images/movies/royal-tenenbaums-wide.jpg",
+        "description": "The eccentric members of a dysfunctional family reunite when their father announces he has stomach cancer. Wes Anderson's quirky ensemble piece about family dysfunction, featuring his signature visual style and dry humor.",
+        "trailer": "https://www.youtube.com/embed/-DNAI9bhBFU"
       }
     ],
     "musical": [
@@ -1198,6 +1478,16 @@
         "poster": "/images/movies/cinderella-wide.jpg",
         "description": "Rodgers and Hammerstein's beloved fairy tale comes to life with Brandy as Cinderella and Whitney Houston as the Fairy Godmother. A diverse, magical adaptation that celebrates dreams coming true.",
         "trailer": "https://www.youtube.com/embed/wTwxMoWNa4Y"
+      },
+      {
+        "title": "The Wiz",
+        "year": 1978,
+        "rating": "G",
+        "genre": ["Adventure", "Family", "Musical"],
+        "duration": "2h 14m",
+        "poster": "/images/movies/the-wiz-wide.jpg",
+        "description": "An urban retelling of The Wizard of Oz featuring an all-Black cast and set in New York City. Diana Ross and Michael Jackson star in this vibrant musical adaptation with memorable songs and elaborate production numbers.",
+        "trailer": "https://www.youtube.com/embed/uNKmKOjGUbw"
       }
     ],
     "action": [
@@ -1300,6 +1590,26 @@
         "poster": "/images/movies/man-in-the-iron-mask-wide.png",
         "description": "The aging musketeers reunite to replace the cruel King Louis XIV with his twin brother. A swashbuckling adventure featuring sword fights, palace intrigue, and the legendary friendship of the Three Musketeers.",
         "trailer": "https://www.youtube.com/embed/gnNt7l2nA_o"
+      },
+      {
+        "title": "The Golden Compass",
+        "year": 2007,
+        "rating": "PG-13",
+        "genre": ["Adventure", "Family", "Fantasy"],
+        "duration": "1h 53m",
+        "poster": "/images/movies/golden-compass-wide.jpg",
+        "description": "A young girl journeys to the far North to save her best friend and other kidnapped children from a sinister organization. Based on Philip Pullman's novel, featuring talking animals, parallel worlds, and epic adventure.",
+        "trailer": "https://www.youtube.com/embed/LHYoOGfBObU"
+      },
+      {
+        "title": "Where the Wild Things Are",
+        "year": 2009,
+        "rating": "PG",
+        "genre": ["Adventure", "Drama", "Family"],
+        "duration": "1h 41m",
+        "poster": "/images/movies/where-the-wild-things-are-wide.jpg",
+        "description": "A young boy escapes to an island inhabited by mysterious creatures who crown him as their king. Spike Jonze's imaginative adaptation of Maurice Sendak's beloved children's book about childhood emotions and imagination.",
+        "trailer": "https://www.youtube.com/embed/uNJPSc_4RCI"
       }
     ],
     "romance": [

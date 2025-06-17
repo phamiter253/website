@@ -86,13 +86,15 @@
     gap: 8px
     overflow-x: auto
     overflow-y: hidden
-    padding: 20px 60px
+    padding: 20px 80px
     scrollbar-width: none
     -ms-overflow-style: none
 
     @media (max-width: 768px)
-      padding-left: 0
-      padding-right: 0
+      padding: 20px 0 50px
+
+    @media (max-width: 480px)
+      padding: 20px 0 40px
 
     &::-webkit-scrollbar
       display: none

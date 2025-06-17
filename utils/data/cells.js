@@ -14,7 +14,7 @@ export const cells = [
     type: 'cell-large',
     category: 'coding',
     image: '/images/favorite-movies-background.png',
-    font: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+    font: '"Bebas Neue"',
     link: '/projects/favorite-movies'
   },
   {
