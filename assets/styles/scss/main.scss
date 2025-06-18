@@ -92,6 +92,10 @@ button:focus-visible, a:focus-visible {
   margin: 0 auto;
   padding: 0 var(--fluid-16-32);
   max-width: 1440px !important;
+
+  .favorite-movies & {
+    max-width: 100% !important;
+  }
 }
 
 a {

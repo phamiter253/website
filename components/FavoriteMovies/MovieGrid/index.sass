@@ -21,11 +21,6 @@
     position: relative
     overflow-y: hidden
 
-    &:hover
-      .movie-grid__nav-button
-        opacity: 1
-        pointer-events: auto
-
   &__scroll-area
     display: flex
     gap: 8px
@@ -103,7 +98,7 @@
         height: 36px
 
     @media (max-width: 480px)
-      width: 45px
+      width: 36px
 
       svg
         width: 32px
@@ -113,18 +108,8 @@
     display: flex
     gap: 16px
     overflow-x: auto
-    scrollbar-width: thin
-    scrollbar-color: #4a5568 transparent
+    scrollbar-width: none
+    -ms-overflow-style: none
 
     &::-webkit-scrollbar
-      height: 6px
-
-    &::-webkit-scrollbar-track
-      background: transparent
-
-    &::-webkit-scrollbar-thumb
-      background-color: #4a5568
-      border-radius: 3px
-
-    &::-webkit-scrollbar-thumb:hover
-      background-color: #718096 
+      display: none 

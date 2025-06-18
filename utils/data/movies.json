@@ -776,6 +776,16 @@
         "poster": "/images/movies/catch-me-if-you-can-wide.jpg",
         "description": "A young con artist successfully impersonates a pilot, doctor, and lawyer while being pursued by an FBI agent. Steven Spielberg's stylish cat-and-mouse thriller based on the true story of Frank Abagnale Jr.",
         "trailer": "https://www.youtube.com/embed/s-7pyIxz8Qg"
+      },
+      {
+        "title": "Under the Silver Lake",
+        "year": 2018,
+        "rating": "R",
+        "genre": ["Comedy", "Crime", "Drama"],
+        "duration": "2h 19m",
+        "poster": "/images/movies/under-silverlake-wide.jpg",
+        "description": "A disenchanted young man becomes obsessed with the mysterious disappearance of his neighbor and discovers an underground conspiracy. David Robert Mitchell's surreal neo-noir about paranoia, celebrity culture, and the search for meaning.",
+        "trailer": "https://www.youtube.com/embed/mwgUesU1lzQ"
       }
     ],
     "superhero": [
@@ -1000,6 +1010,36 @@
         "poster": "/images/movies/eves-bayou-wide.jpg",
         "description": "A young girl discovers dark family secrets in 1960s Louisiana. Kasi Lemmons' haunting Southern Gothic tale about memory, family trauma, and the loss of innocence, told through a child's perspective.",
         "trailer": "https://www.youtube.com/embed/6mXU9qVFRpM"
+      },
+      {
+        "title": "Big Fish",
+        "year": 2003,
+        "rating": "PG-13",
+        "genre": ["Adventure", "Drama", "Fantasy"],
+        "duration": "2h 5m",
+        "poster": "/images/movies/big-fish-wide.jpg",
+        "description": "A son tries to separate fact from fiction in his dying father's life stories filled with magical adventures. Tim Burton's heartwarming tale about storytelling, father-son relationships, and the power of imagination.",
+        "trailer": "https://www.youtube.com/embed/NGaVUApDVuY"
+      },
+      {
+        "title": "The Perks of Being a Wallflower",
+        "year": 2012,
+        "rating": "PG-13",
+        "genre": ["Drama", "Romance"],
+        "duration": "1h 43m",
+        "poster": "/images/movies/perks-being-wallflower-wide.jpg",
+        "description": "An introverted teenager finds friendship and first love with a group of charismatic seniors during his freshman year of high school. A poignant coming-of-age story about finding your tribe and overcoming trauma.",
+        "trailer": "https://www.youtube.com/embed/n5rh7O4IDc0"
+      },
+      {
+        "title": "The Fall",
+        "year": 2006,
+        "rating": "R",
+        "genre": ["Adventure", "Drama", "Fantasy"],
+        "duration": "1h 57m",
+        "poster": "/images/movies/the-fall-wide.jpg",
+        "description": "A hospitalized stuntman tells an elaborate fantasy story to a young girl, blending reality with imagination in stunning visual sequences. Tarsem Singh's visually spectacular tale about storytelling, healing, and the power of narrative.",
+        "trailer": "https://www.youtube.com/embed/rEi-v6aJD7Q"
       }
     ],
     "horror": [
@@ -1062,6 +1102,16 @@
         "poster": "/images/movies/companion-wide.jpg",
         "description": "A young woman discovers her perfect boyfriend may not be what he seems in this tech-thriller about artificial intelligence and relationships. A modern cautionary tale about love in the digital age.",
         "trailer": "https://www.youtube.com/embed/Qr_kX0D3DNA"
+      },
+      {
+        "title": "Black Swan",
+        "year": 2010,
+        "rating": "R",
+        "genre": ["Drama", "Thriller"],
+        "duration": "1h 48m",
+        "poster": "/images/movies/black-swan-wide.jpg",
+        "description": "A committed dancer struggles to maintain her sanity after winning the lead role in Swan Lake. Natalie Portman delivers a haunting performance in Darren Aronofsky's psychological thriller about perfectionism and artistic obsession.",
+        "trailer": "https://www.youtube.com/embed/5jaI1XOB-bs"
       }
     ],
     "scifi": [
@@ -1416,6 +1466,16 @@
         "poster": "/images/movies/royal-tenenbaums-wide.jpg",
         "description": "The eccentric members of a dysfunctional family reunite when their father announces he has stomach cancer. Wes Anderson's quirky ensemble piece about family dysfunction, featuring his signature visual style and dry humor.",
         "trailer": "https://www.youtube.com/embed/-DNAI9bhBFU"
+      },
+      {
+        "title": "How the Grinch Stole Christmas",
+        "year": 2000,
+        "rating": "PG",
+        "genre": ["Comedy", "Family", "Fantasy"],
+        "duration": "1h 44m",
+        "poster": "/images/movies/the-grinch-wide.jpg",
+        "description": "The Grinch, a curmudgeonly creature who lives on Mount Crumpit, decides to ruin Christmas for the cheerful residents of Whoville. Jim Carrey stars in this colorful adaptation of Dr. Seuss's beloved holiday classic.",
+        "trailer": "https://www.youtube.com/embed/ZrYOGW7xl1U"
       }
     ],
     "musical": [
@@ -1732,6 +1792,27 @@
         "poster": "/images/movies/timer-wide.jpg",
         "description": "In a world where a device counts down to when you'll meet your soulmate, a woman questions whether true love can be predetermined. A clever romantic comedy that explores fate, timing, and the nature of love.",
         "trailer": "https://www.youtube.com/embed/pxS_FWBOW0M"
+      },
+      {
+        "title": "Crazy, Stupid, Love",
+        "year": 2011,
+        "rating": "PG-13",
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "1h 58m",
+        "poster": "/images/movies/crazy-stupid-love-wide.jpg",
+        "wideImage": "/images/movies/crazy-stupid-love-wide.jpg",
+        "description": "A father's life unravels when his wife leaves him, but he finds guidance from a smooth-talking bachelor who teaches him how to be a player. Steve Carell and Ryan Gosling star in this ensemble romantic comedy about love, family, and second chances.",
+        "trailer": "https://www.youtube.com/embed/8iCwtxJejik"
+      },
+      {
+        "title": "Silver Linings Playbook",
+        "year": 2012,
+        "rating": "R",
+        "genre": ["Comedy", "Drama", "Romance"],
+        "duration": "2h 2m",
+        "poster": "/images/movies/silver-linings-playbook-wide.jpg",
+        "description": "A man with bipolar disorder moves back in with his parents and meets a young widow with problems of her own. Bradley Cooper and Jennifer Lawrence deliver powerful performances in this romantic comedy-drama about mental health and finding hope.",
+        "trailer": "https://www.youtube.com/embed/UndP5tGlwqI"
       }
     ]
   }
