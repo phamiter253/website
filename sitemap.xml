@@ -168,10 +168,10 @@
             <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/matches.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/lucy.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/anabelle.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/gemini.svg</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/aquarius.svg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/info.png</image:loc>
@@ -183,16 +183,16 @@
             <image:loc>https://priscillahamiter.com/images/animal-crossing/icons/briefcase.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/kksonata.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/alohakk.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/penelope.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/posters/stinky.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/aquarius.svg</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/horoscope/leo.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/bubblegumkk.png</image:loc>
+            <image:loc>https://priscillahamiter.com/images/animal-crossing/songcovers/kkflamenco.png</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/animal-crossing/icons/x-small.png</image:loc>
@@ -489,6 +489,9 @@
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/royal-tenenbaums-wide.jpg</image:loc>
         </image:image>
         <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/the-grinch-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/beast-of-southern-wild-wide.jpg</image:loc>
         </image:image>
         <image:image>
@@ -529,6 +532,15 @@
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/eves-bayou-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/big-fish-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/perks-being-wallflower-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/the-fall-wide.jpg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/moon-wide.jpg</image:loc>
@@ -618,6 +630,12 @@
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/timer-wide.jpg</image:loc>
         </image:image>
         <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/crazy-stupid-love-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/silver-linings-playbook-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/singin-in-rain-wide.jpg</image:loc>
         </image:image>
         <image:image>
@@ -651,6 +669,9 @@
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/catch-me-if-you-can-wide.jpg</image:loc>
         </image:image>
         <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/under-silverlake-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/nope-wide.jpg</image:loc>
         </image:image>
         <image:image>
@@ -667,6 +688,9 @@
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/companion-wide.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/black-swan-wide.jpg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://priscillahamiter.com/_ipx/f_webp/images/movies/rashomon-wide.jpg</image:loc>
@@ -748,4 +772,4 @@
         <loc>https://priscillahamiter.com/projects/weather</loc>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-06-17T15:33:48.300Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-06-18T03:12:51.170Z -->
