@@ -1,6 +1,6 @@
 .movie-card
   flex-shrink: 0
-  width: 410px
+  width: 400px
   cursor: pointer
   transition: all 0.3s ease
   background: transparent
@@ -9,8 +9,7 @@
   overflow: visible
 
   &:focus
-    outline: 2px solid white
-    outline-offset: 2px
+    outline: none
 
   &:hover, &:focus
     transform: scale(1.05)
@@ -20,17 +19,25 @@
       opacity: 1
       transform: translateY(0)
 
+    &::before
+      content: ''
+      position: absolute
+      top: -2px
+      left: -2px
+      right: -2px
+      bottom: -65px
+      border: 2px solid white
+      border-radius: 6px
+      pointer-events: none
+
   @media (max-width: 1400px)
-    width: 320px
+    width: 300px
 
   @media (max-width: 1200px)
     width: 280px
 
   @media (max-width: 768px)
     width: 260px
-
-  // @media (max-width: 480px)
-  //   width: 200px
 
   &__image-container
     position: relative

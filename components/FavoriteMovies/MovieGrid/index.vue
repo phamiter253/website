@@ -22,11 +22,11 @@ const isHovered = ref(false)
 // Get nav button width dynamically based on screen size
 const navButtonWidth = computed(() => {
   if (typeof window !== 'undefined') {
-    if (window.innerWidth <= 480) return 40
+    if (window.innerWidth <= 480) return -20
     if (window.innerWidth <= 768) return 50
-    return 60
+    return 75
   }
-  return 60 // fallback for SSR
+  return 75 // fallback for SSR
 })
 
 // Check if device is mobile

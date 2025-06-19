@@ -572,6 +572,16 @@
         "poster": "/images/movies/over-the-hedge-wide.jpg",
         "description": "A scheming raccoon convinces a family of woodland creatures to help him repay a debt by raiding a new suburban neighborhood. A clever animated comedy about nature versus suburbia.",
         "trailer": "https://www.youtube.com/embed/kkrGBlvGK4I"
+      },
+      {
+        "title": "Futurama: Bender's Big Score",
+        "year": 2007,
+        "rating": "PG-13",
+        "genre": ["Animation", "Comedy", "Sci-Fi"],
+        "duration": "1h 28m",
+        "poster": "/images/movies/futurama-benders-big-score-wide.jpg",
+        "description": "The Planet Express crew faces off against nudist alien scam artists who have taken over Earth. The first of four Futurama movies featuring time travel, paradoxes, and the show's signature blend of humor and heart.",
+        "trailer": "https://www.youtube.com/embed/e74-0EzJt_0"
       }
     ],
     "international": [
@@ -1476,6 +1486,16 @@
         "poster": "/images/movies/the-grinch-wide.jpg",
         "description": "The Grinch, a curmudgeonly creature who lives on Mount Crumpit, decides to ruin Christmas for the cheerful residents of Whoville. Jim Carrey stars in this colorful adaptation of Dr. Seuss's beloved holiday classic.",
         "trailer": "https://www.youtube.com/embed/ZrYOGW7xl1U"
+      },
+      {
+        "title": "Young Frankenstein",
+        "year": 1974,
+        "rating": "PG",
+        "genre": ["Comedy", "Horror"],
+        "duration": "1h 46m",
+        "poster": "/images/movies/young-frankenstein-wide.jpg",
+        "description": "The grandson of the famous Dr. Frankenstein inherits his grandfather's castle and laboratory in Transylvania. Mel Brooks' brilliant parody of classic horror films featuring Gene Wilder's iconic performance.",
+        "trailer": "https://www.youtube.com/embed/sO8g8VmFf0M"
       }
     ],
     "musical": [
@@ -1548,6 +1568,16 @@
         "poster": "/images/movies/the-wiz-wide.jpg",
         "description": "An urban retelling of The Wizard of Oz featuring an all-Black cast and set in New York City. Diana Ross and Michael Jackson star in this vibrant musical adaptation with memorable songs and elaborate production numbers.",
         "trailer": "https://www.youtube.com/embed/uNKmKOjGUbw"
+      },
+      {
+        "title": "The Producers",
+        "year": 2005,
+        "rating": "PG-13",
+        "genre": ["Comedy", "Musical"],
+        "duration": "2h 14m",
+        "poster": "/images/movies/the-producers-wide.jpg",
+        "description": "A Broadway producer and his accountant scheme to get rich by producing a guaranteed flop. Nathan Lane and Matthew Broderick star in this hilarious musical adaptation of Mel Brooks' Tony Award-winning Broadway show.",
+        "trailer": "https://www.youtube.com/embed/kJenz1R9dHI"
       }
     ],
     "action": [
