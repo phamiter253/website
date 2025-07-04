@@ -11,14 +11,6 @@
   &:focus
     outline: none
 
-  &:hover, &:focus
-    transform: scale(1.05)
-    z-index: 9
-
-    .movie-card__focus-info
-      opacity: 1
-      transform: translateY(0)
-
     &::before
       content: ''
       position: absolute
@@ -29,6 +21,14 @@
       border: 2px solid white
       border-radius: 6px
       pointer-events: none
+
+  &:hover, &:focus
+    transform: scale(1.05)
+    z-index: 9
+
+    .movie-card__focus-info
+      opacity: 1
+      transform: translateY(0)
 
   @media (max-width: 1400px)
     width: 300px

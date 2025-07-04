@@ -1214,6 +1214,16 @@
         "poster": "/images/movies/looper-wide.jpg",
         "description": "A time-traveling assassin must kill his future self when time travel is used by crime syndicates to dispose of victims. Rian Johnson's clever sci-fi thriller about identity, fate, and moral choices.",
         "trailer": "https://www.youtube.com/embed/2iQuhsmtfHw"
+      },
+      {
+        "title": "Gattaca",
+        "year": 1997,
+        "rating": "PG-13",
+        "genre": ["Drama", "Sci-Fi", "Thriller"],
+        "duration": "1h 46m",
+        "poster": "/images/movies/gattaca-wide.jpg",
+        "description": "In a future society driven by eugenics, a genetically inferior man assumes the identity of a superior one to pursue his dream of space travel. Andrew Niccol's thought-provoking thriller about genetic discrimination and the power of human determination.",
+        "trailer": "https://www.youtube.com/embed/W_KruQhfvW4"
       }
     ],
     "comedy": [
@@ -1496,6 +1506,26 @@
         "poster": "/images/movies/young-frankenstein-wide.jpg",
         "description": "The grandson of the famous Dr. Frankenstein inherits his grandfather's castle and laboratory in Transylvania. Mel Brooks' brilliant parody of classic horror films featuring Gene Wilder's iconic performance.",
         "trailer": "https://www.youtube.com/embed/sO8g8VmFf0M"
+      },
+      {
+        "title": "The Little Hours",
+        "year": 2017,
+        "rating": "R",
+        "genre": ["Comedy", "Romance"],
+        "duration": "1h 30m",
+        "poster": "/images/movies/the-little-hours-wide.jpg",
+        "description": "In medieval Italy, a young servant fleeing his master takes refuge at a convent full of emotionally unstable nuns. A raunchy comedy inspired by Boccaccio's The Decameron, featuring Alison Brie, Aubrey Plaza, and Kate Micucci.",
+        "trailer": "https://www.youtube.com/embed/G73d-9BZ3bg"
+      },
+      {
+        "title": "Coming to America",
+        "year": 1988,
+        "rating": "R",
+        "genre": ["Comedy", "Romance"],
+        "duration": "1h 57m",
+        "poster": "/images/movies/coming-to-america-wide.jpg",
+        "description": "An African prince travels to Queens, New York to find a bride who will love him for who he is, not his royal status. Eddie Murphy stars in multiple roles in this beloved comedy about love, identity, and cultural differences.",
+        "trailer": "https://www.youtube.com/embed/ZDme5Y5E-bI"
       }
     ],
     "musical": [
@@ -1700,6 +1730,26 @@
         "poster": "/images/movies/where-the-wild-things-are-wide.jpg",
         "description": "A young boy escapes to an island inhabited by mysterious creatures who crown him as their king. Spike Jonze's imaginative adaptation of Maurice Sendak's beloved children's book about childhood emotions and imagination.",
         "trailer": "https://www.youtube.com/embed/uNJPSc_4RCI"
+      },
+      {
+        "title": "Holes",
+        "year": 2003,
+        "rating": "PG",
+        "genre": ["Adventure", "Comedy", "Drama"],
+        "duration": "1h 57m",
+        "poster": "/images/movies/holes-wide.jpg",
+        "description": "A teenager is sent to a juvenile detention camp where the boys are forced to dig holes every day. Based on Louis Sachar's beloved novel, this adventure weaves together past and present in a story about friendship, justice, and breaking family curses.",
+        "trailer": "https://www.youtube.com/embed/ehfD-_2zz2w"
+      },
+      {
+        "title": "Spy Kids",
+        "year": 2001,
+        "rating": "PG",
+        "genre": ["Action", "Adventure", "Comedy"],
+        "duration": "1h 28m",
+        "poster": "/images/movies/spy-kids-wide.jpg",
+        "description": "Two children discover their parents are secret agents and must rescue them from a villain who wants to take over the world using robot children. Robert Rodriguez's imaginative family adventure featuring gadgets, humor, and sibling teamwork.",
+        "trailer": "https://www.youtube.com/embed/GE5aHKJp6HI"
       }
     ],
     "romance": [
@@ -1843,6 +1893,26 @@
         "poster": "/images/movies/silver-linings-playbook-wide.jpg",
         "description": "A man with bipolar disorder moves back in with his parents and meets a young widow with problems of her own. Bradley Cooper and Jennifer Lawrence deliver powerful performances in this romantic comedy-drama about mental health and finding hope.",
         "trailer": "https://www.youtube.com/embed/UndP5tGlwqI"
+      },
+      {
+        "title": "Lady Chatterley's Lover",
+        "year": 2022,
+        "rating": "R",
+        "genre": ["Drama", "Romance"],
+        "duration": "2h 6m",
+        "poster": "/images/movies/lady-chatterleys-lover-wide.jpg",
+        "description": "An unhappily married aristocrat begins a torrid affair with the gamekeeper on her husband's country estate. Based on D.H. Lawrence's controversial novel, this Netflix adaptation explores passion, class, and sexual awakening in post-WWI England.",
+        "trailer": "https://www.youtube.com/embed/ZOkXE3B0pDA"
+      },
+      {
+        "title": "Like Crazy",
+        "year": 2011,
+        "rating": "PG-13",
+        "genre": ["Drama", "Romance"],
+        "duration": "1h 26m",
+        "poster": "/images/movies/like-crazy-wide.jpg",
+        "description": "A British college student and an American student fall deeply in love, but their relationship is tested when she's banned from the US after overstaying her visa. Felicity Jones and Anton Yelchin star in this intimate portrait of long-distance love and immigration challenges.",
+        "trailer": "https://www.youtube.com/embed/wZPbZ00OhOg"
       }
     ]
   }

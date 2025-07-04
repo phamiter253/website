@@ -24,6 +24,7 @@
     const svg = d3.select('.weather-chart')
       .append("svg")
       .attr("viewBox", `0 0 ${width} ${height}`)
+      //.attr("overflow", "hidden")
       .attr("width", "100%")
       .attr("height", "100%")
 
