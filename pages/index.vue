@@ -24,102 +24,102 @@ useHead({
       type: 'application/ld+json',
       children: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://priscillahamiter.com#person",
-        "name": "Priscilla Hamiter",
-        "url": "https://priscillahamiter.com",
-        "image": "https://priscillahamiter.com/profile.jpg",
-        "sameAs": [
-          "https://www.linkedin.com/in/priscilla-hamiter-668293124",
-          "https://github.com/phamiter253"
-        ],
-        "jobTitle": "Web Developer",
+            "@type": "Person",
+            "@id": "https://priscillahamiter.com#person",
+            "name": "Priscilla Hamiter",
+            "url": "https://priscillahamiter.com",
+            "image": "https://priscillahamiter.com/profile.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/priscilla-hamiter-668293124",
+              "https://github.com/phamiter253"
+            ],
+            "jobTitle": "Web Developer",
         "description": "Portfolio of Priscilla Hamiter, a frontend web developer specializing in JavaScript, D3.js, and creative visual applications.",
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "University of San Francisco",
-          "url": "https://www.usfca.edu"
-        },
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Rooster Grin Media",
-          "url": "https://www.roostergrin.com",
-          "logo": "https://www.roostergrin.com/wp-content/uploads/2019/11/rg-logo.png"
-        },
-        "knowsAbout": [
-          "Web Development", "JavaScript", "React", "Vue", "HTML", "CSS", "D3.js"
-        ],
-        "email": "mailto:priscilla.hamiter@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "San Francisco",
-          "addressRegion": "CA",
-          "addressCountry": "US"
-        },
+            "alumniOf": {
+              "@type": "EducationalOrganization",
+              "name": "University of San Francisco",
+              "url": "https://www.usfca.edu"
+            },
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Rooster Grin Media",
+              "url": "https://www.roostergrin.com",
+              "logo": "https://www.roostergrin.com/wp-content/uploads/2019/11/rg-logo.png"
+            },
+            "knowsAbout": [
+              "Web Development", "JavaScript", "React", "Vue", "HTML", "CSS", "D3.js"
+            ],
+            "email": "mailto:priscilla.hamiter@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Francisco",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
         "workExample": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "Animal Crossing Tinder",
-            "applicationCategory": "GameApplication",
-            "operatingSystem": "Web",
-            "creator": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "url": "https://priscillahamiter.com/projects/animal-crossing",
-            "datePublished": "2024-01-22",
-            "description": "A fun Tinder-style app using Animal Crossing characters, built with JavaScript and D3.js.",
-            "image": "https://priscillahamiter.com/images/thumbnails/anima-crossing-tinder-thumnail.jpg"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Halloween Candy Chocolate Bar Graph",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-01-17",
-            "dateModified": "2024-01-27",
-            "description": "A horizontal bar chart built with D3.js that visualizes Halloween candy preferences using a Kaggle dataset.",
-            "image": "https://priscillahamiter.com/images/thumbnails/halloween-thumbnail.png",
-            "url": "https://priscillahamiter.com/projects/halloween-candy"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "San Francisco Weather Graph",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-02-05",
-            "description": "A D3.js visualization exploring weather patterns in San Francisco, showing temperature trends over time.",
-            "image": "https://priscillahamiter.com/images/weather-background.png",
-            "url": "https://priscillahamiter.com/projects/weather"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Insecticide – Game Concept",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-03-01",
-            "description": "A game concept with insects, trains, and murder!",
-            "image": "https://priscillahamiter.com/images/insecticide/insecticide-logo.svg",
-            "url": "https://priscillahamiter.com/projects/insecticide"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "Favorite Movies Collection",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-04-15",
-            "description": "A Netflix-style interface showcasing a curated list of favorite movies, built with Nuxt.js and Vue.",
-            "image": "https://priscillahamiter.com/images/favorite-movies-background.png",
-            "url": "https://priscillahamiter.com/projects/favorite-movies"
-          }
+              {
+                "@type": "SoftwareApplication",
+                "name": "Animal Crossing Tinder",
+                "applicationCategory": "GameApplication",
+                "operatingSystem": "Web",
+                "creator": {
+                  "@type": "Person",
+                  "name": "Priscilla Hamiter"
+                },
+                "url": "https://priscillahamiter.com/projects/animal-crossing",
+                "datePublished": "2024-01-22",
+                "description": "A fun Tinder-style app using Animal Crossing characters, built with JavaScript and D3.js.",
+                "image": "https://priscillahamiter.com/images/thumbnails/anima-crossing-tinder-thumnail.jpg"
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Halloween Candy Chocolate Bar Graph",
+                "author": {
+                  "@type": "Person",
+                  "name": "Priscilla Hamiter"
+                },
+                "datePublished": "2024-01-17",
+                "dateModified": "2024-01-27",
+                "description": "A horizontal bar chart built with D3.js that visualizes Halloween candy preferences using a Kaggle dataset.",
+                "image": "https://priscillahamiter.com/images/thumbnails/halloween-thumbnail.png",
+                "url": "https://priscillahamiter.com/projects/halloween-candy"
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "San Francisco Weather Graph",
+                "author": {
+                  "@type": "Person",
+                  "name": "Priscilla Hamiter"
+                },
+                "datePublished": "2024-02-05",
+                "description": "A D3.js visualization exploring weather patterns in San Francisco, showing temperature trends over time.",
+                "image": "https://priscillahamiter.com/images/weather-background.png",
+                "url": "https://priscillahamiter.com/projects/weather"
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Insecticide – Game Concept",
+                "author": {
+                  "@type": "Person",
+                  "name": "Priscilla Hamiter"
+                },
+                "datePublished": "2024-03-01",
+                "description": "A game concept with insects, trains, and murder!",
+                "image": "https://priscillahamiter.com/images/insecticide/insecticide-logo.svg",
+                "url": "https://priscillahamiter.com/projects/insecticide"
+              },
+              {
+                "@type": "BlogPosting",
+                "headline": "Favorite Movies Collection",
+                "author": {
+                  "@type": "Person",
+                  "name": "Priscilla Hamiter"
+                },
+                "datePublished": "2024-04-15",
+                "description": "A Netflix-style interface showcasing a curated list of favorite movies, built with Nuxt.js and Vue.",
+                "image": "https://priscillahamiter.com/images/favorite-movies-background.png",
+                "url": "https://priscillahamiter.com/projects/favorite-movies"
+              }
         ]
       })
     }

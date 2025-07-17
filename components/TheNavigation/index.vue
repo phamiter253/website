@@ -37,7 +37,7 @@ onUnmounted(() => {
 </script>
 
 <template lang="pug">
-header.navigation(:class="{ active: isDown }")
+header.navigation(:class="{ active: isDown, open: isOpen }")
   .container
     .navigation__container
       NuxtLink(to="/" aria-label="Home")

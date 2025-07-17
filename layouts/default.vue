@@ -44,9 +44,6 @@ main:focus
 .pages-projects__grid
   width: 100%
 
-  h1
-    display: none
-
 .pages-about
   .container
     max-width: 1080px !important

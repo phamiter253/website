@@ -38,7 +38,10 @@
   .contact-form
     .container
       .contact-form__column
-        h1.contact-form__title Get In<br>Touch!
+        .contact-form__title-container
+          svg.contact-form__star(viewBox="-100 -100 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+            polygon(points=`0,-100 8,-25 38,-92 12,-23 71,-71 17,-17 92,-38 25,-8 100,0 25,8 92,38 17,17 71,71 12,23 38,92 8,25 0,100 -8,25 -38,92 -12,23 -71,71 -17,17 -92,38 -25,8 -100,0 -25,-8 -92,-38 -17,-17 -71,-71 -12,-23 -38,-92 -8,-25`)
+          h1.contact-form__title Get In<br>Touch!
       .contact-form__column
         form.contact-form__form(@submit.prevent="handleSubmit")
           .contact-form__group
