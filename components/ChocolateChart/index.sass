@@ -3,11 +3,12 @@
 
   &__container
     &
-      display: flex
-      align-content: center
-      justify-content: center
+      display: grid
+      grid-template-columns: 65% 35%
       gap: 2rem
+      align-items: start
     @media screen and (max-width: 768px)
+      display: flex
       flex-direction: column
       flex-wrap: wrap
       gap: 0
@@ -17,14 +18,14 @@
       display: flex
       flex-direction: column
 
-    &:nth-of-type(1)
-      &
-        width: 65%
-      @media screen and (max-width: 768px)
-        width: 100%
+      &:nth-of-type(1)
+        &
+          width: 100%
+        @media screen and (max-width: 768px)
+          width: 100%
     &:nth-of-type(2)
       &
-        width: 35%
+        width: 100%
       @media screen and (max-width: 768px)
         width: 60%
       @media screen and (max-width: 480px)
@@ -33,7 +34,7 @@
   &__chart
     &
       position: relative
-      max-height: 100vh
+      //max-height: 100vh
       height: inherit
       width: 100%
       height: 100%
@@ -42,8 +43,10 @@
       scrollbar-width: none
     @media screen and (max-width: 768px)
       height: 80vh
+      max-height: 80vh
     @media screen and (max-width: 480px)
       height: 100vh
+      max-height: 100vh
 
     ::-webkit-scrollbar
       display: none

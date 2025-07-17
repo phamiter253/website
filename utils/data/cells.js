@@ -10,6 +10,13 @@ export const cells = [
   //   // ]
   // },
   {
+    name: 'Pride Picnic Charcuterie',
+    type: 'cell',
+    category: 'food',
+    image: '/images/projects/project-27.jpg',
+    children: []
+  },
+  {
     name: 'Favorite Movies',
     type: 'cell-large',
     category: 'coding',
@@ -21,11 +28,12 @@ export const cells = [
     name: 'Giant BFF Bracelet Graduation Lei',
     type: 'cell',
     category: 'art',
-    image: '/images/projects/project-26a.jpg',
-    children: []
-    // children: [
-    //   '/images/projects/project-26a.jpg'
-    // ]
+    image: '',
+    children: [
+      '/images/projects/project-26a.jpg',
+      '/images/projects/project-26.jpg',
+      '/images/projects/project-26b.jpg'
+    ]
   },
   {
     name: 'Insecticide<br>Game Concept',
@@ -34,7 +42,6 @@ export const cells = [
     image: '/images/insecticide/insecticide-background.jpg',
     font: '"Bodoni"',
     link: '/projects/insecticide'
-    //link: '#'
   },
   {
     name: 'San Francisco Weather Graph',
@@ -59,7 +66,8 @@ export const cells = [
     image: '',
     children: [
       '/images/projects/project-25.jpg',
-      '/images/projects/project-25b.jpg'
+      '/images/projects/project-25b.jpg',
+      '/images/projects/project-25c.jpg'
     ]
   },
   {

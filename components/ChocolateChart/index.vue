@@ -1,7 +1,8 @@
 <script setup>
   import { candy } from '~/utils/data/candy'
   const d3 = useNuxtApp().$d3;
-  const types = ["None", "Sugar", "Rating"];
+  // eslint-disable-next-line
+  const buttonTypes = ref(["None", "Sugar", "Rating"]);
   const selectedType = ref('none')
   const y = ref(0);
   const y2 = ref(0);
@@ -17,6 +18,25 @@
     }
     return candy.sort((a,b) => b[selectedType.value] - a[selectedType.value])
   })
+
+  // Simple height matching approach
+  const firstRowRef = ref(null)
+  const secondRowRef = ref(null)
+  
+  const matchHeights = () => {
+    if (firstRowRef.value && secondRowRef.value && typeof window !== 'undefined') {
+      // Reset heights first
+      secondRowRef.value.style.height = 'auto'
+      
+      // Get the natural height of the first row
+      const firstRowHeight = firstRowRef.value.offsetHeight
+      
+      // Apply it to the second row
+      if (firstRowHeight > 0) {
+        secondRowRef.value.style.height = `${firstRowHeight}px`
+      }
+    }
+  }
 
   const showSugar = () => {
     const svg = d3.select('#chart')
@@ -289,6 +309,7 @@
       y6.value = 0
       showRatings()
     }
+
   })
 
   onMounted(() => {
@@ -302,6 +323,17 @@
     });
 
     renderChart()
+    
+    // Match heights after component is mounted
+    setTimeout(matchHeights, 100)
+    setTimeout(matchHeights, 500)
+    
+    // Match heights on window resize
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', () => {
+        setTimeout(matchHeights, 100)
+      })
+    }
   });
 </script>
 
@@ -309,10 +341,10 @@
   .halloween-chart
     .container
       .halloween-chart__container
-        .halloween-chart__row
+        .halloween-chart__row(ref="firstRowRef")
           h1.halloween-chart__title Halloween Candy Chocolate Bar Graph
           fieldset.halloween-chart__type-container
-            .halloween-chart__type-button(v-for='(type,i) in types' :key='`group-type-${i}`')
+            .halloween-chart__type-button(v-for='(type,i) in buttonTypes' :key='`group-type-${i}`')
               input(type='radio' :id='`type-${i}`' :value='type' name='type' :checked='type === "None" ? true : false')
               label(:for='`type-${i}`' v-html='type')
           p Drawing from the #[a(href='https://www.kaggle.com/datasets/fivethirtyeight/the-ultimate-halloween-candy-power-ranking' target='_blank' aria-label='Open Halloween Candy Data set in new tab') Ultimate Halloween Candy Power Ranking] dataset, Drawing from the Ultimate Halloween Candy Power Ranking dataset, I designed a horizontal bar graph to showcase a comparison of popular fun-sized chocolate bars. The graph highlights both the sugar content and ratings of these treats, providing a clear and engaging visual representation of how sweetness and popularity align. It's a fun way to explore the data and see what makes these candies stand out.
@@ -320,7 +352,7 @@
           p According to the dataset, the sugar value represents the percentile of sugar the candy falls under within the data set. I used this value to compare the chocolate bars, sorting by highest to lowests value. I'm not sure if this means the sugar content of the bar or how sugary the participants rated the chocolate but maybe in the future I will update the value to represent the sugar content.<br><br>When you click on the 'Sugar' button, the bars will update and slowly reveal the percentage value relative to the size of the chocolate bar would be without the wrapper.
           h2.halloween-chart__subtitle Rating
           p According to the dataset, the winpercent(rating in my graph) value represents the overall win percentage according to 269,000 matchups. I used this value to compare the chocolate bars, sorting by highest to lowests value.<br><br>When you click on the 'Rating' button, the bars will update and slowly reveal the percentage value relative to the size of the chocolate bar would be without the wrapper.
-        .halloween-chart__row
+        .halloween-chart__row(ref="secondRowRef")
           .halloween-chart__chart
             svg#chart(viewBox='0 0 760 4900')
 </template>
