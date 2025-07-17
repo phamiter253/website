@@ -67,7 +67,7 @@ onMounted(() => {
 
   setTimeout(() => {
     gridContainer.style.pointerEvents = 'auto';
-  }, cells.length * 40);
+  }, cells.length * 50);
 
   const categoryContainer = document.querySelector(".grid__catergory-container");
   categoryContainer.addEventListener("change", (event) => {
@@ -86,11 +86,11 @@ onMounted(() => {
     .grid__container
       template(v-for='(cell, i) in cells' :key='"cell-"+i')
         .cell(v-if='cell.type == "cell"' 
-          :class='{ "hide": !filteredItems.includes(cell) }' 
+          :class='{ "hide": !filteredItems.includes(cell), "long": cell.long }' 
           tabindex="0"
           :id='"cell-"+i'
-          @click="(e) => handleCellClick(e)"
-          @keyup.enter="(e) => handleCellClick(e)"
+          @click="(e) => cell.long ? null : handleCellClick(e)"
+          @keyup.enter="(e) => cell.long ? null : handleCellClick(e)"
         )
           NuxtImg(
             v-if='cell.children.length === 0' 

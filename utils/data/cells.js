@@ -79,11 +79,21 @@ export const cells = [
     link: '/projects/animal-crossing'
   },
   {
+    name: 'S\'more Baked Alaska',
+    type: 'cell',
+    category: 'food',
+    image: '/images/projects/project-24_5.jpg',
+    children: []
+  },
+  {
     name: 'Turkey Shaped Pretzels',
     type: 'cell',
     category: 'food',
-    image: '/images/projects/project-24.jpg',
-    children: []
+    image: '',
+    children: [
+      '/images/projects/project-24.jpg',
+      '/images/projects/project-24b.jpg'
+    ]
   },
   {
     name: 'Spongebob Birthday Cake',
@@ -101,11 +111,9 @@ export const cells = [
     name: 'Halloween Charcuterie',
     type: 'cell',
     category: 'food',
-    image: '',
-    children: [
-      '/images/projects/project-22.jpg', 
-      '/images/projects/project-22b.jpg'
-    ]
+    image: '/images/projects/project-22.jpg',
+    children: [],
+    long: true
   },
   {
     name: 'Western Themed Birthday Cake',
@@ -154,7 +162,8 @@ export const cells = [
     type: 'cell',
     category: 'food',
     image: '/images/projects/project-15.jpg',
-    children: []
+    children: [],
+    long: true
   },
   {
     name: 'Crepe Flowers Bouquet',
@@ -227,13 +236,20 @@ export const cells = [
     children: []
   },
   {
+    name: 'Homemade Oreos',
+    type: 'cell',
+    category: 'food',
+    image: '/images/projects/project-4_5.jpg',
+    children: []
+  },
+  {
     name: 'Hersheys Bar Gift Wrapping',
     type: 'cell',
     category: 'art',
     image: '',
     children: [
       '/images/projects/project-4.jpg',
-      '/images/projects/project-4b.jpg'
+      '/images/projects/project-4b.jpg',
     ]
   },
   {
@@ -258,10 +274,87 @@ export const cells = [
     name: 'Cardboard Guitar Giftbox',
     type: 'cell',
     category: 'art',
+    image: '/images/projects/project-1.jpg',
+    children: [],
+    long: true
+  },
+  {
+    name: 'Homemade Oatmeal Creme Pies',
+    type: 'cell',
+    category: 'food',
+    image: '/images/projects/project-013.jpg',
+    children: []
+  },
+  {
+    name: 'Star Shaped Cronuts',
+    type: 'cell',
+    category: 'food',
+    image: '/images/projects/project-012.jpg',
+    children: []
+  },
+  {
+    name: 'Gingerbread House 2018',
+    type: 'cell',
+    category: 'art',
     image: '',
     children: [
-      '/images/projects/project-1.jpg',
-      '/images/projects/project-1b.jpg'
+      '/images/projects/project-010a.jpg',
+      '/images/projects/project-010b.jpg'
     ]
+  },
+  {
+    name: 'Cardboard End Table',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-09.jpg',
+    children: []
+  },
+  {
+    name: 'Gingerbread House 2017',
+    type: 'cell',
+    category: 'art',
+    image: '',
+    children: [
+      '/images/projects/project-07a.jpg',
+      '/images/projects/project-07b.jpg'
+    ]
+  },
+  {
+    name: 'Senior Mural',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-06.jpg',
+    children: [],
+    long: true
+  },
+  {
+    name: 'Crepe Roses',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-05.jpg',
+    children: []
+  },
+  {
+    name: 'Magazine Paper Mache Table',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-04.jpg',
+    children: [],
+    long: true
+  },
+  {
+    name: 'Paper Mache Lion Statue',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-02.jpg',
+    children: []
+  },
+  {
+    name: 'Cardboard Piano Dresser',
+    type: 'cell',
+    category: 'art',
+    image: '/images/projects/project-03.jpg',
+    children: [],
+    long: true
   }
 ]
