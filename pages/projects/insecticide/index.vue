@@ -16,6 +16,24 @@
         rel: 'canonical',
         href: 'https://priscillahamiter.com/projects/insecticide'
       }
+    ],
+    script: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Insecticide – Game Concept",
+          "author": {
+            "@type": "Person",
+            "name": "Priscilla Hamiter"
+          },
+          "datePublished": "2024-03-01",
+          "description": "A game concept with insects, trains, and murder!",
+          "image": "https://priscillahamiter.com/images/insecticide/insecticide-logo.svg",
+          "url": "https://priscillahamiter.com/projects/insecticide"
+        })
+      }
     ]
   })
 </script>

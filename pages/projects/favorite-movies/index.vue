@@ -22,6 +22,24 @@ useHead({
       href: 'https://priscillahamiter.com/projects/favorite-movies'
     }
   ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Favorite Movies Collection",
+        "author": {
+          "@type": "Person",
+          "name": "Priscilla Hamiter"
+        },
+        "datePublished": "2024-04-15",
+        "description": "A Netflix-style interface showcasing a curated list of favorite movies, built with Nuxt.js and Vue.",
+        "image": "https://priscillahamiter.com/images/favorite-movies-background.png",
+        "url": "https://priscillahamiter.com/projects/favorite-movies"
+      })
+    }
+  ],
   bodyAttrs: {
     class: 'netflix-page'
   }

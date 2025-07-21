@@ -16,6 +16,24 @@
         rel: 'canonical',
         href: 'https://priscillahamiter.com/projects/animal-crossing'
       }
+    ],
+    script: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Animal Crossing Tinder",
+          "author": {
+            "@type": "Person",
+            "name": "Priscilla Hamiter"
+          },
+          "datePublished": "2024-01-22",
+          "description": "A fun Tinder-style app using Animal Crossing characters, built with JavaScript and D3.js.",
+          "image": "https://priscillahamiter.com/images/thumbnails/anima-crossing-tinder-thumnail.jpg",
+          "url": "https://priscillahamiter.com/projects/animal-crossing"
+        })
+      }
     ]
   })
 </script>

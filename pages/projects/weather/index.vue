@@ -21,6 +21,24 @@
         rel: 'preconnect', 
         href: 'https://tuwu420iv8.execute-api.us-west-1.amazonaws.com'
       }
+    ],
+    script: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "San Francisco Weather Graph",
+          "author": {
+            "@type": "Person",
+            "name": "Priscilla Hamiter"
+          },
+          "datePublished": "2024-02-05",
+          "description": "A D3.js visualization exploring weather patterns in San Francisco, showing temperature trends over time.",
+          "image": "https://priscillahamiter.com/images/weather-background.png",
+          "url": "https://priscillahamiter.com/projects/weather"
+        })
+      }
     ]
   })
 </script>
