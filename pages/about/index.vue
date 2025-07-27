@@ -24,4 +24,3 @@
   .pages-about
     AboutSection
 </template>
-  

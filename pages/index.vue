@@ -120,6 +120,18 @@ useHead({
             "description": "A Netflix-style interface showcasing a curated list of favorite movies, built with Nuxt.js and Vue.",
             "image": "https://priscillahamiter.com/images/favorite-movies-background.png",
             "url": "https://priscillahamiter.com/projects/favorite-movies"
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "San Francisco Monopoly",
+            "author": {
+              "@type": "Person",
+              "name": "Priscilla Hamiter"
+            },
+            "datePublished": "2025-01-27",
+            "description": "A San Francisco-themed version of Monopoly featuring iconic SF neighborhoods, landmarks, and local businesses as properties.",
+            "image": "https://priscillahamiter.com/images/projects/sf-monopoly-preview.jpg",
+            "url": "https://priscillahamiter.com/projects/sf-monopoly"
           }
         ]
       })

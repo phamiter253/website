@@ -25,11 +25,20 @@
     .about-section__main
       .container
         .about-section__content
+
+          .about-section__section.star
+            .about-section__section-content
+              p.about-section__text I've studied Computer Science at the University of San Francisco, and I'm currently working as a Frontend Developer at Rooster Grin Media.
+              p.about-section__text I'm inspired by the showstoppers from "The Great British Baking Show", the data visualization projects from Visual Cinnamon and Shirley Wu, and thousands of pins on Pinterest.
+            .about-section__section-star
+              StarSlider(:slides="sliderSlides" title="Inspirations")
+
           .about-section__section
             h2.about-section__section-title About
-            p.about-section__bio Committed, innovative Senior Engineering Manager with over 5 years of professional experience in web applications design, creative design, and leadership through excellent communication. Familiar with agile development of web apps and fast-paced, collaborative workflows.
-            p.about-section__bio-continued Comfortable debugging or troubleshooting front-end and back end development environments with computer programming and problem-solving skills. Can diagnose, develop, or manage a web applications ecosystem, including use cases with APIs. Known for reliability, influencing team culture, and programming prowess.
-          
+            p.about-section__text Committed, innovative Senior Engineering Manager with over 5 years of professional experience in web applications design, creative design, and leadership through excellent communication. Familiar with agile development of web apps and fast-paced, collaborative workflows.
+            p.about-section__text Comfortable debugging or troubleshooting front-end and back end development environments with computer programming and problem-solving skills. Can diagnose, develop, or manage a web applications ecosystem, including use cases with APIs. Known for reliability, influencing team culture, and programming prowess.
+        
+
           .about-section__section
             h2.about-section__section-title Experience
             
@@ -151,6 +160,25 @@ const experienceItems = ref([
     company: 'Reactful • San Francisco, CA'
   }
 ])
+
+const sliderSlides = [
+  {
+    image: "/images/projects/project-9.jpg",
+    title: "Frontend Development"
+  },
+  {
+    image: "/images/projects/project-010b.jpg",
+    title: "JavaScript"
+  },
+  {
+    image: "/images/projects/project-012.jpg",
+    title: "Vue.js"
+  },
+  {
+    image: "/images/halloween-candy/halloween-candy.png",
+    title: "D3.js"
+  }
+]
 
 function nextSlide() {
   if (currentSlide.value < experienceItems.value.length - 1) {
