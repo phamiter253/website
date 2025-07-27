@@ -45,38 +45,20 @@
             .about-section__experience-slider
               .about-section__slider-container
                 .about-section__slider-track(:style="{ transform: `translateX(-${currentSlide * 100}%)` }")
-                  .about-section__experience-item
+                  .about-section__experience-item(
+                    v-for="(item, index) in experienceItems"
+                    :key="index"
+                  )
                     .about-section__experience-header
-                      h3.about-section__job-title Frontend Developer
-                      p.about-section__company Rooster Grin Media • San Francisco, CA
+                      h3.about-section__job-title {{ item.title }}
+                      p.about-section__company {{ item.company }}
                     ul.about-section__job-description
-                      li Builds next-generation, ADA-compliant websites using Nuxt.js and AWS, ensuring optimized performance, scalability, and accessibility for all users.
-                      li Develops customized websites by designing and implementing features aligned with business' branding.
-                      li Presents websites to clients, conducting detailed walkthroughs and demonstrating all site components' functionality and design.
-                  
-                  .about-section__experience-item
-                    .about-section__experience-header
-                      h3.about-section__job-title Lead Web Developer Support
-                      p.about-section__company Rooster Grin Media • San Francisco, CA
-                    ul.about-section__job-description
-                      li Problem-solved with clients, ensuring problems that arise are resolved in a timely & friendly manner. Managed and maintained over 900 websites.
-                      li Set processes & guidelines for site templates, worked with Web Development Team for build and launch.
-                      li Employed familiarity with WordPress APIs, open-source deployments, and creative tools in troubleshooting.
-                  
-                  .about-section__experience-item
-                    .about-section__experience-header
-                      h3.about-section__job-title Software Engineer Intern
-                      p.about-section__company Reactful • San Francisco, CA
-                    ul.about-section__job-description
-                      li Redesigned and implemented front end with React, Bootstrap, and custom CSS frameworks.
-                      li Expanded backend functionality of Neon Juice API and implemented frontend connections.
-                      li Brainstormed and created multiple wireframes and types of workflow for website builder/generator web application.
+                      li(
+                        v-for="(task, taskIndex) in item.tasks"
+                        :key="taskIndex"
+                      ) {{ task }}
               
               .about-section__slider-controls
-                //- button.about-section__slider-arrow.about-section__slider-arrow--prev(@click="prevSlide" :disabled="currentSlide === 0")
-                //-   svg(width="24" height="24" viewBox="0 0 24 24" fill="none")
-                //-     path(d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
-                
                 .about-section__slider-dots
                   button.about-section__slider-dot(
                     v-for="(item, index) in experienceItems" 
@@ -84,11 +66,6 @@
                     @click="goToSlide(index)"
                     :class="{ 'about-section__slider-dot--active': currentSlide === index }"
                   )
-                
-                //- button.about-section__slider-arrow.about-section__slider-arrow--next(@click="nextSlide" :disabled="currentSlide === experienceItems.length - 1")
-                //-   svg(width="24" height="24" viewBox="0 0 24 24" fill="none")
-                //-     path(d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
-          
           //- .about-section__section
           //-   h2.about-section__section-title Education
           //-   .about-section__education-item
@@ -149,15 +126,30 @@ const currentSlide = ref(0)
 const experienceItems = ref([
   {
     title: 'Frontend Developer',
-    company: 'Rooster Grin Media • San Francisco, CA'
+    company: 'Rooster Grin Media • San Francisco, CA',
+    tasks: [
+      'Builds next-generation, ADA-compliant websites using Nuxt.js and AWS, ensuring optimized performance, scalability, and accessibility for all users.',
+      'Develops customized websites by designing and implementing features aligned with business\' branding.',
+      'Presents websites to clients, conducting detailed walkthroughs and demonstrating all site components\' functionality and design.'
+    ]
   },
   {
     title: 'Lead Web Developer Support', 
-    company: 'Rooster Grin Media • San Francisco, CA'
+    company: 'Rooster Grin Media • San Francisco, CA',
+    tasks: [
+      'Problem-solved with clients, ensuring problems that arise are resolved in a timely & friendly manner. Managed and maintained over 900 websites.',
+      'Set processes & guidelines for site templates, worked with Web Development Team for build and launch.',
+      'Employed familiarity with WordPress APIs, open-source deployments, and creative tools in troubleshooting.'
+    ]
   },
   {
     title: 'Software Engineer Intern',
-    company: 'Reactful • San Francisco, CA'
+    company: 'Reactful • San Francisco, CA',
+    tasks: [
+      'Redesigned and implemented front end with React, Bootstrap, and custom CSS frameworks.',
+      'Expanded backend functionality of Neon Juice API and implemented frontend connections.',
+      'Brainstormed and created multiple wireframes and types of workflow for website builder/generator web application.'
+    ]
   }
 ])
 
