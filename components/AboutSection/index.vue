@@ -195,6 +195,8 @@ function prevSlide() {
 function goToSlide(index) {
   currentSlide.value = index
 }
+
+
 </script>
 
 <style lang="sass" src="./index.sass"></style>

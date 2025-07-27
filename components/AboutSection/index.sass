@@ -295,26 +295,28 @@
   &__slider-track
     display: flex
     transition: transform 0.3s ease-in-out
+    width: 100%
+    
+    @media (max-width: 768px)
+      transition: transform 0.2s ease-in-out
 
   &__experience-item
-    //flex: 0 0 100%
+    flex: 0 0 100%
     padding: 2rem
     margin-bottom: 0
     border-bottom: none
     background: transparent
-    min-width: 93%
+    width: 100%
+    box-sizing: border-box
 
     @media (max-width: 768px)
       padding: 1.5rem
-      min-width: 95%
 
     @media (max-width: 600px)
       padding: 1.25rem
-      min-width: 100%
 
     @media (max-width: 480px)
       padding: 1rem
-      min-width: 98%
 
   &__slider-controls
     display: flex
