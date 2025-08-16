@@ -1,14 +1,25 @@
 export const cells = [
-  // {
-  //   name: 'Autumn Birthday Cake',
-  //   type: 'cell',
-  //   category: 'food',
-  //   image: '',
-  //   children: []
-  //   // children: [
-  //   //   '/images/projects/project-26a.jpg'
-  //   // ]
-  // },
+  {
+    name: 'Vegan Funfetti Birthday Cake',
+    type: 'cell',
+    category: 'food',
+    image: '',
+    children: [
+      '/images/projects/project-29a.jpg',
+      '/images/projects/project-29b.jpg'
+    ]
+  },
+  {
+    name: 'Vegan Challah Bread',
+    type: 'cell',
+    category: 'food',
+    image: '',
+    children: [
+      '/images/projects/project-28a.jpg',
+      '/images/projects/project-28b.jpg',
+      '/images/projects/project-28c.jpg'
+    ]
+  },
   {
     name: 'Pride Picnic Charcuterie',
     type: 'cell',

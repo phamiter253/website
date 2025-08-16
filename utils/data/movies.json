@@ -582,6 +582,16 @@
         "poster": "/images/movies/futurama-benders-big-score-wide.jpg",
         "description": "The Planet Express crew faces off against nudist alien scam artists who have taken over Earth. The first of four Futurama movies featuring time travel, paradoxes, and the show's signature blend of humor and heart.",
         "trailer": "https://www.youtube.com/embed/e74-0EzJt_0"
+      },
+      {
+        "title": "The Incredibles",
+        "year": 2004,
+        "rating": "PG",
+        "genre": ["Animation", "Action", "Family"],
+        "duration": "1h 55m",
+        "poster": "/images/movies/incredibles-wide.jpg",
+        "description": "Pixar's superhero family adventure follows retired superheroes Bob and Helen Parr as they're forced back into action to save the world. A perfect blend of family dynamics, action, and humor that works for all ages.",
+        "trailer": "https://www.youtube.com/embed/sJCjKQQOqT0"
       }
     ],
     "international": [
@@ -1913,6 +1923,46 @@
         "poster": "/images/movies/like-crazy-wide.jpg",
         "description": "A British college student and an American student fall deeply in love, but their relationship is tested when she's banned from the US after overstaying her visa. Felicity Jones and Anton Yelchin star in this intimate portrait of long-distance love and immigration challenges.",
         "trailer": "https://www.youtube.com/embed/wZPbZ00OhOg"
+      },
+      {
+        "title": "Kama Sutra: A Tale of Love",
+        "year": 1996,
+        "rating": "R",
+        "genre": ["Drama", "Romance"],
+        "duration": "1h 54m",
+        "poster": "/images/movies/kama-sutra-wide.jpg",
+        "description": "Mira Nair's visually stunning epic explores love, desire, and rivalry between two women in 16th century India. A tale of passion, betrayal, and the ancient art of love set against the backdrop of royal courts and political intrigue.",
+        "trailer": "https://www.youtube.com/embed/FcxX3zDmpOI"
+      },
+      {
+        "title": "Some Like It Hot",
+        "year": 1959,
+        "rating": "Not Rated",
+        "genre": ["Comedy", "Romance"],
+        "duration": "2h 1m",
+        "poster": "/images/movies/some-like-it-hot-wide.jpg",
+        "description": "Billy Wilder's masterpiece comedy starring Marilyn Monroe, Tony Curtis, and Jack Lemmon. Two musicians witness a mob hit and flee Chicago disguised as women in an all-female band, leading to hilarious complications and romance.",
+        "trailer": "https://www.youtube.com/embed/97TYs2YXbJw"
+      },
+      {
+        "title": "Secretary",
+        "year": 2002,
+        "rating": "R",
+        "genre": ["Drama", "Romance"],
+        "duration": "1h 44m",
+        "poster": "/images/movies/secretary-wide.jpg",
+        "description": "Maggie Gyllenhaal and James Spader star in this unconventional romantic drama about a young woman who finds purpose and love in an unusual employer-employee relationship. A bold exploration of dominance, submission, and self-discovery.",
+        "trailer": "https://www.youtube.com/embed/AFma24S-Uvw"
+      },
+      {
+        "title": "Never Let Me Go",
+        "year": 2010,
+        "rating": "R",
+        "genre": ["Drama", "Romance", "Sci-Fi"],
+        "duration": "1h 43m",
+        "poster": "/images/movies/never-let-me-go-wide.jpg",
+        "description": "Based on Kazuo Ishiguro's novel, this haunting drama follows three friends from a mysterious boarding school as they discover the dark truth about their purpose. Carey Mulligan, Keira Knightley, and Andrew Garfield deliver powerful performances in this dystopian love story.",
+        "trailer": "https://www.youtube.com/embed/sXiRZhDEo8A"
       }
     ]
   }
