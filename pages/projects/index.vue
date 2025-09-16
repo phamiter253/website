@@ -131,6 +131,93 @@
             ]
           }
         })
+      },
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ImageGallery",
+          "name": "Creative Arts Gallery - Baking & Gift Design",
+          "description": "Visual showcase of creative non-coding projects including artisan baking, culinary design, gift wrapping, and aesthetic presentation work",
+          "url": "https://priscillahamiter.com/projects",
+          "author": {
+            "@type": "Person",
+            "@id": "https://priscillahamiter.com#person",
+            "name": "Priscilla Hamiter"
+          },
+          "image": [
+            {
+              "@type": "ImageObject",
+              "name": "Paper Mache Lion Statue",
+              "description": "Artistic baking creations and food styling showcasing creativity in culinary arts and presentation",
+              "url": "https://priscillahamiter.com/images/projects/project-02.jpg",
+              "width": 1200,
+              "height": 630,
+              "contentUrl": "https://priscillahamiter.com/projects",
+              "creator": {
+                "@type": "Person",
+                "name": "Priscilla Hamiter"
+              },
+              "keywords": ["Paper Mache", "Lion Statue", "Creative Presentation"]
+            },
+            {
+              "@type": "ImageObject",
+              "name": "White Elephant Gift Wrapping",
+              "description": "Elegant gift wrapping and package design showcasing attention to detail and aesthetic presentation",
+              "url": "https://priscillahamiter.com/images/projects/project-17.jpg",
+              "width": 1200,
+              "height": 630,
+              "contentUrl": "https://priscillahamiter.com/projects",
+              "creator": {
+                "@type": "Person",
+                "name": "Priscilla Hamiter"
+              },
+              "keywords": ["Gift Wrapping", "Package Design", "Creative Presentation", "Detail Work", "Aesthetic Design"]
+            },
+            {
+              "@type": "ImageObject",
+              "name": "Turkey Shaped Pretzels",
+              "description": "Creative baking creations and food styling showcasing creativity in culinary arts and presentation",
+              "url": "https://priscillahamiter.com/images/projects/project-24.jpg",
+              "width": 1200,
+              "height": 630,
+              "contentUrl": "https://priscillahamiter.com/projects",
+              "creator": {
+                "@type": "Person",
+                "name": "Priscilla Hamiter"
+              },
+              "keywords": ["Baking", "Food Design", "Culinary Arts", "Creative Presentation", "Food Styling"]
+            },
+            {
+              "@type": "ImageObject",
+              "name": "Graduation Lei",
+              "description": "Creative presentation showcasing artistic approach to graduation lei",
+              "url": "https://priscillahamiter.com/images/projects/project-26.jpg",
+              "width": 1200,
+              "height": 630,
+              "contentUrl": "https://priscillahamiter.com/projects",
+              "creator": {
+                "@type": "Person",
+                "name": "Priscilla Hamiter"
+              },
+              "keywords": ["Graduation Lei", "Creative Presentation"]
+            },
+            {
+              "@type": "ImageObject",
+              "name": "Melted Candle Birthday Cake",
+              "description": "Custom baked goods and specialty desserts showcasing advanced baking techniques and creative design",
+              "url": "https://priscillahamiter.com/images/projects/project-30a.jpg",
+              "width": 1200,
+              "height": 630,
+              "contentUrl": "https://priscillahamiter.com/projects",
+              "creator": {
+                "@type": "Person",
+                "name": "Priscilla Hamiter"
+              },
+              "keywords": ["Specialty Baking", "Custom Desserts", "Advanced Techniques", "Creative Baking", "Dessert Design"]
+            }
+          ]
+        })
       }
     ]
   })

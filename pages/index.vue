@@ -186,14 +186,16 @@ useHead({
           "@id": "https://priscillahamiter.com#person",
           "name": "Priscilla Hamiter"
         },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://priscillahamiter.com/projects?search={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://priscillahamiter.com/projects?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ],
         "mainEntity": {
           "@type": "Person",
           "@id": "https://priscillahamiter.com#person"
@@ -245,6 +247,82 @@ useHead({
               "@type": "Answer",
               "text": "You can contact Priscilla through her portfolio website at priscillahamiter.com/contact, connect with her on LinkedIn, or find her on GitHub @phamiter253."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I see live demos of Priscilla's projects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Visit priscillahamiter.com/projects to interact with live demos including the Animal Crossing Tinder app, Halloween candy visualizations, and weather data charts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What technologies does Priscilla use for data visualization?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priscilla specializes in D3.js for interactive data visualizations, combined with JavaScript, Vue.js, and HTML5 Canvas for creating engaging charts and graphs."
+            }
+          }
+        ]
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Priscilla Hamiter - Frontend Developer Portfolio Gallery",
+        "description": "Visual portfolio showcasing interactive web development projects, data visualizations, and creative applications",
+        "url": "https://priscillahamiter.com",
+        "author": {
+          "@type": "Person",
+          "@id": "https://priscillahamiter.com#person",
+          "name": "Priscilla Hamiter"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://priscillahamiter.com/images/profile.jpg",
+          "width": 400,
+          "height": 400,
+          "caption": "Priscilla Hamiter - Frontend Developer"
+        },
+        "image": [
+          {
+            "@type": "ImageObject",
+            "name": "Priscilla Hamiter - Frontend Developer Profile",
+            "description": "Professional headshot of Priscilla Hamiter, Frontend Developer specializing in JavaScript and D3.js",
+            "url": "https://priscillahamiter.com/images/profile.jpg",
+            "width": 400,
+            "height": 400,
+            "contentUrl": "https://priscillahamiter.com/about"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Animal Crossing Tinder App Preview",
+            "description": "Interactive dating app interface using Animal Crossing characters",
+            "url": "https://priscillahamiter.com/images/thumbnails/anima-crossing-tinder-thumnail.jpg",
+            "width": 1200,
+            "height": 630,
+            "contentUrl": "https://priscillahamiter.com/projects/animal-crossing"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Halloween Candy Data Visualization",
+            "description": "D3.js interactive bar chart showing candy preferences data",
+            "url": "https://priscillahamiter.com/images/thumbnails/halloween-thumbnail.png",
+            "width": 1200,
+            "height": 630,
+            "contentUrl": "https://priscillahamiter.com/projects/halloween-candy"
+          },
+          {
+            "@type": "ImageObject",
+            "name": "Netflix-Style Movie Interface",
+            "description": "Vue.js application mimicking Netflix's movie browsing experience",
+            "url": "https://priscillahamiter.com/images/favorite-movies-background.png",
+            "width": 1200,
+            "height": 630,
+            "contentUrl": "https://priscillahamiter.com/projects/favorite-movies"
           }
         ]
       })

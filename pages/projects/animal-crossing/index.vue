@@ -22,6 +22,31 @@
         type: 'application/ld+json',
         children: JSON.stringify({
           "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does the Animal Crossing Tinder app work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Swipe right or left on Animal Crossing villagers! The app uses real character data and implements Tinder-style matching with interactive animations built in JavaScript and D3.js."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I actually play this Animal Crossing dating game?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! It's a fully functional web app. Visit the project page to start swiping through villagers and see your matches in real-time."
+              }
+            }
+          ]
+        })
+      },
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify({
+          "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
             {
