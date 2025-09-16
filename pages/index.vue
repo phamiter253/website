@@ -2,21 +2,95 @@
 import { useHead } from 'nuxt/app'
 
 useHead({
-  title: 'Priscilla Hamiter',
+  title: 'Priscilla Hamiter - Frontend Developer Portfolio | JavaScript & D3.js Specialist',
     meta: [
       {
         name: 'description',
-        content: `Portfolio of Priscilla Hamiter's work as a Frontend Developer.`
+        content: `Frontend Developer specializing in JavaScript, Vue.js, React & D3.js. Explore interactive projects: Animal Crossing Tinder, data visualizations & more.`
       },
       {
         name: 'keywords',
-        content: 'Portfolio, Priscilla Hamiter, Frontend Developer, Projects'
+        content: 'Priscilla Hamiter, Frontend Developer, JavaScript Developer, Vue.js, React, D3.js, Data Visualization, Web Developer, San Francisco, Portfolio, Interactive Projects, Animal Crossing, Halloween Candy, Weather Data, Movie Database'
+      },
+      {
+        name: 'author',
+        content: 'Priscilla Hamiter'
+      },
+      {
+        name: 'robots',
+        content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+      },
+      // Open Graph meta tags for better social sharing and search results
+      {
+        property: 'og:title',
+        content: 'Priscilla Hamiter - Frontend Developer Portfolio'
+      },
+      {
+        property: 'og:description',
+        content: 'Frontend Developer specializing in JavaScript, Vue.js, React, and D3.js data visualizations. Explore interactive projects and creative web applications.'
+      },
+      {
+        property: 'og:image',
+        content: 'https://priscillahamiter.com/images/profile.jpg'
+      },
+      {
+        property: 'og:image:width',
+        content: '1200'
+      },
+      {
+        property: 'og:image:height',
+        content: '630'
+      },
+      {
+        property: 'og:url',
+        content: 'https://priscillahamiter.com'
+      },
+      {
+        property: 'og:type',
+        content: 'profile'
+      },
+      {
+        property: 'og:site_name',
+        content: 'Priscilla Hamiter Portfolio'
+      },
+      {
+        property: 'profile:first_name',
+        content: 'Priscilla'
+      },
+      {
+        property: 'profile:last_name',
+        content: 'Hamiter'
+      },
+      {
+        property: 'profile:username',
+        content: 'phamiter253'
+      },
+      // Twitter Card meta tags
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        name: 'twitter:title',
+        content: 'Priscilla Hamiter - Frontend Developer Portfolio'
+      },
+      {
+        name: 'twitter:description',
+        content: 'Frontend Developer specializing in JavaScript, Vue.js, React, and D3.js data visualizations.'
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://priscillahamiter.com/images/profile.jpg'
+      },
+      {
+        name: 'twitter:creator',
+        content: '@priscillahamiter'
       }
     ],
     link: [
       {
         rel: 'canonical',
-        href: 'https://priscillahamiter.com/about'
+        href: 'https://priscillahamiter.com'
       }
     ],
   script: [
@@ -30,13 +104,18 @@ useHead({
           "@id": "https://priscillahamiter.com#person",
           "name": "Priscilla Hamiter",
           "url": "https://priscillahamiter.com",
-          "image": "https://priscillahamiter.com/profile.jpg",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://priscillahamiter.com/images/profile.jpg",
+            "width": 400,
+            "height": 400
+          },
           "sameAs": [
             "https://www.linkedin.com/in/priscilla-hamiter-668293124",
             "https://github.com/phamiter253"
           ],
-          "jobTitle": "Web Developer",
-          "description": "Portfolio of Priscilla Hamiter, a frontend web developer specializing in JavaScript, D3.js, and creative visual applications.",
+          "jobTitle": "Frontend Developer",
+          "description": "Portfolio of Priscilla Hamiter, a frontend web developer specializing in JavaScript, Vue.js, React, D3.js, and creative visual applications. Based in San Francisco, creating interactive data visualizations and modern web experiences.",
           "alumniOf": {
             "@type": "EducationalOrganization",
             "name": "University of San Francisco",
@@ -44,12 +123,30 @@ useHead({
           },
           "worksFor": {
             "@type": "Organization",
+            "@id": "https://www.roostergrin.com#organization",
             "name": "Rooster Grin Media",
             "url": "https://www.roostergrin.com",
-            "logo": "https://www.roostergrin.com/wp-content/uploads/2019/11/rg-logo.png"
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.roostergrin.com/wp-content/uploads/2019/11/rg-logo.png",
+              "width": 200,
+              "height": 200
+            },
+            "description": "A San Francisco-based software company that offers a full range of services from website design to online marketing",
+            "foundingDate": "2015",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Francisco",
+              "addressRegion": "CA",
+              "addressCountry": "US"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/rooster-grin-media",
+              "https://twitter.com/roostergrin"
+            ]
           },
           "knowsAbout": [
-            "Web Development", "JavaScript", "React", "Vue", "HTML", "CSS", "D3.js"
+            "Web Development", "JavaScript", "React", "Vue.js", "Nuxt.js", "HTML5", "CSS3", "SASS", "D3.js", "Data Visualization", "Frontend Architecture", "Responsive Design", "User Interface Design"
           ],
           "email": "priscilla.hamiter@gmail.com",
           "address": {
@@ -57,81 +154,97 @@ useHead({
             "addressLocality": "San Francisco",
             "addressRegion": "CA",
             "addressCountry": "US"
+          },
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Frontend Developer",
+            "occupationLocation": {
+              "@type": "City",
+              "name": "San Francisco"
+            },
+            "skills": "JavaScript, Vue.js, React, D3.js, HTML, CSS, SASS, Data Visualization"
           }
         },
-        "workExample": [
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://priscillahamiter.com"
+        }
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://priscillahamiter.com#website",
+        "name": "Priscilla Hamiter Portfolio",
+        "alternateName": "Priscilla Hamiter Frontend Developer",
+        "url": "https://priscillahamiter.com",
+        "description": "Frontend Developer Portfolio showcasing JavaScript, Vue.js, React, and D3.js projects",
+        "publisher": {
+          "@type": "Person",
+          "@id": "https://priscillahamiter.com#person",
+          "name": "Priscilla Hamiter"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://priscillahamiter.com/projects?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "mainEntity": {
+          "@type": "Person",
+          "@id": "https://priscillahamiter.com#person"
+        }
+      })
+    },
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
           {
-            "@type": "BlogPosting",
-            "headline": "Animal Crossing Tinder",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-01-22",
-            "description": "A fun Tinder-style app using Animal Crossing characters, built with JavaScript and D3.js.",
-            "image": "https://priscillahamiter.com/images/thumbnails/anima-crossing-tinder-thumnail.jpg",
-            "url": "https://priscillahamiter.com/projects/animal-crossing"
+            "@type": "Question",
+            "name": "What programming languages does Priscilla Hamiter specialize in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priscilla specializes in JavaScript, Vue.js, React, HTML5, CSS3, SASS, and D3.js for data visualization. She also has experience with Nuxt.js for full-stack applications."
+            }
           },
           {
-            "@type": "SoftwareApplication",
-            "headline": "Halloween Candy Chocolate Bar Graph",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-01-17",
-            "dateModified": "2024-01-27",
-            "description": "A horizontal bar chart built with D3.js that visualizes Halloween candy preferences using a Kaggle dataset.",
-            "image": "https://priscillahamiter.com/images/thumbnails/halloween-thumbnail.png",
-            "url": "https://priscillahamiter.com/projects/halloween-candy"
+            "@type": "Question", 
+            "name": "What type of projects does Priscilla Hamiter create?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priscilla creates interactive web applications including data visualizations, gaming interfaces, movie databases, and creative web experiences. Her notable projects include Animal Crossing Tinder, Halloween Candy visualizations, and Netflix-style interfaces."
+            }
           },
           {
-            "@type": "BlogPosting",
-            "headline": "San Francisco Weather Graph",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-02-05",
-            "description": "A D3.js visualization exploring weather patterns in San Francisco, showing temperature trends over time.",
-            "image": "https://priscillahamiter.com/images/weather-background.png",
-            "url": "https://priscillahamiter.com/projects/weather"
+            "@type": "Question",
+            "name": "Where is Priscilla Hamiter located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priscilla is based in San Francisco, California, and currently works at Rooster Grin Media as a Frontend Developer."
+            }
           },
           {
-            "@type": "BlogPosting",
-            "headline": "Insecticide – Game Concept",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2024-03-01",
-            "description": "A game concept with insects, trains, and murder!",
-            "image": "https://priscillahamiter.com/images/insecticide/insecticide-logo.svg",
-            "url": "https://priscillahamiter.com/projects/insecticide"
+            "@type": "Question",
+            "name": "What makes Priscilla Hamiter's portfolio unique?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priscilla combines technical frontend development skills with creative design, specializing in interactive data visualizations and unique user experiences. Her projects showcase both technical proficiency and creative problem-solving."
+            }
           },
           {
-            "@type": "BlogPosting",
-            "headline": "Favorite Movies Collection",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2025-06-21",
-            "description": "A Netflix-style interface showcasing a curated list of favorite movies, built with Nuxt.js and Vue.",
-            "image": "https://priscillahamiter.com/images/favorite-movies-background.png",
-            "url": "https://priscillahamiter.com/projects/favorite-movies"
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": "San Francisco Monopoly",
-            "author": {
-              "@type": "Person",
-              "name": "Priscilla Hamiter"
-            },
-            "datePublished": "2025-01-27",
-            "description": "A San Francisco-themed version of Monopoly featuring iconic SF neighborhoods, landmarks, and local businesses as properties.",
-            "image": "https://priscillahamiter.com/images/projects/sf-monopoly-preview.jpg",
-            "url": "https://priscillahamiter.com/projects/sf-monopoly"
+            "@type": "Question",
+            "name": "How can I contact Priscilla Hamiter for collaboration?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can contact Priscilla through her portfolio website at priscillahamiter.com/contact, connect with her on LinkedIn, or find her on GitHub @phamiter253."
+            }
           }
         ]
       })
