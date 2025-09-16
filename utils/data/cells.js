@@ -1,5 +1,15 @@
 export const cells = [
   {
+    name: 'Melted Candle Birthday Cake',
+    type: 'cell',
+    category: 'food',
+    image: '',
+    children: [
+      '/images/projects/project-30a.jpg',
+      '/images/projects/project-30b.jpg'
+    ]
+  },
+  {
     name: 'Vegan Funfetti Birthday Cake',
     type: 'cell',
     category: 'food',
