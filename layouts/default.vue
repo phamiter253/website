@@ -22,6 +22,10 @@ main:focus
   flex: 1
   justify-content: center
   overflow-x: hidden
+  margin-top: 101px
+
+  @media screen and (max-width: 768px)
+    margin-top: 76px
 
 .pages-home,.pages-contact, .pages-about, .pages-projects, .pages-thank-you
   display: flex

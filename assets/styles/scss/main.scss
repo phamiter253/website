@@ -6,8 +6,8 @@
     "maxWidth": 1440,
     "pairs": (
       (54, 84),
-      (48, 64),
-      (36, 52),
+      (40, 64),
+      (32, 52),
       (18, 32),
       (16, 24),
       (16, 32),
@@ -26,33 +26,66 @@ body {
   margin: 0;
   animation: fadeIn .5s ease-in;
   overflow-y: auto;
-  scrollbar-color: #333 transparent;
   scrollbar-width: thin;
+  scrollbar-color: rgba(51, 51, 51, 0.5) transparent;
 }
 
+/* Webkit browsers - auto-hiding scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  transition: opacity 0.3s ease;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 5px;
+  background: rgba(51, 51, 51, 0.4);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: black;
+  background: rgba(51, 51, 51, 0.7);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(51, 51, 51, 0.9);
+}
+
+/* Auto-hide effect - only show when scrolling or hovering */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+*:hover {
+  scrollbar-color: rgba(51, 51, 51, 0.5) transparent;
+}
+
+body::-webkit-scrollbar {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body:hover::-webkit-scrollbar,
+body::-webkit-scrollbar:hover {
+  opacity: 1;
 }
 
 h1 {
-  font-size: var(--fluid-48-64)
+  font-size: var(--fluid-40-64)
 }
 
 h2 {
-  font-size: var(--fluid-36-52)
+  font-size: var(--fluid-32-52)
 }
 
 h3 {

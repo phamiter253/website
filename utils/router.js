@@ -10,9 +10,17 @@ export const router = [
   {
     name: 'Projects',
     path: '/projects'
-  },
-  {
-    name: 'Contact',
-    path: '/contact'
   }
+  // {
+  //   name: 'Art',
+  //   path: '/art'
+  // },
+  // {
+  //   name: 'Baking',
+  //   path: '/baking'
+  // },
+  // {
+  //   name: 'Code',
+  //   path: '/code'
+  // }
 ]

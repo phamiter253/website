@@ -5,52 +5,21 @@
     display: flex
     flex-direction: column
     justify-content: flex-start
-    padding: 2rem 0 0
+    padding: 1rem 0 0
     width: 100%
     z-index: 5
 
-  &__links
-    display: flex
-    flex-wrap: wrap
-    margin: .5rem 0
-    padding: 0
-
-  &__link
-    &-item
-      display: flex
-      align-items: center
-      font-family: 'Amiri', sans-serif
-      font-size: 1.5rem
-      letter-spacing: 1px
-      list-style-type: none
-
-      &::after
-        &
-          display: block
-          border-radius: .75rem
-          width: .70rem
-          height: .80rem
-          margin: 0 .85rem
-          background-color: black
-          content: ""
-        @media screen and (max-width: 600px)
-          width: .58rem
-          height: .6rem
-
-      &:last-child::after
-        width: 0
-        height: 0
-        content: ""
-
   &__copyright
     &
-      border-top: #333 solid 1px
+      border-top: #000 solid 2px
       margin-top: 0 
+      margin-bottom: 1rem
       padding: .5rem 0 0
       width: 40%
-      font-family: 'Amiri', sans-serif
+      font-family: 'Amiri-Bold', sans-serif
       font-style: italic
-      font-size: 18px
+      font-weight: 600
+      font-size: 20px
 
     @media screen and (max-width: 600px)
       width: 80%

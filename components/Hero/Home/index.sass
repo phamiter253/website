@@ -4,17 +4,8 @@
 
   .container
     &
-      min-height: 80vh
+      height: 100%
       z-index: 0
-    @media screen and (max-width: 768px)
-      height: 120vh
-    // @media screen and (max-width: 1280px) and (max-width: 768px)
-    //   height: 100vh
-    @media screen and (max-width: 600px)
-      height: 90vh
-    @media screen and (max-width: 900px) and (max-height: 480px)
-      height: 85vh
-      min-height: 0
 
   h1
     margin: 0
@@ -43,7 +34,8 @@
       background-position: center
       margin: auto 0
       height: auto
-      width: 30%
+      width: calc(100%/3 - 1rem)
+      max-width: 415px
       overflow: hidden
       pointer-events: auto
     @media screen and (max-width: 768px)
@@ -52,6 +44,7 @@
       margin: 0 auto
       height: 65vw
       width: auto
+      max-width: unset
     @media screen and (max-width: 900px) and (max-height: 480px)
       border-radius: 90% / 60%
       aspect-ratio: 2 / 3

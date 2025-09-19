@@ -18,13 +18,6 @@ const handleScroll = debounce(() => {
 
 const toggleDrawer = () => {
   isOpen.value = !isOpen.value;
-  const body = document.body;
-
-  if (isOpen.value) {
-    !body.classList.contains("stop-scroll") && body.classList.add("stop-scroll");
-  } else {
-    body.classList.remove("stop-scroll");
-  }
 };
 
 onMounted(() => {
@@ -40,28 +33,17 @@ onUnmounted(() => {
 header.navigation(:class="{ active: isDown, open: isOpen }")
   .container
     .navigation__container
-      NuxtLink(to="/" aria-label="Home")
-        img.navigation__logo(src="/logo.svg" alt="Priscilla Hamiter Logo")
-      button.navigation__hamburger(
-        aria-label="Open menu"
+      button(
+        aria-label="Toggle menu"
         :aria-expanded="isOpen"
         aria-controls="navigation__drawer"
         @click="toggleDrawer"
       )
-        span
-        span
-        span
-  button.navigation__overlay(v-if="isOpen" @click="toggleDrawer")
-  .navigation__drawer(:class="{ open: isOpen }")
-    button.navigation__close(
-      aria-label="Close menu"
-      @click="toggleDrawer"
-    )
-      span
-      span
-    ul.navigation__links
-      li.navigation__link-item(v-for="(page, i) in router.slice(1)" :key="`link-${i}`" @click="toggleDrawer")
-        NuxtLink.navigation__link(:to="page.path") {{ page.name }}
+        img.navigation__logo(src="/logo.svg" alt="Priscilla Hamiter Logo")
+      .navigation__drawer(:class="{ open: isOpen }")
+        ul.navigation__links
+          li.navigation__link-item(v-for="(page, i) in router" :key="`link-${i}`" @click="toggleDrawer")
+            NuxtLink.navigation__link(:to="page.path") {{ page.name }}
 </template>
 
 <style lang="sass" src="./index.sass"></style>

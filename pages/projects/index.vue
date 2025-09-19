@@ -225,7 +225,7 @@
 
 <template lang="pug">
   .pages-projects__grid
-    HeroProjects
+    h1(style='display: none') Projects
     ProjectGrid
 </template>
   
