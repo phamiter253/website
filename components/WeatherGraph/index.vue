@@ -26,6 +26,9 @@
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const startDrag = (event) => {
+    // Guard against server-side rendering
+    if (!import.meta.client || !window || !document) return;
+    
     isDragging.value = true;
     const clientX = event.type === 'touchstart' ? event.touches[0].clientX : event.clientX;
     const clientY = event.type === 'touchstart' ? event.touches[0].clientY : event.clientY;
@@ -45,6 +48,8 @@
   };
 
   const onDrag = (event) => {
+    // Guard against server-side rendering
+    if (!import.meta.client || !window || !document) return;
     if (!isDragging.value) return;
     
     const clientX = event.type === 'touchmove' ? event.touches[0].clientX : event.clientX;
@@ -92,6 +97,9 @@
   };
 
   const renderChart = (data) => {
+    // Guard against server-side rendering
+    if (!import.meta.client || !window) return;
+    
     const columns = window.innerWidth <= 768 ? 10 : 30
     const rows = Math.ceil(data.length / columns)
     const width = columns * (squareSize + spacing)
@@ -156,18 +164,24 @@
     }
     
     renderChart(data)
-    window.addEventListener("resize", renderChart(data));
+    if (import.meta.client && window) {
+      window.addEventListener("resize", () => renderChart(data));
+    }
   })
 
   onBeforeUnmount(() => {
-    const data = {}
-    window.removeEventListener("resize", renderChart(data));
+    // Guard against server-side rendering
+    if (import.meta.client && window) {
+      window.removeEventListener("resize", () => renderChart({}));
+    }
     
     // Clean up any remaining drag listeners
-    document.removeEventListener('mousemove', onDrag);
-    document.removeEventListener('mouseup', endDrag);
-    document.removeEventListener('touchmove', onDrag);
-    document.removeEventListener('touchend', endDrag);
+    if (import.meta.client && document) {
+      document.removeEventListener('mousemove', onDrag);
+      document.removeEventListener('mouseup', endDrag);
+      document.removeEventListener('touchmove', onDrag);
+      document.removeEventListener('touchend', endDrag);
+    }
   });
 </script>
 

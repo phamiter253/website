@@ -1,3 +1,6 @@
+<script setup>
+useHead({ meta: [{ name: 'robots', content: 'noindex, noarchive, nosnippet' }] })
+</script>
 <template lang="pug">
 .pages-404
   .container

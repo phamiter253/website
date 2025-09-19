@@ -24,10 +24,14 @@
           .post("https://formeezy.com/api/v1/forms/67972c7758208a0008474679/submissions", formData)
           .then(({ data }) => {
             const { redirect } = data;
-            window.location.href = redirect;
+            if (import.meta.client && window) {
+              window.location.href = redirect;
+            }
           })
           .catch((e) => {
-            window.location.href = e.response.data.redirect;
+            if (import.meta.client && window) {
+              window.location.href = e.response.data.redirect;
+            }
           });
       }
     }
