@@ -51,9 +51,6 @@
             label.contact-form__label(for="email" class="form-label") Email*
             input(id="email" v-model="form.email" type="email" name="email" required)
           .contact-form__group
-            label.contact-form__label(for="phone" class="form-label") Phone
-            input(id="phone" name="phone" type="text")
-          .contact-form__group
             label.contact-form__label(for="message" class="form-label") Message*
             textarea(id="message" v-model="form.message" name="message" required)
           input.bot-field(name="bot-field" type="text")

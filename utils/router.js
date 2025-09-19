@@ -10,6 +10,10 @@ export const router = [
   {
     name: 'Projects',
     path: '/projects'
+  },
+  {
+    name: 'Contact',
+    path: '/contact'
   }
   // {
   //   name: 'Art',
