@@ -1,5 +1,9 @@
 <script setup>
+  // Add a CSS class to the body for this page
   useHead({
+    bodyAttrs: {
+      class: 'weather-page'
+    },
     title: 'San Francisco Weather Graph | Priscilla Hamiter',
     meta: [
       { 
@@ -46,3 +50,32 @@
   .pages-projects
     WeatherGraph
 </template>
+
+<style lang="sass">
+// Remove the default margin-top for the weather page
+body.weather-page #main-content
+  margin-top: 0 !important
+  z-index: 5 !important
+
+  @media screen and (max-width: 768px)
+    margin-top: 0 !important
+
+// Layer the navigation elements for the weather page
+body.weather-page
+  header.navigation
+    pointer-events: none !important
+    z-index: 15 !important
+    
+  .navigation__container
+    z-index: 12 !important
+    pointer-events: auto !important
+    position: relative !important
+  
+  .navigation__drawer
+    z-index: 3 !important
+    pointer-events: auto !important
+  
+  .navigation__links
+    z-index: 2 !important
+    pointer-events: auto !important
+</style>

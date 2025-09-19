@@ -6,15 +6,13 @@
   box-shadow: none
   background-color: transparent
   width: 100%
-  z-index: 10
-
+  
   .container
     padding: 0
 
   &.active, &.open
-    z-index: 12
-
     .navigation__container
+      z-index: 12
       box-shadow: 0 4px 10px 0 rgba(0,0,0,.06),0 3px 16px -4px rgba(0,0,0,.5)
 
   &__container
@@ -24,6 +22,7 @@
     width: fit-content
     background-color: #fcf6f1
     border-radius: 3rem
+    z-index: 10
 
     @media screen and (max-width: 768px)
       border-radius: 2.5rem

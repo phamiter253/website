@@ -2,10 +2,14 @@
   import { weather } from '~/utils/data/weather'
   
   const d3 = useNuxtApp().$d3;
-  const isExpanded = ref(false);
+  const isExpanded = ref(true);
   const isDragging = ref(false);
-  const widgetPosition = ref({ bottom: 16 }); // 1rem = 16px
-  const dragOffset = ref({ y: 0 });
+  const widgetPosition = ref({ 
+    top: '50vh', 
+    left: '50vw',
+    transform: 'translate(-50%, -50%)'
+  });
+  const dragOffset = ref({ x: 0, y: 0 });
   const currentTemp = ref(null);
   const currentDate = ref(null);
   const squareSize = 64
@@ -23,8 +27,16 @@
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const startDrag = (event) => {
     isDragging.value = true;
+    const clientX = event.type === 'touchstart' ? event.touches[0].clientX : event.clientX;
     const clientY = event.type === 'touchstart' ? event.touches[0].clientY : event.clientY;
-    dragOffset.value.y = clientY - (window.innerHeight - widgetPosition.value.bottom - 60); // 60 is widget height
+    
+    // Get current position in pixels
+    const currentTop = parseFloat(widgetPosition.value.top) * window.innerHeight / 100;
+    const currentLeft = parseFloat(widgetPosition.value.left) * window.innerWidth / 100;
+    
+    dragOffset.value.x = clientX - currentLeft;
+    dragOffset.value.y = clientY - currentTop;
+    
     document.addEventListener('mousemove', onDrag);
     document.addEventListener('mouseup', endDrag);
     document.addEventListener('touchmove', onDrag, { passive: false });
@@ -35,14 +47,36 @@
   const onDrag = (event) => {
     if (!isDragging.value) return;
     
+    const clientX = event.type === 'touchmove' ? event.touches[0].clientX : event.clientX;
     const clientY = event.type === 'touchmove' ? event.touches[0].clientY : event.clientY;
-    const newBottom = window.innerHeight - clientY + dragOffset.value.y;
     
-    // Constrain to viewport bounds (16px margin from top/bottom)
-    const minBottom = 16;
-    const maxBottom = window.innerHeight - 76; // 60px widget height + 16px margin
+    const newLeft = clientX - dragOffset.value.x;
+    const newTop = clientY - dragOffset.value.y;
     
-    widgetPosition.value.bottom = Math.max(minBottom, Math.min(maxBottom, newBottom));
+    // Get widget element to calculate its dimensions
+    const widget = document.querySelector('.weather-graph__widget');
+    const widgetRect = widget ? widget.getBoundingClientRect() : { width: 300, height: 200 };
+    
+    // Calculate bounds considering widget size (widget center should stay within viewport)
+    const halfWidth = widgetRect.width / 2;
+    const halfHeight = widgetRect.height / 2;
+    
+    const minLeft = halfWidth;
+    const maxLeft = window.innerWidth - halfWidth;
+    const minTop = halfHeight;
+    const maxTop = window.innerHeight - halfHeight;
+    
+    // Constrain position to keep widget fully within viewport
+    const constrainedLeft = Math.max(minLeft, Math.min(maxLeft, newLeft));
+    const constrainedTop = Math.max(minTop, Math.min(maxTop, newTop));
+    
+    // Convert to viewport units
+    const leftVw = (constrainedLeft / window.innerWidth) * 100;
+    const topVh = (constrainedTop / window.innerHeight) * 100;
+    
+    widgetPosition.value.left = leftVw + 'vw';
+    widgetPosition.value.top = topVh + 'vh';
+    
     event.preventDefault();
   };
 
@@ -142,7 +176,7 @@
     .weather-graph__chart
       .weather-graph__widget(
         :class="{ expanded: isExpanded, dragging: isDragging }"
-        :style="{ bottom: widgetPosition.bottom + 'px' }"
+        :style="widgetPosition"
         @mousedown="startDrag"
         @touchstart="startDrag"
       )
