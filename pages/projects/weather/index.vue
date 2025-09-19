@@ -64,12 +64,9 @@ body.weather-page #main-content
 body.weather-page
   header.navigation
     pointer-events: none !important
-    z-index: 15 !important
     
   .navigation__container
-    z-index: 12 !important
     pointer-events: auto !important
-    position: relative !important
   
   .navigation__drawer
     z-index: 3 !important
