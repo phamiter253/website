@@ -185,8 +185,7 @@ export default defineNuxtConfig({
       rollupOptions: {
         output: {
           manualChunks: {
-            'gsap': ['gsap'],
-            'vendor': ['vue', 'vue-router']
+            'gsap': ['gsap']
           }
         }
       }
