@@ -1,0 +1,87 @@
+// Component: BaseButton
+// Universal button component with variants, states, and accessibility
+
+.base-button
+  // Base styles
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: 0.5rem
+  border: none
+  border-radius: 4px
+  font-family: 'Amiri', serif
+  font-weight: 600
+  text-decoration: none
+  cursor: pointer
+  transition: all 0.2s ease
+  white-space: nowrap
+  
+  &:focus-visible
+    outline-offset: 2px
+    outline-width: 2px
+    outline-style: solid
+    outline-color: var(--color-focus, #F24C4C)
+  
+  // Variants
+  &--primary
+    background-color: #49240F
+    color: white
+    
+    &:hover:not(.base-button--disabled)
+      background-color: #5c2d12
+      transform: translateY(-1px)
+  
+  &--secondary
+    background-color: #E4A79D
+    color: #49240F
+    
+    &:hover:not(.base-button--disabled)
+      background-color: #d69b8e
+      transform: translateY(-1px)
+  
+  &--ghost
+    background-color: transparent
+    color: #49240F
+    border: 2px solid #49240F
+    
+    &:hover:not(.base-button--disabled)
+      background-color: #49240F
+      color: white
+  
+  &--link
+    background-color: transparent
+    color: #49240F
+    text-decoration: underline
+    padding: 0
+    
+    &:hover:not(.base-button--disabled)
+      color: #8C3061
+  
+  // Sizes
+  &--small
+    padding: 0.25rem 0.75rem
+    font-size: 0.875rem
+    
+  &--medium
+    padding: 0.5rem 1.5rem
+    font-size: 1rem
+    
+  &--large
+    padding: 0.75rem 2rem
+    font-size: 1.125rem
+  
+  // States
+  &--disabled
+    opacity: 0.6
+    cursor: not-allowed
+    
+  &--loading
+    cursor: wait
+    
+  &--block
+    width: 100%
+  
+  // Content
+  &__content,
+  &__text
+    line-height: 1

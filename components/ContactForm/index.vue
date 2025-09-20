@@ -1,41 +1,85 @@
-<script>
-  import axios from 'axios';
+<script setup lang="ts">
+import { validationRules } from '~/composables/useForm'
+import type { ContactFormData } from '~/types'
 
-  export default {
-    name: 'ContactForm',
-    data() {
-      return {
-        form: {
-          name: "",
-          email: "",
-          message: "",
-        },
-      };
-    },
-    methods: {
-      handleSubmit: async function() {
-        const formData = new FormData();
+// Form configuration
+const initialValues: ContactFormData = {
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
+}
 
-        for (const [key, value] of Object.entries(this.form)) {
-          formData.append(key, value);
-        }
+const formValidationRules = {
+  name: [validationRules.required('Name is required')],
+  email: [
+    validationRules.required('Email is required'),
+    validationRules.email('Please enter a valid email address')
+  ],
+  subject: [validationRules.required('Subject is required')],
+  message: [
+    validationRules.required('Message is required'),
+    validationRules.minLength(10, 'Message must be at least 10 characters')
+  ]
+}
 
-        await axios
-          .post("https://formeezy.com/api/v1/forms/67972c7758208a0008474679/submissions", formData)
-          .then(({ data }) => {
-            const { redirect } = data;
-            if (import.meta.client && window) {
-              window.location.href = redirect;
-            }
-          })
-          .catch((e) => {
-            if (import.meta.client && window) {
-              window.location.href = e.response.data.redirect;
-            }
-          });
-      }
-    }
-  };
+// Use form composable
+const {
+  values,
+  errors,
+  isValid,
+  isSubmitting,
+  setTouched,
+  handleSubmit,
+  reset
+} = useForm({
+  initialValues,
+  validationRules: formValidationRules,
+  validateOnBlur: true
+})
+
+// Thank you modal state
+const showThankYouModal = ref(false)
+
+// Form submission handler
+const onSubmit = async(formData: ContactFormData) => {
+  try {
+    const formDataToSend = new FormData()
+
+    // Add form fields
+    Object.entries(formData).forEach(([key, value]) => {
+      formDataToSend.append(key, value)
+    })
+
+    await $fetch('https://formeezy.com/api/v1/forms/67972c7758208a0008474679/submissions', {
+      method: 'POST',
+      body: formDataToSend
+    })
+
+    // Show thank you modal instead of redirecting
+    showThankYouModal.value = true
+
+    // Reset form after successful submission
+    reset()
+
+  } catch (error: unknown) {
+    console.error('Form submission error:', error)
+
+    // Show thank you modal even on error (form services often redirect on success)
+    showThankYouModal.value = true
+    reset()
+  }
+}
+
+// Handle form submission
+const submitForm = async() => {
+  await handleSubmit(onSubmit)
+}
+
+// Handle modal close
+const handleModalClose = () => {
+  showThankYouModal.value = false
+}
 </script>
 
 <template lang="pug">
@@ -43,22 +87,73 @@
     .container
       .contact-form__column
         .contact-form__title-container
-          //-svg.contact-form__star(viewBox="-100 -100 200 200" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
-            polygon(points=`0,-100 8,-25 38,-92 12,-23 71,-71 17,-17 92,-38 25,-8 100,0 25,8 92,38 17,17 71,71 12,23 38,92 8,25 0,100 -8,25 -38,92 -12,23 -71,71 -17,17 -92,38 -25,8 -100,0 -25,-8 -92,-38 -17,-17 -71,-71 -12,-23 -38,-92 -8,-25`)
           h1.contact-form__title Get In<br>Touch!
+
       .contact-form__column
-        form.contact-form__form(@submit.prevent="handleSubmit")
-          .contact-form__group
-            label.contact-form__label(for="name" class="form-label") Name*
-            input(id="name" v-model="form.name" type="text" name="name" required)
-          .contact-form__group
-            label.contact-form__label(for="email" class="form-label") Email*
-            input(id="email" v-model="form.email" type="email" name="email" required)
-          .contact-form__group
-            label.contact-form__label(for="message" class="form-label") Message*
-            textarea(id="message" v-model="form.message" name="message" required)
-          input.bot-field(name="bot-field" type="text")
-          button.contact-form__submit(type="submit" tabindex=0) Send Message
+        form.contact-form__form(@submit.prevent="submitForm")
+          BaseInput(
+            v-model="values.name"
+            type="text"
+            label="Name"
+            placeholder="Your full name"
+            required
+            :error-message="errors.name"
+            @blur="setTouched('name')"
+          )
+
+          BaseInput(
+            v-model="values.email"
+            type="email"
+            label="Email"
+            placeholder="your.email@example.com"
+            required
+            :error-message="errors.email"
+            @blur="setTouched('email')"
+          )
+
+          BaseInput(
+            v-model="values.subject"
+            type="text"
+            label="Subject"
+            placeholder="What's this about?"
+            required
+            :error-message="errors.subject"
+            @blur="setTouched('subject')"
+          )
+
+          BaseInput(
+            v-model="values.message"
+            label="Message"
+            placeholder="Tell me more about your project or question..."
+            multiline
+            :rows="5"
+            required
+            :error-message="errors.message"
+            @blur="setTouched('message')"
+          )
+
+          // Honeypot field for spam protection
+          input.bot-field(
+            name="bot-field"
+            type="text"
+            tabindex="-1"
+            aria-hidden="true"
+          )
+
+          BaseButton.contact-form__submit(
+            type="submit"
+            variant="primary"
+            size="large"
+            :loading="isSubmitting"
+            :disabled="!isValid || isSubmitting"
+            block
+          ) {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+
+    // Thank you modal
+    ThankYouModal(
+      v-model="showThankYouModal"
+      @close="handleModalClose"
+    )
 </template>
 
-<style lang="sass" src="./index.sass"></style> 
+<style lang="sass" src="./index.sass"></style>

@@ -1,3 +1,6 @@
+// Component: TheNavigation
+// Fixed navigation with smooth drawer animation and scroll detection
+
 .navigation
   position: fixed
   top: .5rem
@@ -11,11 +14,13 @@
   .container
     padding: 0
 
+  // Active state when scrolled or drawer is open
   &.active, &.open
     .navigation__container
       z-index: 10000 !important
       box-shadow: 0 4px 10px 0 rgba(0,0,0,.06),0 3px 16px -4px rgba(0,0,0,.5)
 
+  // Main container with pill shape
   &__container
     display: flex
     flex-direction: row
@@ -28,20 +33,36 @@
 
     @media screen and (max-width: 768px)
       border-radius: 2.5rem
-
-    @media screen and (max-width: 768px)
       flex-direction: column
+  
+  // Toggle button (invisible but clickable)
+  &__toggle
+    all: unset
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    z-index: 15
     
+    &:focus-visible
+      outline-offset: 2px
+      outline-width: 2px
+      outline-style: solid
+      outline-color: #F24C4C
+      border-radius: 50%
+    
+  // Logo styling
   &__logo
-    &
-      width: auto
-      height: 65px
-      position: relative
-      z-index: 15
+    width: auto
+    height: 65px
+    position: relative
+    z-index: 15
 
     @media screen and (max-width: 768px)
       height: 40px
 
+  // Navigation drawer with smooth animation
   &__drawer
     transition: max-width .5s cubic-bezier(0.4, 0, 0.2, 1) .05s
     display: flex
@@ -58,12 +79,14 @@
       max-height: 0
       flex-direction: column
 
+    // Open state
     &.open
       max-width: 500px
 
       @media screen and (max-width: 768px)
         max-height: 500px
 
+  // Navigation links list
   &__links
     display: flex
     margin: 0
@@ -77,12 +100,14 @@
       flex-direction: column
       align-items: center
 
+    // Transform to visible when drawer is open
     .navigation__drawer.open &
       transform: translateX(0%)
 
       @media screen and (max-width: 768px)
         transform: translateY(0%)
 
+  // Individual navigation link items
   &__link
     &-item
       display: flex
@@ -100,15 +125,15 @@
         justify-content: center
         font-size: 1rem
 
+      // Decorative dots between items
       &::after
-        &
-          display: block
-          border-radius: .3rem
-          width: .3rem
-          height: .33rem
-          margin: 0 .75rem
-          background-color: black
-          content: ""
+        display: block
+        border-radius: .3rem
+        width: .3rem
+        height: .33rem
+        margin: 0 .75rem
+        background-color: black
+        content: ""
 
         @media screen and (max-width: 768px)
           margin: .75rem 0
@@ -117,6 +142,7 @@
           width: .3rem
           height: .33rem
 
+      // First item spacing
       &:first-child
         margin-left: 2.25rem
 
@@ -124,6 +150,7 @@
           margin-top: 1rem
           margin-left: 0
 
+      // Last item spacing
       &:last-child
         margin-right: 1.25rem
 
@@ -131,11 +158,26 @@
           margin-bottom: 1rem
           margin-right: 0
   
+      // Hide dot after last item
       &:last-child::after
         margin: 0
         width: 0
         height: 0
         content: ""
+    
+    // Link styling with hover effects
+    &
+      color: #333
+      text-decoration: none
+      transition: color 0.2s ease
+      
+      &:hover
+        color: #8C3061
+      
+      &[aria-current="page"]
+        color: #49240F
+        font-weight: 700
 
+// Utility class to prevent body scroll when mobile menu is open
 .stop-scroll
   overflow: hidden
