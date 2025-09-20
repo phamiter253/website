@@ -1,13 +1,16 @@
 export default defineNuxtConfig({
-  site: { 
-    url: 'priscillahamiter.com' 
+  // Site configuration
+  site: {
+    url: 'https://priscillahamiter.com'
   },
+
+  // Build configuration
   build: {
     transpile: ['gsap']
   },
   app: {
     head: {
-      htmlAttrs: { 
+      htmlAttrs: {
         lang: 'en',
         'data-theme': 'dark'
       },
@@ -129,29 +132,75 @@ export default defineNuxtConfig({
       lastmod: new Date().toISOString()
     }
   },
+  // Image optimization configuration
   image: {
-    format: ['webp', 'avif']
+    format: ['webp', 'avif'],
+    quality: 85,
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    },
+    densities: [1, 2],
+    // Presets for common image types
+    presets: {
+      thumbnail: {
+        modifiers: {
+          format: 'webp',
+          width: 400,
+          height: 300,
+          fit: 'cover'
+        }
+      },
+      hero: {
+        modifiers: {
+          format: 'webp',
+          width: 1920,
+          height: 1080,
+          fit: 'cover',
+          quality: 90
+        }
+      },
+      project: {
+        modifiers: {
+          format: 'webp',
+          width: 1200,
+          height: 800,
+          fit: 'cover'
+        }
+      }
+    }
   },
   plugins: [
     '~/plugins/gsap.client.js'
   ],
+  // Vite configuration for optimized builds and development
   vite: {
     build: {
       chunkSizeWarningLimit: 1000,
       minify: 'esbuild',
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          unused: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'gsap': ['gsap'],
+            'd3': ['d3'],
+            'vendor': ['vue', 'vue-router']
+          }
         }
       }
     },
     css: {
       preprocessorOptions: {
         sass: {
-          additionalData:  '@use "~/assets/styles/sass/global.sass" as *\n'
+          additionalData: '@use "~/assets/styles/sass/global.sass" as *\n'
         }
       }
+    },
+    optimizeDeps: {
+      include: ['gsap', 'd3']
     }
   },
   router: {
@@ -161,23 +210,35 @@ export default defineNuxtConfig({
     fallback: true
   },
   ssr: true,
+  // Development configuration
+  devtools: { enabled: true },
+
+  // TypeScript configuration
+  typescript: {
+    strict: true,
+    typeCheck: true
+  },
+
+  // Nitro server configuration
   nitro: {
     prerender: {
       crawlLinks: true,
       failOnError: false
     },
+    // Compression for better performance
+    compressPublicAssets: true,
     routeRules: {
-      '/_nuxt/**': { 
-        headers: { 
+      '/_nuxt/**': {
+        headers: {
           'Cache-Control': 'public, max-age=31536000, immutable',
           'X-Content-Type-Options': 'nosniff'
-        } 
+        }
       },
-      '/static/**': { 
-        headers: { 
+      '/static/**': {
+        headers: {
           'Cache-Control': 'public, max-age=31536000, immutable',
           'X-Content-Type-Options': 'nosniff'
-        } 
+        }
       },
       '/images/**': {
         headers: {
@@ -185,31 +246,31 @@ export default defineNuxtConfig({
           'X-Content-Type-Options': 'nosniff'
         }
       },
-      '/favicon.ico': { 
-        headers: { 
+      '/favicon.ico': {
+        headers: {
           'Cache-Control': 'public, max-age=86400',
           'X-Content-Type-Options': 'nosniff'
-        } 
+        }
       },
       '/robots.txt': {
-        headers: { 
+        headers: {
           'Cache-Control': 'public, max-age=86400',
           'Content-Type': 'text/plain'
         }
       },
       '/sitemap.xml': {
-        headers: { 
+        headers: {
           'Cache-Control': 'public, max-age=86400',
           'Content-Type': 'application/xml'
         }
       },
-      '/**': { 
-        headers: { 
+      '/**': {
+        headers: {
           'Cache-Control': 'no-cache, no-store, must-revalidate',
           'X-Frame-Options': 'DENY',
           'X-Content-Type-Options': 'nosniff',
           'Referrer-Policy': 'strict-origin-when-cross-origin'
-        } 
+        }
       }
     }
   },

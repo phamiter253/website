@@ -1,32 +1,55 @@
 {
-  "name": "nuxt-app",
+  "name": "priscilla-hamiter-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive portfolio website showcasing creative projects and professional work",
+  "author": "Priscilla Hamiter",
   "private": true,
   "type": "module",
+  "homepage": "https://priscillahamiter.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/portfolio"
+  },
+  "keywords": [
+    "portfolio",
+    "nuxt",
+    "vue",
+    "creative-coding",
+    "data-visualization",
+    "interactive-design"
+  ],
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages --dotfiles -d .output/public"
+    "deploy": "gh-pages --dotfiles -d .output/public",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "nuxt typecheck",
+    "clean": "rm -rf .nuxt .output dist node_modules/.cache"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.7.4",
     "@nuxt/image": "^1.9.0",
     "@nuxtjs/sitemap": "^7.2.4",
-    "axios": "^1.7.9",
     "d3": "^7.9.0",
-    "gh-pages": "^6.2.0",
     "gsap": "^3.12.5",
-    "mongodb": "^6.12.0",
     "nuxt": "^3.15.4",
     "utopia-core-scss": "^1.2.1",
-    "vite-plugin-pug": "^0.4.1",
-    "vue": "latest",
-    "vue-router": "^4.5.0"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "prettier": "^3.4.2",
     "rollup-plugin-visualizer": "^5.14.0",
     "sass": "^1.83.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }

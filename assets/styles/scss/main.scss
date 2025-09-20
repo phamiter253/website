@@ -1,27 +1,33 @@
+/**
+ * Main SCSS Entry Point
+ * Contains global styles, typography, and base elements
+ */
+
 @use '~/node_modules/utopia-core-scss/src/utopia.scss' as utopia;
 
+// CSS Custom Properties - Fluid Typography System
 :root {
   @include utopia.generateClamps((
     "minWidth": 320,
     "maxWidth": 1440,
     "pairs": (
-      (54, 84),
-      (40, 64),
-      (32, 52),
-      (18, 32),
-      (16, 24),
-      (16, 32),
-      (16, 20),
-      (12, 16)
+      (54, 84),  // Large display text
+      (40, 64),  // Hero headings (h1)
+      (32, 52),  // Section headings (h2)
+      (18, 32),  // Subsection headings (h3)
+      (16, 24),  // Large body text
+      (16, 32),  // Button text / prominent text
+      (16, 20),  // Regular body text (p)
+      (12, 16)   // Small text / captions
     ),
     "prefix": "fluid-",
     "relativeTo": "viewport-width",
   ));
 }
 
+// Base body styles
 body {
-  //background-color: #f8f6f0;
-  background-color: #fcf6f1;
+  background-color: #fcf6f1; // Warm off-white background
   color: #333;
   margin: 0;
   animation: fadeIn .5s ease-in;
@@ -30,7 +36,12 @@ body {
   scrollbar-color: rgba(51, 51, 51, 0.5) transparent;
 }
 
-/* Webkit browsers - auto-hiding scrollbar */
+/* ========================================
+   CUSTOM SCROLLBAR STYLES
+   Auto-hiding scrollbars for better UX
+   ======================================== */
+
+/* Webkit browsers - thin, auto-hiding scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   transition: opacity 0.3s ease;
@@ -59,7 +70,7 @@ body {
   background: rgba(51, 51, 51, 0.9);
 }
 
-/* Auto-hide effect - only show when scrolling or hovering */
+/* Firefox scrollbar styling */
 * {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
@@ -70,6 +81,7 @@ body {
   scrollbar-color: rgba(51, 51, 51, 0.5) transparent;
 }
 
+/* Auto-hide effect - only show when hovering */
 body::-webkit-scrollbar {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -80,16 +92,21 @@ body::-webkit-scrollbar:hover {
   opacity: 1;
 }
 
+/* ========================================
+   TYPOGRAPHY SYSTEM
+   Fluid typography using CSS custom properties
+   ======================================== */
+
 h1 {
-  font-size: var(--fluid-40-64)
+  font-size: var(--fluid-40-64);
 }
 
 h2 {
-  font-size: var(--fluid-32-52)
+  font-size: var(--fluid-32-52);
 }
 
 h3 {
-  font-size: var(--fluid-18-32)
+  font-size: var(--fluid-18-32);
 }
 
 p {
@@ -107,17 +124,29 @@ p {
   }
 }
 
+/* ========================================
+   INTERACTIVE ELEMENTS
+   Button and link styling
+   ======================================== */
+
 button {
   all: unset;
   cursor: pointer;
 }
 
-button:focus-visible, a:focus-visible {
+/* Focus styles for accessibility */
+button:focus-visible, 
+a:focus-visible {
   outline-offset: 1px;
   outline-width: medium;
   outline-style: dashed;
   outline-color: #F24C4C;
 }
+
+/* ========================================
+   LAYOUT COMPONENTS
+   Reusable layout classes
+   ======================================== */
 
 .container {
   display: flex;
@@ -128,19 +157,30 @@ button:focus-visible, a:focus-visible {
   padding: 0 var(--fluid-16-32);
   max-width: 1440px !important;
 
+  /* Special case for full-width movie layout */
   .favorite-movies & {
     max-width: 100% !important;
   }
 }
+
+/* ========================================
+   GLOBAL LINK STYLES
+   Default link appearance
+   ======================================== */
 
 a {
   color: black;
   text-decoration: none;
 
   &:hover {
-    color: #333
+    color: #333;
   }
 }
+
+/* ========================================
+   FORM ELEMENTS
+   Reset and base styles for forms
+   ======================================== */
 
 fieldset {
   border: none;
@@ -151,9 +191,15 @@ legend {
   padding-bottom: .5rem;
 }
 
+/* Hide radio buttons for custom styling */
 input[type="radio"] { 
   display: none; 
 }
+
+/* ========================================
+   ANIMATIONS
+   Reusable keyframe animations
+   ======================================== */
 
 @keyframes fadeIn {
   from {
